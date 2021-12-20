@@ -11,7 +11,6 @@ mp.dps = 50
 class BMA:
 
     def __init__(self, y, X, **kwargs):
-        # Setup the basic variables.
         self.y = y
         self.X = X
         self.names = list(X.columns)
@@ -21,15 +20,14 @@ class BMA:
         self.coefficients_mp = mp.zeros(self.nCols,1)
         self.coefficients = np.zeros(self.nCols)
         self.probabilities = np.zeros(self.nCols)
-        # Check the max model size. (Max number of predictor variables to use in a model.)
-        # This can be used to reduce the runtime but not doing an exhaustive sampling.
+        # check the max model size (max number of predictor variables to use in a model)
+        # this can be used to reduce the runtime but not doing an exhaustive sampling
         if 'MaxVars' in kwargs.keys():
             self.MaxVars = kwargs['MaxVars']
         else:
             self.MaxVars = self.nCols
-        # Prepare the priors if they are provided.
-        # The priors are provided for the individual regressor variables.
-        # The prior for a model is the product of the priors on the variables in the model.
+        # prepare the priors if they are provided
+        # the prior for a model is the product of the priors of the variables in the model
         if 'Priors' in kwargs.keys():
             if np.size(kwargs['Priors']) == self.nCols:
                 self.Priors = kwargs['Priors']
@@ -49,28 +47,23 @@ class BMA:
             self.RegType = 'LS'
 
     def fit(self):
-        # Perform the Bayesian Model Averaging
-
-        # Initialize the sum of the likelihoods for all the models to zero.
-        # This will be the 'normalization' denominator in Bayes Theorem.
+        # this will be the 'normalization' denominator in Bayes Theorem
         likelighood_sum = 0
 
-        # To facilitate iterating through all possible models, we start by iterating thorugh
-        # the number of elements in the model.
+        # forall number of elements in the model
         max_likelihood = 0
         for num_elements in range(1,self.MaxVars+1):
 
             if self.Verbose == True:
                 print("Computing BMA for models of size: ", num_elements)
 
-            # Make a list of all index sets of models of this size.
+            # make a list of all index sets of models of this size
             Models_next = list(combinations(list(range(self.nCols)), num_elements))
 
             # Occam's window - compute the candidate models to use for the next iteration
-            # Models_previous: the set of models from the previous iteration that satisfy (likelihhod > max_likelihhod/20)
-            # Models_next:     the set of candidate models for the next iteration
-            # Models_current:  the set of models from Models_next that can be consturcted by adding one new variable
-            #                    to a model from Models_previous
+            # Models_previous: the set of models from the previous iteration that satisfy (likelihhod > max_likelihood/20)
+            # Models_next: the set of candidate models for the next iteration
+            # Models_current: the set of models from Models_next that can be consturcted by adding one new variable to a model from Models_previous
             if num_elements == 1:
                 Models_current = Models_next
                 Models_previous = []
@@ -87,17 +80,17 @@ class BMA:
                 Models_previous = []
 
 
-            # Iterate through all possible models of the given size.
+            # iterate through all possible models of the given size
             for model_index_set in Models_current:
 
-                # Compute the linear regression for this given model.
+                # compute the regression for this given model
                 model_X = self.X.iloc[:,list(model_index_set)]
                 if self.RegType == 'Logit':
                     model_regr = sm.Logit(self.y, model_X).fit(disp=0)
                 else:
                     model_regr = OLS(self.y, model_X).fit()
 
-                # Compute the likelihood (times the prior) for the model.
+                # compute the likelihood (times the prior) for the model
                 model_likelihood = mp.exp(-model_regr.bic/2)*np.prod(self.Priors[list(model_index_set)])
 
                 if (model_likelihood > max_likelihood/20):
@@ -105,11 +98,10 @@ class BMA:
                         print("Model Variables:",model_index_set,"likelihood=",model_likelihood)
                     self.likelihoods_all[str(model_index_set)] = model_likelihood
 
-                    # Add this likelihood to the running tally of likelihoods.
+                    # add this likelihood to the running tally of likelihoods
                     likelighood_sum = mp.fadd(likelighood_sum, model_likelihood)
 
-                    # Add this likelihood (times the priors) to the running tally
-                    # of likelihoods for each variable in the model.
+                    # add this likelihood (times the priors) for each variable in the model
                     for idx, i in zip(model_index_set, range(num_elements)):
                         self.likelihoods[idx] = mp.fadd(self.likelihoods[idx], model_likelihood, prec=1000)
                         self.coefficients_mp[idx] = mp.fadd(self.coefficients_mp[idx], model_regr.params[i]*model_likelihood, prec=1000)
@@ -120,14 +112,13 @@ class BMA:
                         print("Model Variables:",model_index_set,"rejected by Occam's window")
 
 
-        # Divide by the denominator in Bayes theorem to normalize the probabilities
-        # sum to one.
+        # divide by the denominator in Bayes theorem to normalize the probabilities sum to one
         self.likelighood_sum = likelighood_sum
         for idx in range(self.nCols):
             self.probabilities[idx] = mp.fdiv(self.likelihoods[idx],likelighood_sum, prec=1000)
             self.coefficients[idx] = mp.fdiv(self.coefficients_mp[idx],likelighood_sum, prec=1000)
 
-        # Return the new BMA object as an output.
+        # BMA object as output
         return self
 
     def predict(self, data):
@@ -157,9 +148,9 @@ df["firm"] = (df["firm"] == "Yes")*1 # converts the famhit to 0 (no hist) and 1 
 #df.head()
 
 # illuminance,smoke,color,dist,firm,power,band,speed,quality,hazard
-DROP = ['speed','quality','hazard']
+DROP = ['color','dist','firm','speed','quality','hazard']
 LIMIT = 400
-LIMIT1 = 300
+LIMIT1 = 400
 
 X_oracle = df.drop(["hazard"], axis=1)
 y_oracle = df["hazard"]
@@ -181,8 +172,25 @@ pred_bma = bma_reg.predict(add_constant(X))
 # print(pred_Logit)
 # print(pred_bma)
 
-print('BMA accuracy: ' + str(np.sum((pred_bma > 0.5) == y)/len(y)))
-print('Logit accuracy: ' + str(np.sum((pred_Logit > 0.5) == y1)/len(y1)))
+def precision(predictions, oracle):
+    true_positives = np.sum((predictions > 0.5) == oracle)
+    false_positives = np.sum((predictions > 0.5) != oracle)
+    return true_positives / (true_positives + false_positives)
+
+def recall(predictions, oracle):
+    true_positives = np.sum((predictions > 0.5) == oracle)
+    false_negatives = np.sum((predictions < 0.5) != oracle)
+    return true_positives / (true_positives + false_negatives)
+
+def f_measure(predictions, oracle):
+    p = precision(predictions, oracle)
+    r = recall(predictions, oracle)
+    return 2 * ( (p * r) / (p + r) )
+
+#accuracy = np.sum((pred_bma > 0.5) == y)/len(y)
+
+print('BMA: precision = ' + str(precision(pred_bma, y)) + ' recall = ' + str(recall(pred_bma, y)) + ' F = ' + str(f_measure(pred_bma, y)))
+print('Logit: precision = ' + str(precision(pred_Logit, y1)) + ' recall = ' + str(recall(pred_Logit, y1)) + ' F = ' + str(f_measure(pred_Logit, y1)))
 
 
 def fitness(X):
@@ -226,6 +234,7 @@ def run_adaptation(model, vars, row_data, fitness):
 # vars: illuminance,smoke,color,dist,firm,power,band,speed,quality,hazard
 # e.g., 160,12,5.73,23.11,Present,49,25.3,97.2,52,1
 # [101,218], [0,31.2], [0.98,15.33], [6.74,42.49], [0,1], [13,78], [14.7,46.58], [0,147.19], [15,64]
+
 
 print('=== adaptation with BMA ===')
 
