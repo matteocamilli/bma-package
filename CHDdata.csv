@@ -1,4 +1,4 @@
-illuminance,smoke,color,dist,firm,power,band,speed,quality,hazard
+illuminance,smoke,color,dist,firm,power,band,quality,speed,hazard
 160,12,5.73,23.11,Yes,49,25.3,97.2,52,1
 144,0.01,4.41,28.61,No,55,28.87,2.06,63,1
 118,0.08,3.48,32.28,Yes,52,29.14,3.81,46,0

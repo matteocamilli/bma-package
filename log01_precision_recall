@@ -1,0 +1,695 @@
+Computing BMA for models of size:  1
+Model Variables: (0,) likelihood= 4.9865768219377153210630711681547669976099931774553e-115
+Model Variables: (1,) likelihood= 3.6534738213120627630253828984622542154766070082152e-116
+Model Variables: (2,) rejected by Occam's window
+Model Variables: (3,) rejected by Occam's window
+Model Variables: (4,) rejected by Occam's window
+Model Variables: (5,) rejected by Occam's window
+Model Variables: (6,) likelihood= 2.6707110836894816941243062512314620866694730980284e-116
+Model Variables: (7,) likelihood= 5.7497197207224400570343050504651292173215399544176e-116
+Model Variables: (8,) rejected by Occam's window
+Model Variables: (9,) rejected by Occam's window
+Computing BMA for models of size:  2
+Model Variables: [0, 1] likelihood= 2.2463378753164842314985027926006736873702276230771e-114
+Model Variables: [0, 2] likelihood= 2.3099419829468787899386765498139250135273567586889e-109
+Model Variables: [0, 3] likelihood= 1.157834019819486150167137697040946720092508654823e-109
+Model Variables: [0, 4] likelihood= 1.7118861554561784241052535157505964704010983280883e-110
+Model Variables: [0, 5] likelihood= 6.8992299122915820500566416558573399060069347351795e-110
+Model Variables: [0, 6] rejected by Occam's window
+Model Variables: [0, 7] rejected by Occam's window
+Model Variables: [0, 8] rejected by Occam's window
+Model Variables: [0, 9] likelihood= 5.3151082360813410363583536264073314587367343269699e-104
+Model Variables: [1, 2] rejected by Occam's window
+Model Variables: [1, 3] rejected by Occam's window
+Model Variables: [1, 4] rejected by Occam's window
+Model Variables: [1, 5] rejected by Occam's window
+Model Variables: [1, 6] rejected by Occam's window
+Model Variables: [1, 7] rejected by Occam's window
+Model Variables: [1, 8] rejected by Occam's window
+Model Variables: [1, 9] rejected by Occam's window
+Model Variables: [2, 6] rejected by Occam's window
+Model Variables: [2, 7] rejected by Occam's window
+Model Variables: [3, 6] rejected by Occam's window
+Model Variables: [3, 7] rejected by Occam's window
+Model Variables: [4, 6] rejected by Occam's window
+Model Variables: [4, 7] rejected by Occam's window
+Model Variables: [5, 6] rejected by Occam's window
+Model Variables: [5, 7] rejected by Occam's window
+Model Variables: [6, 7] rejected by Occam's window
+Model Variables: [6, 8] rejected by Occam's window
+Model Variables: [6, 9] rejected by Occam's window
+Model Variables: [7, 8] rejected by Occam's window
+Model Variables: [7, 9] rejected by Occam's window
+Computing BMA for models of size:  3
+Model Variables: [0, 1, 2] rejected by Occam's window
+Model Variables: [0, 1, 3] rejected by Occam's window
+Model Variables: [0, 1, 4] rejected by Occam's window
+Model Variables: [0, 1, 5] rejected by Occam's window
+Model Variables: [0, 1, 6] rejected by Occam's window
+Model Variables: [0, 1, 7] rejected by Occam's window
+Model Variables: [0, 1, 8] rejected by Occam's window
+Model Variables: [0, 1, 9] likelihood= 3.2044476786219497577695846030935929154721897001759e-105
+Model Variables: [0, 2, 3] rejected by Occam's window
+Model Variables: [0, 2, 4] rejected by Occam's window
+Model Variables: [0, 2, 5] likelihood= 8.1390977920998718377237341283456255006813741635056e-105
+Model Variables: [0, 2, 6] rejected by Occam's window
+Model Variables: [0, 2, 7] rejected by Occam's window
+Model Variables: [0, 2, 8] rejected by Occam's window
+Model Variables: [0, 2, 9] likelihood= 1.404513420644144193834419538966924336664156664499e-103
+Model Variables: [0, 3, 4] rejected by Occam's window
+Model Variables: [0, 3, 5] rejected by Occam's window
+Model Variables: [0, 3, 6] rejected by Occam's window
+Model Variables: [0, 3, 7] rejected by Occam's window
+Model Variables: [0, 3, 8] rejected by Occam's window
+Model Variables: [0, 3, 9] likelihood= 4.6855993749311206153457422696785552140098301336211e-102
+Model Variables: [0, 4, 5] rejected by Occam's window
+Model Variables: [0, 4, 6] rejected by Occam's window
+Model Variables: [0, 4, 7] rejected by Occam's window
+Model Variables: [0, 4, 8] rejected by Occam's window
+Model Variables: [0, 4, 9] rejected by Occam's window
+Model Variables: [0, 5, 6] rejected by Occam's window
+Model Variables: [0, 5, 7] rejected by Occam's window
+Model Variables: [0, 5, 8] rejected by Occam's window
+Model Variables: [0, 5, 9] likelihood= 7.9533888092675116478933232353089421502682310681593e-102
+Model Variables: [0, 6, 9] likelihood= 1.2825999813687647629200028679075950537212836249661e-102
+Model Variables: [0, 7, 9] rejected by Occam's window
+Model Variables: [0, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  4
+Model Variables: [0, 1, 2, 5] rejected by Occam's window
+Model Variables: [0, 1, 2, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 9] rejected by Occam's window
+Model Variables: [0, 1, 4, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 9] likelihood= 5.5524099321395164687227483683758910253325843849183e-103
+Model Variables: [0, 1, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5] likelihood= 1.9772199189266547287419519234390084098451925047275e-102
+Model Variables: [0, 2, 3, 9] likelihood= 1.201457513252064729393843194471794141346076141935e-101
+Model Variables: [0, 2, 4, 5] rejected by Occam's window
+Model Variables: [0, 2, 4, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6] rejected by Occam's window
+Model Variables: [0, 2, 5, 7] rejected by Occam's window
+Model Variables: [0, 2, 5, 8] rejected by Occam's window
+Model Variables: [0, 2, 5, 9] likelihood= 4.1713181734996767233624239018325058270585713667924e-101
+Model Variables: [0, 2, 6, 9] likelihood= 2.6409667113893958818733586068264402672225764462763e-102
+Model Variables: [0, 2, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 9] likelihood= 9.9587724267248052782725155565232518404509407891728e-101
+Model Variables: [0, 3, 6, 9] likelihood= 4.6744180767353349575170590011732983448882279021526e-101
+Model Variables: [0, 3, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 8, 9] rejected by Occam's window
+Model Variables: [0, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 9] likelihood= 1.3325801159677731217313872774076016397988557842918e-100
+Model Variables: [0, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  5
+Model Variables: [0, 1, 2, 3, 5] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 9] likelihood= 9.7761091330231338676327808561409131451681780494624e-102
+Model Variables: [0, 1, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 7] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 8] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 9] likelihood= 4.9637296209784024125744638347933049914946124727589e-100
+Model Variables: [0, 2, 3, 6, 9] likelihood= 9.5197131935400615883239807904643899812536775828449e-101
+Model Variables: [0, 2, 3, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 9] likelihood= 5.4949457013424475753240541364756101710584473684187e-100
+Model Variables: [0, 2, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 9] likelihood= 8.6118558902853240868604783425576630171691607065145e-100
+Model Variables: [0, 3, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  6
+Model Variables: [0, 1, 2, 3, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 6, 9] likelihood= 5.2320935130107449126892967073681737237336464258383e-101
+Model Variables: [0, 1, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6, 9] likelihood= 3.4258799309601851188099173558338879332766241236398e-99
+Model Variables: [0, 2, 3, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  7
+Model Variables: [0, 1, 2, 3, 5, 6, 9] likelihood= 2.0451178233744155759913704095312449682747925893412e-100
+Model Variables: [0, 1, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 9] likelihood= 1.8745469233326054984752594308829065324134811100887e-100
+Model Variables: [0, 2, 3, 5, 6, 7, 9] likelihood= 2.9774657739546936972170560559149471710432044929062e-100
+Model Variables: [0, 2, 3, 5, 6, 8, 9] likelihood= 1.7505944940613004879340526310940085707081373378099e-100
+Computing BMA for models of size:  8
+Model Variables: [0, 1, 2, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6, 7, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  9
+Computing BMA for models of size:  10
+=== Computation of the scores for each model ===
+Logit (0,) Vars: 1 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit (1,) Vars: 1 precision = 0.41214057507987223 recall = 0.9084507042253521 F1 = 0.5670329670329671
+Logit (2,) Vars: 1 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit (3,) Vars: 1 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit (4,) Vars: 1 precision = 0.5089820359281437 recall = 0.5985915492957746 F1 = 0.5501618122977346
+Logit (5,) Vars: 1 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit (6,) Vars: 1 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit (7,) Vars: 1 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit (8,) Vars: 1 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 1] Vars: 2 precision = 0.6545454545454545 recall = 0.2535211267605634 F1 = 0.3654822335025381
+Logit [0, 2] Vars: 2 precision = 0.5581395348837209 recall = 0.16901408450704225 F1 = 0.2594594594594594
+Logit [0, 3] Vars: 2 precision = 0.5238095238095238 recall = 0.15492957746478872 F1 = 0.23913043478260868
+Logit [0, 4] Vars: 2 precision = 0.4642857142857143 recall = 0.36619718309859156 F1 = 0.4094488188976378
+Logit [0, 5] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 6] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 7] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 8] Vars: 2 precision = 0.5108695652173914 recall = 0.33098591549295775 F1 = 0.4017094017094017
+Logit [1, 2] Vars: 2 precision = 0.5362318840579711 recall = 0.2605633802816901 F1 = 0.3507109004739336
+Logit [1, 3] Vars: 2 precision = 0.5806451612903226 recall = 0.2535211267605634 F1 = 0.35294117647058826
+Logit [1, 4] Vars: 2 precision = 0.41214057507987223 recall = 0.9084507042253521 F1 = 0.5670329670329671
+Logit [1, 5] Vars: 2 precision = 0.5737704918032787 recall = 0.24647887323943662 F1 = 0.3448275862068965
+Logit [1, 6] Vars: 2 precision = 0.6296296296296297 recall = 0.23943661971830985 F1 = 0.346938775510204
+Logit [1, 7] Vars: 2 precision = 0.45806451612903226 recall = 0.5 F1 = 0.47811447811447816
+Logit [1, 8] Vars: 2 precision = 0.5636363636363636 recall = 0.21830985915492956 F1 = 0.31472081218274106
+Logit [2, 3] Vars: 2 precision = 0.26666666666666666 recall = 0.028169014084507043 F1 = 0.05095541401273885
+Logit [2, 4] Vars: 2 precision = 0.36633663366336633 recall = 0.2605633802816901 F1 = 0.30452674897119336
+Logit [2, 5] Vars: 2 precision = 0.49056603773584906 recall = 0.18309859154929578 F1 = 0.26666666666666666
+Logit [2, 6] Vars: 2 precision = 0.5490196078431373 recall = 0.19718309859154928 F1 = 0.29015544041450775
+Logit [2, 7] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [2, 8] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [3, 4] Vars: 2 precision = 0.4482758620689655 recall = 0.2746478873239437 F1 = 0.34061135371179035
+Logit [3, 5] Vars: 2 precision = 0.4 recall = 0.07042253521126761 F1 = 0.11976047904191618
+Logit [3, 6] Vars: 2 precision = 0.5441176470588235 recall = 0.2605633802816901 F1 = 0.35238095238095235
+Logit [3, 7] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [3, 8] Vars: 2 precision = 0.4339622641509434 recall = 0.1619718309859155 F1 = 0.2358974358974359
+Logit [4, 5] Vars: 2 precision = 0.4489795918367347 recall = 0.30985915492957744 F1 = 0.36666666666666664
+Logit [4, 6] Vars: 2 precision = 0.5046728971962616 recall = 0.38028169014084506 F1 = 0.4337349397590361
+Logit [4, 7] Vars: 2 precision = 0.5086206896551724 recall = 0.4154929577464789 F1 = 0.4573643410852713
+Logit [4, 8] Vars: 2 precision = 0.3448275862068966 recall = 0.2112676056338028 F1 = 0.2620087336244542
+Logit [5, 6] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [5, 7] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [5, 8] Vars: 2 precision = 0.5072463768115942 recall = 0.24647887323943662 F1 = 0.33175355450236965
+Logit [6, 7] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [6, 8] Vars: 2 precision = 0.5411764705882353 recall = 0.323943661971831 F1 = 0.4052863436123348
+Logit [7, 8] Vars: 2 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 1, 2] Vars: 3 precision = 0.6097560975609756 recall = 0.352112676056338 F1 = 0.4464285714285714
+Logit [0, 1, 3] Vars: 3 precision = 0.6190476190476191 recall = 0.2746478873239437 F1 = 0.3804878048780488
+Logit [0, 1, 4] Vars: 3 precision = 0.5851063829787234 recall = 0.3873239436619718 F1 = 0.4661016949152542
+Logit [0, 1, 5] Vars: 3 precision = 0.6491228070175439 recall = 0.2605633802816901 F1 = 0.37185929648241206
+Logit [0, 1, 6] Vars: 3 precision = 0.631578947368421 recall = 0.2535211267605634 F1 = 0.36180904522613067
+Logit [0, 1, 7] Vars: 3 precision = 0.6545454545454545 recall = 0.2535211267605634 F1 = 0.3654822335025381
+Logit [0, 1, 8] Vars: 3 precision = 0.5638297872340425 recall = 0.3732394366197183 F1 = 0.4491525423728814
+Logit [0, 2, 3] Vars: 3 precision = 0.5666666666666667 recall = 0.23943661971830985 F1 = 0.3366336633663366
+Logit [0, 2, 4] Vars: 3 precision = 0.6022727272727273 recall = 0.3732394366197183 F1 = 0.46086956521739136
+Logit [0, 2, 5] Vars: 3 precision = 0.5625 recall = 0.19014084507042253 F1 = 0.28421052631578947
+Logit [0, 2, 6] Vars: 3 precision = 0.56 recall = 0.19718309859154928 F1 = 0.29166666666666663
+Logit [0, 2, 7] Vars: 3 precision = 0.5454545454545454 recall = 0.16901408450704225 F1 = 0.25806451612903225
+Logit [0, 2, 8] Vars: 3 precision = 0.5684210526315789 recall = 0.38028169014084506 F1 = 0.45569620253164556
+Logit [0, 3, 4] Vars: 3 precision = 0.5384615384615384 recall = 0.34507042253521125 F1 = 0.4206008583690987
+Logit [0, 3, 5] Vars: 3 precision = 0.525 recall = 0.14788732394366197 F1 = 0.23076923076923078
+Logit [0, 3, 6] Vars: 3 precision = 0.5441176470588235 recall = 0.2605633802816901 F1 = 0.35238095238095235
+Logit [0, 3, 7] Vars: 3 precision = 0.5348837209302325 recall = 0.1619718309859155 F1 = 0.24864864864864866
+Logit [0, 3, 8] Vars: 3 precision = 0.5227272727272727 recall = 0.323943661971831 F1 = 0.4
+Logit [0, 4, 5] Vars: 3 precision = 0.4351851851851852 recall = 0.33098591549295775 F1 = 0.376
+Logit [0, 4, 6] Vars: 3 precision = 0.5046728971962616 recall = 0.38028169014084506 F1 = 0.4337349397590361
+Logit [0, 4, 7] Vars: 3 precision = 0.46846846846846846 recall = 0.36619718309859156 F1 = 0.41106719367588934
+Logit [0, 4, 8] Vars: 3 precision = 0.5510204081632653 recall = 0.38028169014084506 F1 = 0.45
+Logit [0, 5, 6] Vars: 3 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 5, 7] Vars: 3 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 5, 8] Vars: 3 precision = 0.5056179775280899 recall = 0.31690140845070425 F1 = 0.38961038961038963
+Logit [0, 6, 7] Vars: 3 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 6, 8] Vars: 3 precision = 0.5157894736842106 recall = 0.34507042253521125 F1 = 0.41350210970464135
+Logit [0, 7, 8] Vars: 3 precision = 0.5164835164835165 recall = 0.33098591549295775 F1 = 0.4034334763948498
+Logit [1, 2, 3] Vars: 3 precision = 0.6323529411764706 recall = 0.3028169014084507 F1 = 0.40952380952380946
+Logit [1, 2, 4] Vars: 3 precision = 0.4811320754716981 recall = 0.3591549295774648 F1 = 0.4112903225806452
+Logit [1, 2, 5] Vars: 3 precision = 0.5930232558139535 recall = 0.3591549295774648 F1 = 0.4473684210526316
+Logit [1, 2, 6] Vars: 3 precision = 0.65 recall = 0.36619718309859156 F1 = 0.46846846846846846
+Logit [1, 2, 7] Vars: 3 precision = 0.5409836065573771 recall = 0.2323943661971831 F1 = 0.3251231527093596
+Logit [1, 2, 8] Vars: 3 precision = 0.5576923076923077 recall = 0.20422535211267606 F1 = 0.2989690721649485
+Logit [1, 3, 4] Vars: 3 precision = 0.5392156862745098 recall = 0.3873239436619718 F1 = 0.45081967213114754
+Logit [1, 3, 5] Vars: 3 precision = 0.546875 recall = 0.24647887323943662 F1 = 0.33980582524271846
+Logit [1, 3, 6] Vars: 3 precision = 0.6067415730337079 recall = 0.38028169014084506 F1 = 0.4675324675324675
+Logit [1, 3, 7] Vars: 3 precision = 0.55 recall = 0.2323943661971831 F1 = 0.3267326732673267
+Logit [1, 3, 8] Vars: 3 precision = 0.5492957746478874 recall = 0.2746478873239437 F1 = 0.36619718309859156
+Logit [1, 4, 5] Vars: 3 precision = 0.5510204081632653 recall = 0.38028169014084506 F1 = 0.45
+Logit [1, 4, 6] Vars: 3 precision = 0.5979381443298969 recall = 0.4084507042253521 F1 = 0.4853556485355649
+Logit [1, 4, 7] Vars: 3 precision = 0.45408163265306123 recall = 0.6267605633802817 F1 = 0.5266272189349113
+Logit [1, 4, 8] Vars: 3 precision = 0.5 recall = 0.3591549295774648 F1 = 0.4180327868852459
+Logit [1, 5, 6] Vars: 3 precision = 0.6296296296296297 recall = 0.23943661971830985 F1 = 0.346938775510204
+Logit [1, 5, 7] Vars: 3 precision = 0.5901639344262295 recall = 0.2535211267605634 F1 = 0.35467980295566504
+Logit [1, 5, 8] Vars: 3 precision = 0.5308641975308642 recall = 0.3028169014084507 F1 = 0.3856502242152467
+Logit [1, 6, 7] Vars: 3 precision = 0.6481481481481481 recall = 0.24647887323943662 F1 = 0.35714285714285715
+Logit [1, 6, 8] Vars: 3 precision = 0.5212765957446809 recall = 0.34507042253521125 F1 = 0.41525423728813554
+Logit [1, 7, 8] Vars: 3 precision = 0.5740740740740741 recall = 0.21830985915492956 F1 = 0.31632653061224486
+Logit [2, 3, 4] Vars: 3 precision = 0.5053763440860215 recall = 0.33098591549295775 F1 = 0.39999999999999997
+Logit [2, 3, 5] Vars: 3 precision = 0.5094339622641509 recall = 0.19014084507042253 F1 = 0.27692307692307694
+Logit [2, 3, 6] Vars: 3 precision = 0.5977011494252874 recall = 0.36619718309859156 F1 = 0.45414847161572053
+Logit [2, 3, 7] Vars: 3 precision = 0.26666666666666666 recall = 0.028169014084507043 F1 = 0.05095541401273885
+Logit [2, 3, 8] Vars: 3 precision = 0.417910447761194 recall = 0.19718309859154928 F1 = 0.2679425837320574
+Logit [2, 4, 5] Vars: 3 precision = 0.5777777777777777 recall = 0.36619718309859156 F1 = 0.4482758620689655
+Logit [2, 4, 6] Vars: 3 precision = 0.6265060240963856 recall = 0.36619718309859156 F1 = 0.46222222222222226
+Logit [2, 4, 7] Vars: 3 precision = 0.3883495145631068 recall = 0.28169014084507044 F1 = 0.32653061224489793
+Logit [2, 4, 8] Vars: 3 precision = 0.34444444444444444 recall = 0.21830985915492956 F1 = 0.2672413793103448
+Logit [2, 5, 6] Vars: 3 precision = 0.5510204081632653 recall = 0.19014084507042253 F1 = 0.28272251308900526
+Logit [2, 5, 7] Vars: 3 precision = 0.5185185185185185 recall = 0.19718309859154928 F1 = 0.2857142857142857
+Logit [2, 5, 8] Vars: 3 precision = 0.5 recall = 0.2605633802816901 F1 = 0.34259259259259256
+Logit [2, 6, 7] Vars: 3 precision = 0.5892857142857143 recall = 0.2323943661971831 F1 = 0.3333333333333333
+Logit [2, 6, 8] Vars: 3 precision = 0.5686274509803921 recall = 0.4084507042253521 F1 = 0.47540983606557374
+Logit [2, 7, 8] Vars: 3 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [3, 4, 5] Vars: 3 precision = 0.49 recall = 0.34507042253521125 F1 = 0.4049586776859504
+Logit [3, 4, 6] Vars: 3 precision = 0.6043956043956044 recall = 0.3873239436619718 F1 = 0.47210300429184543
+Logit [3, 4, 7] Vars: 3 precision = 0.4482758620689655 recall = 0.2746478873239437 F1 = 0.34061135371179035
+Logit [3, 4, 8] Vars: 3 precision = 0.4731182795698925 recall = 0.30985915492957744 F1 = 0.3744680851063829
+Logit [3, 5, 6] Vars: 3 precision = 0.5454545454545454 recall = 0.29577464788732394 F1 = 0.3835616438356164
+Logit [3, 5, 7] Vars: 3 precision = 0.4444444444444444 recall = 0.08450704225352113 F1 = 0.1420118343195266
+Logit [3, 5, 8] Vars: 3 precision = 0.4696969696969697 recall = 0.21830985915492956 F1 = 0.2980769230769231
+Logit [3, 6, 7] Vars: 3 precision = 0.5333333333333333 recall = 0.28169014084507044 F1 = 0.3686635944700461
+Logit [3, 6, 8] Vars: 3 precision = 0.5242718446601942 recall = 0.38028169014084506 F1 = 0.44081632653061226
+Logit [3, 7, 8] Vars: 3 precision = 0.4117647058823529 recall = 0.14788732394366197 F1 = 0.2176165803108808
+Logit [4, 5, 6] Vars: 3 precision = 0.5046728971962616 recall = 0.38028169014084506 F1 = 0.4337349397590361
+Logit [4, 5, 7] Vars: 3 precision = 0.4444444444444444 recall = 0.30985915492957744 F1 = 0.3651452282157676
+Logit [4, 5, 8] Vars: 3 precision = 0.48484848484848486 recall = 0.3380281690140845 F1 = 0.3983402489626556
+Logit [4, 6, 7] Vars: 3 precision = 0.49038461538461536 recall = 0.3591549295774648 F1 = 0.41463414634146345
+Logit [4, 6, 8] Vars: 3 precision = 0.5663716814159292 recall = 0.4507042253521127 F1 = 0.5019607843137255
+Logit [4, 7, 8] Vars: 3 precision = 0.4166666666666667 recall = 0.28169014084507044 F1 = 0.33613445378151263
+Logit [5, 6, 7] Vars: 3 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [5, 6, 8] Vars: 3 precision = 0.5348837209302325 recall = 0.323943661971831 F1 = 0.4035087719298246
+Logit [5, 7, 8] Vars: 3 precision = 0.5142857142857142 recall = 0.2535211267605634 F1 = 0.33962264150943394
+Logit [6, 7, 8] Vars: 3 precision = 0.5517241379310345 recall = 0.3380281690140845 F1 = 0.4192139737991266
+Logit [0, 1, 2, 3] Vars: 4 precision = 0.6071428571428571 recall = 0.3591549295774648 F1 = 0.45132743362831856
+Logit [0, 1, 2, 4] Vars: 4 precision = 0.6288659793814433 recall = 0.4295774647887324 F1 = 0.510460251046025
+Logit [0, 1, 2, 5] Vars: 4 precision = 0.6296296296296297 recall = 0.3591549295774648 F1 = 0.45739910313901344
+Logit [0, 1, 2, 6] Vars: 4 precision = 0.6341463414634146 recall = 0.36619718309859156 F1 = 0.4642857142857143
+Logit [0, 1, 2, 7] Vars: 4 precision = 0.6125 recall = 0.34507042253521125 F1 = 0.44144144144144143
+Logit [0, 1, 2, 8] Vars: 4 precision = 0.5943396226415094 recall = 0.44366197183098594 F1 = 0.5080645161290323
+Logit [0, 1, 3, 4] Vars: 4 precision = 0.5882352941176471 recall = 0.4225352112676056 F1 = 0.49180327868852464
+Logit [0, 1, 3, 5] Vars: 4 precision = 0.6031746031746031 recall = 0.2676056338028169 F1 = 0.37073170731707317
+Logit [0, 1, 3, 6] Vars: 4 precision = 0.6022727272727273 recall = 0.3732394366197183 F1 = 0.46086956521739136
+Logit [0, 1, 3, 7] Vars: 4 precision = 0.6190476190476191 recall = 0.2746478873239437 F1 = 0.3804878048780488
+Logit [0, 1, 3, 8] Vars: 4 precision = 0.5714285714285714 recall = 0.39436619718309857 F1 = 0.4666666666666667
+Logit [0, 1, 4, 5] Vars: 4 precision = 0.5729166666666666 recall = 0.3873239436619718 F1 = 0.46218487394957974
+Logit [0, 1, 4, 6] Vars: 4 precision = 0.5876288659793815 recall = 0.4014084507042254 F1 = 0.4769874476987448
+Logit [0, 1, 4, 7] Vars: 4 precision = 0.5684210526315789 recall = 0.38028169014084506 F1 = 0.45569620253164556
+Logit [0, 1, 4, 8] Vars: 4 precision = 0.5779816513761468 recall = 0.44366197183098594 F1 = 0.5019920318725101
+Logit [0, 1, 5, 6] Vars: 4 precision = 0.6140350877192983 recall = 0.24647887323943662 F1 = 0.35175879396984927
+Logit [0, 1, 5, 7] Vars: 4 precision = 0.6607142857142857 recall = 0.2605633802816901 F1 = 0.37373737373737376
+Logit [0, 1, 5, 8] Vars: 4 precision = 0.5652173913043478 recall = 0.36619718309859156 F1 = 0.4444444444444444
+Logit [0, 1, 6, 7] Vars: 4 precision = 0.6379310344827587 recall = 0.2605633802816901 F1 = 0.37
+Logit [0, 1, 6, 8] Vars: 4 precision = 0.5698924731182796 recall = 0.3732394366197183 F1 = 0.451063829787234
+Logit [0, 1, 7, 8] Vars: 4 precision = 0.5698924731182796 recall = 0.3732394366197183 F1 = 0.451063829787234
+Logit [0, 2, 3, 4] Vars: 4 precision = 0.6111111111111112 recall = 0.3873239436619718 F1 = 0.47413793103448276
+Logit [0, 2, 3, 5] Vars: 4 precision = 0.5555555555555556 recall = 0.24647887323943662 F1 = 0.34146341463414637
+Logit [0, 2, 3, 6] Vars: 4 precision = 0.6136363636363636 recall = 0.38028169014084506 F1 = 0.4695652173913043
+Logit [0, 2, 3, 7] Vars: 4 precision = 0.5409836065573771 recall = 0.2323943661971831 F1 = 0.3251231527093596
+Logit [0, 2, 3, 8] Vars: 4 precision = 0.5473684210526316 recall = 0.36619718309859156 F1 = 0.4388185654008439
+Logit [0, 2, 4, 5] Vars: 4 precision = 0.6190476190476191 recall = 0.36619718309859156 F1 = 0.46017699115044247
+Logit [0, 2, 4, 6] Vars: 4 precision = 0.6296296296296297 recall = 0.3591549295774648 F1 = 0.45739910313901344
+Logit [0, 2, 4, 7] Vars: 4 precision = 0.6235294117647059 recall = 0.3732394366197183 F1 = 0.46696035242290757
+Logit [0, 2, 4, 8] Vars: 4 precision = 0.5833333333333334 recall = 0.44366197183098594 F1 = 0.5040000000000001
+Logit [0, 2, 5, 6] Vars: 4 precision = 0.56 recall = 0.19718309859154928 F1 = 0.29166666666666663
+Logit [0, 2, 5, 7] Vars: 4 precision = 0.5294117647058824 recall = 0.19014084507042253 F1 = 0.27979274611398963
+Logit [0, 2, 5, 8] Vars: 4 precision = 0.5531914893617021 recall = 0.36619718309859156 F1 = 0.4406779661016949
+Logit [0, 2, 6, 7] Vars: 4 precision = 0.6363636363636364 recall = 0.24647887323943662 F1 = 0.3553299492385787
+Logit [0, 2, 6, 8] Vars: 4 precision = 0.6153846153846154 recall = 0.4507042253521127 F1 = 0.5203252032520326
+Logit [0, 2, 7, 8] Vars: 4 precision = 0.5510204081632653 recall = 0.38028169014084506 F1 = 0.45
+Logit [0, 3, 4, 5] Vars: 4 precision = 0.5425531914893617 recall = 0.3591549295774648 F1 = 0.43220338983050843
+Logit [0, 3, 4, 6] Vars: 4 precision = 0.6043956043956044 recall = 0.3873239436619718 F1 = 0.47210300429184543
+Logit [0, 3, 4, 7] Vars: 4 precision = 0.5604395604395604 recall = 0.3591549295774648 F1 = 0.43776824034334766
+Logit [0, 3, 4, 8] Vars: 4 precision = 0.5510204081632653 recall = 0.38028169014084506 F1 = 0.45
+Logit [0, 3, 5, 6] Vars: 4 precision = 0.5421686746987951 recall = 0.31690140845070425 F1 = 0.4
+Logit [0, 3, 5, 7] Vars: 4 precision = 0.5116279069767442 recall = 0.15492957746478872 F1 = 0.2378378378378378
+Logit [0, 3, 5, 8] Vars: 4 precision = 0.5172413793103449 recall = 0.31690140845070425 F1 = 0.39301310043668125
+Logit [0, 3, 6, 7] Vars: 4 precision = 0.527027027027027 recall = 0.2746478873239437 F1 = 0.3611111111111111
+Logit [0, 3, 6, 8] Vars: 4 precision = 0.54 recall = 0.38028169014084506 F1 = 0.44628099173553726
+Logit [0, 3, 7, 8] Vars: 4 precision = 0.5108695652173914 recall = 0.33098591549295775 F1 = 0.4017094017094017
+Logit [0, 4, 5, 6] Vars: 4 precision = 0.5 recall = 0.38028169014084506 F1 = 0.432
+Logit [0, 4, 5, 7] Vars: 4 precision = 0.4444444444444444 recall = 0.3380281690140845 F1 = 0.38399999999999995
+Logit [0, 4, 5, 8] Vars: 4 precision = 0.5670103092783505 recall = 0.3873239436619718 F1 = 0.4602510460251046
+Logit [0, 4, 6, 7] Vars: 4 precision = 0.4857142857142857 recall = 0.3591549295774648 F1 = 0.4129554655870446
+Logit [0, 4, 6, 8] Vars: 4 precision = 0.5945945945945946 recall = 0.4647887323943662 F1 = 0.5217391304347826
+Logit [0, 4, 7, 8] Vars: 4 precision = 0.5473684210526316 recall = 0.36619718309859156 F1 = 0.4388185654008439
+Logit [0, 5, 6, 7] Vars: 4 precision = 0.0 recall = 0.0 F1 = 0.0
+Logit [0, 5, 6, 8] Vars: 4 precision = 0.5154639175257731 recall = 0.352112676056338 F1 = 0.41841004184100417
+Logit [0, 5, 7, 8] Vars: 4 precision = 0.5054945054945055 recall = 0.323943661971831 F1 = 0.3948497854077253
+Logit [0, 6, 7, 8] Vars: 4 precision = 0.5102040816326531 recall = 0.352112676056338 F1 = 0.41666666666666663
+Logit [1, 2, 3, 4] Vars: 4 precision = 0.5631067961165048 recall = 0.4084507042253521 F1 = 0.473469387755102
+Logit [1, 2, 3, 5] Vars: 4 precision = 0.6071428571428571 recall = 0.3591549295774648 F1 = 0.45132743362831856
+Logit [1, 2, 3, 6] Vars: 4 precision = 0.631578947368421 recall = 0.4225352112676056 F1 = 0.5063291139240506
+Logit [1, 2, 3, 7] Vars: 4 precision = 0.582089552238806 recall = 0.2746478873239437 F1 = 0.3732057416267943
+Logit [1, 2, 3, 8] Vars: 4 precision = 0.5584415584415584 recall = 0.3028169014084507 F1 = 0.3926940639269406
+Logit [1, 2, 4, 5] Vars: 4 precision = 0.5728155339805825 recall = 0.4154929577464789 F1 = 0.48163265306122444
+Logit [1, 2, 4, 6] Vars: 4 precision = 0.6407766990291263 recall = 0.4647887323943662 F1 = 0.5387755102040817
+Logit [1, 2, 4, 7] Vars: 4 precision = 0.43478260869565216 recall = 0.352112676056338 F1 = 0.38910505836575876
+Logit [1, 2, 4, 8] Vars: 4 precision = 0.49 recall = 0.34507042253521125 F1 = 0.4049586776859504
+Logit [1, 2, 5, 6] Vars: 4 precision = 0.6506024096385542 recall = 0.38028169014084506 F1 = 0.48
+Logit [1, 2, 5, 7] Vars: 4 precision = 0.5930232558139535 recall = 0.3591549295774648 F1 = 0.4473684210526316
+Logit [1, 2, 5, 8] Vars: 4 precision = 0.5698924731182796 recall = 0.3732394366197183 F1 = 0.451063829787234
+Logit [1, 2, 6, 7] Vars: 4 precision = 0.6419753086419753 recall = 0.36619718309859156 F1 = 0.4663677130044844
+Logit [1, 2, 6, 8] Vars: 4 precision = 0.5904761904761905 recall = 0.43661971830985913 F1 = 0.5020242914979758
+Logit [1, 2, 7, 8] Vars: 4 precision = 0.5769230769230769 recall = 0.2112676056338028 F1 = 0.30927835051546393
+Logit [1, 3, 4, 5] Vars: 4 precision = 0.5510204081632653 recall = 0.38028169014084506 F1 = 0.45
+Logit [1, 3, 4, 6] Vars: 4 precision = 0.6116504854368932 recall = 0.44366197183098594 F1 = 0.5142857142857142
+Logit [1, 3, 4, 7] Vars: 4 precision = 0.5188679245283019 recall = 0.3873239436619718 F1 = 0.4435483870967742
+Logit [1, 3, 4, 8] Vars: 4 precision = 0.5480769230769231 recall = 0.4014084507042254 F1 = 0.4634146341463415
+Logit [1, 3, 5, 6] Vars: 4 precision = 0.5555555555555556 recall = 0.3873239436619718 F1 = 0.4564315352697096
+Logit [1, 3, 5, 7] Vars: 4 precision = 0.5555555555555556 recall = 0.24647887323943662 F1 = 0.34146341463414637
+Logit [1, 3, 5, 8] Vars: 4 precision = 0.525 recall = 0.29577464788732394 F1 = 0.37837837837837845
+Logit [1, 3, 6, 7] Vars: 4 precision = 0.6067415730337079 recall = 0.38028169014084506 F1 = 0.4675324675324675
+Logit [1, 3, 6, 8] Vars: 4 precision = 0.5686274509803921 recall = 0.4084507042253521 F1 = 0.47540983606557374
+Logit [1, 3, 7, 8] Vars: 4 precision = 0.5223880597014925 recall = 0.24647887323943662 F1 = 0.33492822966507174
+Logit [1, 4, 5, 6] Vars: 4 precision = 0.5979381443298969 recall = 0.4084507042253521 F1 = 0.4853556485355649
+Logit [1, 4, 5, 7] Vars: 4 precision = 0.56 recall = 0.39436619718309857 F1 = 0.4628099173553719
+Logit [1, 4, 5, 8] Vars: 4 precision = 0.5514018691588785 recall = 0.4154929577464789 F1 = 0.4738955823293173
+Logit [1, 4, 6, 7] Vars: 4 precision = 0.5851063829787234 recall = 0.3873239436619718 F1 = 0.4661016949152542
+Logit [1, 4, 6, 8] Vars: 4 precision = 0.6050420168067226 recall = 0.5070422535211268 F1 = 0.5517241379310346
+Logit [1, 4, 7, 8] Vars: 4 precision = 0.504950495049505 recall = 0.3591549295774648 F1 = 0.4197530864197531
+Logit [1, 5, 6, 7] Vars: 4 precision = 0.6481481481481481 recall = 0.24647887323943662 F1 = 0.35714285714285715
+Logit [1, 5, 6, 8] Vars: 4 precision = 0.5212765957446809 recall = 0.34507042253521125 F1 = 0.41525423728813554
+Logit [1, 5, 7, 8] Vars: 4 precision = 0.5512820512820513 recall = 0.3028169014084507 F1 = 0.3909090909090909
+Logit [1, 6, 7, 8] Vars: 4 precision = 0.5252525252525253 recall = 0.36619718309859156 F1 = 0.43153526970954365
+Logit [2, 3, 4, 5] Vars: 4 precision = 0.5777777777777777 recall = 0.36619718309859156 F1 = 0.4482758620689655
+Logit [2, 3, 4, 6] Vars: 4 precision = 0.6262626262626263 recall = 0.43661971830985913 F1 = 0.5145228215767635
+Logit [2, 3, 4, 7] Vars: 4 precision = 0.5164835164835165 recall = 0.33098591549295775 F1 = 0.4034334763948498
+Logit [2, 3, 4, 8] Vars: 4 precision = 0.4845360824742268 recall = 0.33098591549295775 F1 = 0.3933054393305439
+Logit [2, 3, 5, 6] Vars: 4 precision = 0.5777777777777777 recall = 0.36619718309859156 F1 = 0.4482758620689655
+Logit [2, 3, 5, 7] Vars: 4 precision = 0.4716981132075472 recall = 0.176056338028169 F1 = 0.25641025641025644
+Logit [2, 3, 5, 8] Vars: 4 precision = 0.524390243902439 recall = 0.3028169014084507 F1 = 0.3839285714285714
+Logit [2, 3, 6, 7] Vars: 4 precision = 0.5795454545454546 recall = 0.3591549295774648 F1 = 0.44347826086956527
+Logit [2, 3, 6, 8] Vars: 4 precision = 0.5673076923076923 recall = 0.4154929577464789 F1 = 0.4796747967479674
+Logit [2, 3, 7, 8] Vars: 4 precision = 0.4 recall = 0.18309859154929578 F1 = 0.25120772946859904
+Logit [2, 4, 5, 6] Vars: 4 precision = 0.6341463414634146 recall = 0.36619718309859156 F1 = 0.4642857142857143
+Logit [2, 4, 5, 7] Vars: 4 precision = 0.5777777777777777 recall = 0.36619718309859156 F1 = 0.4482758620689655
+Logit [2, 4, 5, 8] Vars: 4 precision = 0.5436893203883495 recall = 0.39436619718309857 F1 = 0.4571428571428572
+Logit [2, 4, 6, 7] Vars: 4 precision = 0.6329113924050633 recall = 0.352112676056338 F1 = 0.4524886877828054
+Logit [2, 4, 6, 8] Vars: 4 precision = 0.6160714285714286 recall = 0.4859154929577465 F1 = 0.5433070866141733
+Logit [2, 4, 7, 8] Vars: 4 precision = 0.38613861386138615 recall = 0.2746478873239437 F1 = 0.3209876543209877
+Logit [2, 5, 6, 7] Vars: 4 precision = 0.6071428571428571 recall = 0.23943661971830985 F1 = 0.3434343434343434
+Logit [2, 5, 6, 8] Vars: 4 precision = 0.5643564356435643 recall = 0.4014084507042254 F1 = 0.4691358024691358
+Logit [2, 5, 7, 8] Vars: 4 precision = 0.5128205128205128 recall = 0.28169014084507044 F1 = 0.3636363636363636
+Logit [2, 6, 7, 8] Vars: 4 precision = 0.5660377358490566 recall = 0.4225352112676056 F1 = 0.48387096774193544
+Logit [3, 4, 5, 6] Vars: 4 precision = 0.6732673267326733 recall = 0.4788732394366197 F1 = 0.5596707818930041
+Logit [3, 4, 5, 7] Vars: 4 precision = 0.49 recall = 0.34507042253521125 F1 = 0.4049586776859504
+Logit [3, 4, 5, 8] Vars: 4 precision = 0.5306122448979592 recall = 0.36619718309859156 F1 = 0.43333333333333335
+Logit [3, 4, 6, 7] Vars: 4 precision = 0.6086956521739131 recall = 0.39436619718309857 F1 = 0.47863247863247865
+Logit [3, 4, 6, 8] Vars: 4 precision = 0.6055045871559633 recall = 0.4647887323943662 F1 = 0.5258964143426296
+Logit [3, 4, 7, 8] Vars: 4 precision = 0.4787234042553192 recall = 0.31690140845070425 F1 = 0.38135593220338987
+Logit [3, 5, 6, 7] Vars: 4 precision = 0.5512820512820513 recall = 0.3028169014084507 F1 = 0.3909090909090909
+Logit [3, 5, 6, 8] Vars: 4 precision = 0.5612244897959183 recall = 0.3873239436619718 F1 = 0.4583333333333333
+Logit [3, 5, 7, 8] Vars: 4 precision = 0.5 recall = 0.24647887323943662 F1 = 0.330188679245283
+Logit [3, 6, 7, 8] Vars: 4 precision = 0.5436893203883495 recall = 0.39436619718309857 F1 = 0.4571428571428572
+Logit [4, 5, 6, 7] Vars: 4 precision = 0.4854368932038835 recall = 0.352112676056338 F1 = 0.40816326530612246
+Logit [4, 5, 6, 8] Vars: 4 precision = 0.5714285714285714 recall = 0.4507042253521127 F1 = 0.5039370078740156
+Logit [4, 5, 7, 8] Vars: 4 precision = 0.48484848484848486 recall = 0.3380281690140845 F1 = 0.3983402489626556
+Logit [4, 6, 7, 8] Vars: 4 precision = 0.5625 recall = 0.44366197183098594 F1 = 0.49606299212598426
+Logit [5, 6, 7, 8] Vars: 4 precision = 0.5517241379310345 recall = 0.3380281690140845 F1 = 0.4192139737991266
+Logit [0, 1, 2, 3, 4] Vars: 5 precision = 0.6391752577319587 recall = 0.43661971830985913 F1 = 0.5188284518828452
+Logit [0, 1, 2, 3, 5] Vars: 5 precision = 0.6 recall = 0.3591549295774648 F1 = 0.44933920704845814
+Logit [0, 1, 2, 3, 6] Vars: 5 precision = 0.6344086021505376 recall = 0.4154929577464789 F1 = 0.5021276595744681
+Logit [0, 1, 2, 3, 7] Vars: 5 precision = 0.6 recall = 0.3591549295774648 F1 = 0.44933920704845814
+Logit [0, 1, 2, 3, 8] Vars: 5 precision = 0.5925925925925926 recall = 0.4507042253521127 F1 = 0.512
+Logit [0, 1, 2, 4, 5] Vars: 5 precision = 0.6344086021505376 recall = 0.4154929577464789 F1 = 0.5021276595744681
+Logit [0, 1, 2, 4, 6] Vars: 5 precision = 0.6534653465346535 recall = 0.4647887323943662 F1 = 0.5432098765432098
+Logit [0, 1, 2, 4, 7] Vars: 5 precision = 0.625 recall = 0.4225352112676056 F1 = 0.5042016806722689
+Logit [0, 1, 2, 4, 8] Vars: 5 precision = 0.6039603960396039 recall = 0.4295774647887324 F1 = 0.5020576131687242
+Logit [0, 1, 2, 5, 6] Vars: 5 precision = 0.6375 recall = 0.3591549295774648 F1 = 0.4594594594594595
+Logit [0, 1, 2, 5, 7] Vars: 5 precision = 0.6296296296296297 recall = 0.3591549295774648 F1 = 0.45739910313901344
+Logit [0, 1, 2, 5, 8] Vars: 5 precision = 0.5865384615384616 recall = 0.4295774647887324 F1 = 0.4959349593495935
+Logit [0, 1, 2, 6, 7] Vars: 5 precision = 0.625 recall = 0.352112676056338 F1 = 0.45045045045045046
+Logit [0, 1, 2, 6, 8] Vars: 5 precision = 0.625 recall = 0.45774647887323944 F1 = 0.5284552845528455
+Logit [0, 1, 2, 7, 8] Vars: 5 precision = 0.5925925925925926 recall = 0.4507042253521127 F1 = 0.512
+Logit [0, 1, 3, 4, 5] Vars: 5 precision = 0.5882352941176471 recall = 0.4225352112676056 F1 = 0.49180327868852464
+Logit [0, 1, 3, 4, 6] Vars: 5 precision = 0.61 recall = 0.4295774647887324 F1 = 0.5041322314049587
+Logit [0, 1, 3, 4, 7] Vars: 5 precision = 0.5922330097087378 recall = 0.4295774647887324 F1 = 0.4979591836734694
+Logit [0, 1, 3, 4, 8] Vars: 5 precision = 0.5779816513761468 recall = 0.44366197183098594 F1 = 0.5019920318725101
+Logit [0, 1, 3, 5, 6] Vars: 5 precision = 0.5698924731182796 recall = 0.3732394366197183 F1 = 0.451063829787234
+Logit [0, 1, 3, 5, 7] Vars: 5 precision = 0.6031746031746031 recall = 0.2676056338028169 F1 = 0.37073170731707317
+Logit [0, 1, 3, 5, 8] Vars: 5 precision = 0.5773195876288659 recall = 0.39436619718309857 F1 = 0.4686192468619247
+Logit [0, 1, 3, 6, 7] Vars: 5 precision = 0.6046511627906976 recall = 0.36619718309859156 F1 = 0.456140350877193
+Logit [0, 1, 3, 6, 8] Vars: 5 precision = 0.6020408163265306 recall = 0.4154929577464789 F1 = 0.49166666666666664
+Logit [0, 1, 3, 7, 8] Vars: 5 precision = 0.5773195876288659 recall = 0.39436619718309857 F1 = 0.4686192468619247
+Logit [0, 1, 4, 5, 6] Vars: 5 precision = 0.5876288659793815 recall = 0.4014084507042254 F1 = 0.4769874476987448
+Logit [0, 1, 4, 5, 7] Vars: 5 precision = 0.574468085106383 recall = 0.38028169014084506 F1 = 0.45762711864406785
+Logit [0, 1, 4, 5, 8] Vars: 5 precision = 0.5849056603773585 recall = 0.43661971830985913 F1 = 0.5
+Logit [0, 1, 4, 6, 7] Vars: 5 precision = 0.5833333333333334 recall = 0.39436619718309857 F1 = 0.4705882352941176
+Logit [0, 1, 4, 6, 8] Vars: 5 precision = 0.6071428571428571 recall = 0.4788732394366197 F1 = 0.5354330708661418
+Logit [0, 1, 4, 7, 8] Vars: 5 precision = 0.5740740740740741 recall = 0.43661971830985913 F1 = 0.49599999999999994
+Logit [0, 1, 5, 6, 7] Vars: 5 precision = 0.6206896551724138 recall = 0.2535211267605634 F1 = 0.36
+Logit [0, 1, 5, 6, 8] Vars: 5 precision = 0.5643564356435643 recall = 0.4014084507042254 F1 = 0.4691358024691358
+Logit [0, 1, 5, 7, 8] Vars: 5 precision = 0.5698924731182796 recall = 0.3732394366197183 F1 = 0.451063829787234
+Logit [0, 1, 6, 7, 8] Vars: 5 precision = 0.5698924731182796 recall = 0.3732394366197183 F1 = 0.451063829787234
+Logit [0, 2, 3, 4, 5] Vars: 5 precision = 0.6292134831460674 recall = 0.39436619718309857 F1 = 0.4848484848484848
+Logit [0, 2, 3, 4, 6] Vars: 5 precision = 0.6262626262626263 recall = 0.43661971830985913 F1 = 0.5145228215767635
+Logit [0, 2, 3, 4, 7] Vars: 5 precision = 0.627906976744186 recall = 0.38028169014084506 F1 = 0.4736842105263158
+Logit [0, 2, 3, 4, 8] Vars: 5 precision = 0.5925925925925926 recall = 0.4507042253521127 F1 = 0.512
+Logit [0, 2, 3, 5, 6] Vars: 5 precision = 0.6043956043956044 recall = 0.3873239436619718 F1 = 0.47210300429184543
+Logit [0, 2, 3, 5, 7] Vars: 5 precision = 0.532258064516129 recall = 0.2323943661971831 F1 = 0.32352941176470584
+Logit [0, 2, 3, 5, 8] Vars: 5 precision = 0.5483870967741935 recall = 0.3591549295774648 F1 = 0.4340425531914894
+Logit [0, 2, 3, 6, 7] Vars: 5 precision = 0.5609756097560976 recall = 0.323943661971831 F1 = 0.41071428571428575
+Logit [0, 2, 3, 6, 8] Vars: 5 precision = 0.5855855855855856 recall = 0.45774647887323944 F1 = 0.5138339920948616
+Logit [0, 2, 3, 7, 8] Vars: 5 precision = 0.5436893203883495 recall = 0.39436619718309857 F1 = 0.4571428571428572
+Logit [0, 2, 4, 5, 6] Vars: 5 precision = 0.6375 recall = 0.3591549295774648 F1 = 0.4594594594594595
+Logit [0, 2, 4, 5, 7] Vars: 5 precision = 0.6125 recall = 0.34507042253521125 F1 = 0.44144144144144143
+Logit [0, 2, 4, 5, 8] Vars: 5 precision = 0.5922330097087378 recall = 0.4295774647887324 F1 = 0.4979591836734694
+Logit [0, 2, 4, 6, 7] Vars: 5 precision = 0.6428571428571429 recall = 0.38028169014084506 F1 = 0.47787610619469023
+Logit [0, 2, 4, 6, 8] Vars: 5 precision = 0.6132075471698113 recall = 0.45774647887323944 F1 = 0.5241935483870968
+Logit [0, 2, 4, 7, 8] Vars: 5 precision = 0.5740740740740741 recall = 0.43661971830985913 F1 = 0.49599999999999994
+Logit [0, 2, 5, 6, 7] Vars: 5 precision = 0.6363636363636364 recall = 0.24647887323943662 F1 = 0.3553299492385787
+Logit [0, 2, 5, 6, 8] Vars: 5 precision = 0.6074766355140186 recall = 0.45774647887323944 F1 = 0.5220883534136546
+Logit [0, 2, 5, 7, 8] Vars: 5 precision = 0.5578947368421052 recall = 0.3732394366197183 F1 = 0.4472573839662447
+Logit [0, 2, 6, 7, 8] Vars: 5 precision = 0.6057692307692307 recall = 0.44366197183098594 F1 = 0.5121951219512195
+Logit [0, 3, 4, 5, 6] Vars: 5 precision = 0.6632653061224489 recall = 0.45774647887323944 F1 = 0.5416666666666666
+Logit [0, 3, 4, 5, 7] Vars: 5 precision = 0.5319148936170213 recall = 0.352112676056338 F1 = 0.423728813559322
+Logit [0, 3, 4, 5, 8] Vars: 5 precision = 0.5625 recall = 0.38028169014084506 F1 = 0.453781512605042
+Logit [0, 3, 4, 6, 7] Vars: 5 precision = 0.6086956521739131 recall = 0.39436619718309857 F1 = 0.47863247863247865
+Logit [0, 3, 4, 6, 8] Vars: 5 precision = 0.5794392523364486 recall = 0.43661971830985913 F1 = 0.497991967871486
+Logit [0, 3, 4, 7, 8] Vars: 5 precision = 0.5473684210526316 recall = 0.36619718309859156 F1 = 0.4388185654008439
+Logit [0, 3, 5, 6, 7] Vars: 5 precision = 0.5121951219512195 recall = 0.29577464788732394 F1 = 0.375
+Logit [0, 3, 5, 6, 8] Vars: 5 precision = 0.54 recall = 0.38028169014084506 F1 = 0.44628099173553726
+Logit [0, 3, 5, 7, 8] Vars: 5 precision = 0.5222222222222223 recall = 0.33098591549295775 F1 = 0.4051724137931035
+Logit [0, 3, 6, 7, 8] Vars: 5 precision = 0.53 recall = 0.3732394366197183 F1 = 0.4380165289256199
+Logit [0, 4, 5, 6, 7] Vars: 5 precision = 0.4857142857142857 recall = 0.3591549295774648 F1 = 0.4129554655870446
+Logit [0, 4, 5, 6, 8] Vars: 5 precision = 0.5929203539823009 recall = 0.47183098591549294 F1 = 0.5254901960784313
+Logit [0, 4, 5, 7, 8] Vars: 5 precision = 0.5578947368421052 recall = 0.3732394366197183 F1 = 0.4472573839662447
+Logit [0, 4, 6, 7, 8] Vars: 5 precision = 0.5963302752293578 recall = 0.45774647887323944 F1 = 0.5179282868525896
+Logit [0, 5, 6, 7, 8] Vars: 5 precision = 0.5157894736842106 recall = 0.34507042253521125 F1 = 0.41350210970464135
+Logit [1, 2, 3, 4, 5] Vars: 5 precision = 0.5784313725490197 recall = 0.4154929577464789 F1 = 0.4836065573770492
+Logit [1, 2, 3, 4, 6] Vars: 5 precision = 0.6476190476190476 recall = 0.4788732394366197 F1 = 0.5506072874493927
+Logit [1, 2, 3, 4, 7] Vars: 5 precision = 0.5321100917431193 recall = 0.4084507042253521 F1 = 0.4621513944223108
+Logit [1, 2, 3, 4, 8] Vars: 5 precision = 0.5619047619047619 recall = 0.4154929577464789 F1 = 0.4777327935222672
+Logit [1, 2, 3, 5, 6] Vars: 5 precision = 0.6326530612244898 recall = 0.43661971830985913 F1 = 0.5166666666666667
+Logit [1, 2, 3, 5, 7] Vars: 5 precision = 0.6144578313253012 recall = 0.3591549295774648 F1 = 0.4533333333333333
+Logit [1, 2, 3, 5, 8] Vars: 5 precision = 0.5473684210526316 recall = 0.36619718309859156 F1 = 0.4388185654008439
+Logit [1, 2, 3, 6, 7] Vars: 5 precision = 0.6382978723404256 recall = 0.4225352112676056 F1 = 0.5084745762711864
+Logit [1, 2, 3, 6, 8] Vars: 5 precision = 0.616822429906542 recall = 0.4647887323943662 F1 = 0.5301204819277109
+Logit [1, 2, 3, 7, 8] Vars: 5 precision = 0.547945205479452 recall = 0.28169014084507044 F1 = 0.3720930232558139
+Logit [1, 2, 4, 5, 6] Vars: 5 precision = 0.6442307692307693 recall = 0.47183098591549294 F1 = 0.5447154471544715
+Logit [1, 2, 4, 5, 7] Vars: 5 precision = 0.5514018691588785 recall = 0.4154929577464789 F1 = 0.4738955823293173
+Logit [1, 2, 4, 5, 8] Vars: 5 precision = 0.5566037735849056 recall = 0.4154929577464789 F1 = 0.47580645161290325
+Logit [1, 2, 4, 6, 7] Vars: 5 precision = 0.6320754716981132 recall = 0.47183098591549294 F1 = 0.5403225806451613
+Logit [1, 2, 4, 6, 8] Vars: 5 precision = 0.6120689655172413 recall = 0.5 F1 = 0.5503875968992248
+Logit [1, 2, 4, 7, 8] Vars: 5 precision = 0.47619047619047616 recall = 0.352112676056338 F1 = 0.40485829959514164
+Logit [1, 2, 5, 6, 7] Vars: 5 precision = 0.6463414634146342 recall = 0.3732394366197183 F1 = 0.4732142857142857
+Logit [1, 2, 5, 6, 8] Vars: 5 precision = 0.6 recall = 0.44366197183098594 F1 = 0.5101214574898786
+Logit [1, 2, 5, 7, 8] Vars: 5 precision = 0.5652173913043478 recall = 0.36619718309859156 F1 = 0.4444444444444444
+Logit [1, 2, 6, 7, 8] Vars: 5 precision = 0.5904761904761905 recall = 0.43661971830985913 F1 = 0.5020242914979758
+Logit [1, 3, 4, 5, 6] Vars: 5 precision = 0.6442307692307693 recall = 0.47183098591549294 F1 = 0.5447154471544715
+Logit [1, 3, 4, 5, 7] Vars: 5 precision = 0.56 recall = 0.39436619718309857 F1 = 0.4628099173553719
+Logit [1, 3, 4, 5, 8] Vars: 5 precision = 0.5825242718446602 recall = 0.4225352112676056 F1 = 0.48979591836734687
+Logit [1, 3, 4, 6, 7] Vars: 5 precision = 0.6078431372549019 recall = 0.43661971830985913 F1 = 0.5081967213114753
+Logit [1, 3, 4, 6, 8] Vars: 5 precision = 0.6068376068376068 recall = 0.5 F1 = 0.5482625482625482
+Logit [1, 3, 4, 7, 8] Vars: 5 precision = 0.5436893203883495 recall = 0.39436619718309857 F1 = 0.4571428571428572
+Logit [1, 3, 5, 6, 7] Vars: 5 precision = 0.5714285714285714 recall = 0.39436619718309857 F1 = 0.4666666666666667
+Logit [1, 3, 5, 6, 8] Vars: 5 precision = 0.580952380952381 recall = 0.4295774647887324 F1 = 0.49392712550607293
+Logit [1, 3, 5, 7, 8] Vars: 5 precision = 0.5189873417721519 recall = 0.2887323943661972 F1 = 0.37104072398190047
+Logit [1, 3, 6, 7, 8] Vars: 5 precision = 0.5728155339805825 recall = 0.4154929577464789 F1 = 0.48163265306122444
+Logit [1, 4, 5, 6, 7] Vars: 5 precision = 0.5851063829787234 recall = 0.3873239436619718 F1 = 0.4661016949152542
+Logit [1, 4, 5, 6, 8] Vars: 5 precision = 0.6134453781512605 recall = 0.5140845070422535 F1 = 0.5593869731800767
+Logit [1, 4, 5, 7, 8] Vars: 5 precision = 0.5555555555555556 recall = 0.4225352112676056 F1 = 0.48
+Logit [1, 4, 6, 7, 8] Vars: 5 precision = 0.6101694915254238 recall = 0.5070422535211268 F1 = 0.553846153846154
+Logit [1, 5, 6, 7, 8] Vars: 5 precision = 0.5257731958762887 recall = 0.3591549295774648 F1 = 0.4267782426778242
+Logit [2, 3, 4, 5, 6] Vars: 5 precision = 0.6534653465346535 recall = 0.4647887323943662 F1 = 0.5432098765432098
+Logit [2, 3, 4, 5, 7] Vars: 5 precision = 0.5777777777777777 recall = 0.36619718309859156 F1 = 0.4482758620689655
+Logit [2, 3, 4, 5, 8] Vars: 5 precision = 0.5686274509803921 recall = 0.4084507042253521 F1 = 0.47540983606557374
+Logit [2, 3, 4, 6, 7] Vars: 5 precision = 0.62 recall = 0.43661971830985913 F1 = 0.512396694214876
+Logit [2, 3, 4, 6, 8] Vars: 5 precision = 0.6140350877192983 recall = 0.49295774647887325 F1 = 0.5468750000000001
+Logit [2, 3, 4, 7, 8] Vars: 5 precision = 0.4897959183673469 recall = 0.3380281690140845 F1 = 0.4
+Logit [2, 3, 5, 6, 7] Vars: 5 precision = 0.5777777777777777 recall = 0.36619718309859156 F1 = 0.4482758620689655
+Logit [2, 3, 5, 6, 8] Vars: 5 precision = 0.5865384615384616 recall = 0.4295774647887324 F1 = 0.4959349593495935
+Logit [2, 3, 5, 7, 8] Vars: 5 precision = 0.5061728395061729 recall = 0.2887323943661972 F1 = 0.36771300448430494
+Logit [2, 3, 6, 7, 8] Vars: 5 precision = 0.5619047619047619 recall = 0.4154929577464789 F1 = 0.4777327935222672
+Logit [2, 4, 5, 6, 7] Vars: 5 precision = 0.6329113924050633 recall = 0.352112676056338 F1 = 0.4524886877828054
+Logit [2, 4, 5, 6, 8] Vars: 5 precision = 0.6126126126126126 recall = 0.4788732394366197 F1 = 0.5375494071146244
+Logit [2, 4, 5, 7, 8] Vars: 5 precision = 0.55 recall = 0.3873239436619718 F1 = 0.4545454545454546
+Logit [2, 4, 6, 7, 8] Vars: 5 precision = 0.625 recall = 0.49295774647887325 F1 = 0.5511811023622046
+Logit [2, 5, 6, 7, 8] Vars: 5 precision = 0.5714285714285714 recall = 0.4225352112676056 F1 = 0.48582995951417
+Logit [3, 4, 5, 6, 7] Vars: 5 precision = 0.6732673267326733 recall = 0.4788732394366197 F1 = 0.5596707818930041
+Logit [3, 4, 5, 6, 8] Vars: 5 precision = 0.6330275229357798 recall = 0.4859154929577465 F1 = 0.5498007968127491
+Logit [3, 4, 5, 7, 8] Vars: 5 precision = 0.5148514851485149 recall = 0.36619718309859156 F1 = 0.4279835390946502
+Logit [3, 4, 6, 7, 8] Vars: 5 precision = 0.6 recall = 0.4647887323943662 F1 = 0.5238095238095237
+Logit [3, 5, 6, 7, 8] Vars: 5 precision = 0.5544554455445545 recall = 0.39436619718309857 F1 = 0.4609053497942387
+Logit [4, 5, 6, 7, 8] Vars: 5 precision = 0.5714285714285714 recall = 0.4507042253521127 F1 = 0.5039370078740156
+Logit [0, 1, 2, 3, 4, 5] Vars: 6 precision = 0.6288659793814433 recall = 0.4295774647887324 F1 = 0.510460251046025
+Logit [0, 1, 2, 3, 4, 6] Vars: 6 precision = 0.6320754716981132 recall = 0.47183098591549294 F1 = 0.5403225806451613
+Logit [0, 1, 2, 3, 4, 7] Vars: 6 precision = 0.6458333333333334 recall = 0.43661971830985913 F1 = 0.5210084033613446
+Logit [0, 1, 2, 3, 4, 8] Vars: 6 precision = 0.6057692307692307 recall = 0.44366197183098594 F1 = 0.5121951219512195
+Logit [0, 1, 2, 3, 5, 6] Vars: 6 precision = 0.6354166666666666 recall = 0.4295774647887324 F1 = 0.5126050420168067
+Logit [0, 1, 2, 3, 5, 7] Vars: 6 precision = 0.5833333333333334 recall = 0.34507042253521125 F1 = 0.43362831858407075
+Logit [0, 1, 2, 3, 5, 8] Vars: 6 precision = 0.5922330097087378 recall = 0.4295774647887324 F1 = 0.4979591836734694
+Logit [0, 1, 2, 3, 6, 7] Vars: 6 precision = 0.6304347826086957 recall = 0.4084507042253521 F1 = 0.49572649572649574
+Logit [0, 1, 2, 3, 6, 8] Vars: 6 precision = 0.6372549019607843 recall = 0.45774647887323944 F1 = 0.5327868852459017
+Logit [0, 1, 2, 3, 7, 8] Vars: 6 precision = 0.5871559633027523 recall = 0.4507042253521127 F1 = 0.5099601593625498
+Logit [0, 1, 2, 4, 5, 6] Vars: 6 precision = 0.6534653465346535 recall = 0.4647887323943662 F1 = 0.5432098765432098
+Logit [0, 1, 2, 4, 5, 7] Vars: 6 precision = 0.6382978723404256 recall = 0.4225352112676056 F1 = 0.5084745762711864
+Logit [0, 1, 2, 4, 5, 8] Vars: 6 precision = 0.5918367346938775 recall = 0.4084507042253521 F1 = 0.4833333333333334
+Logit [0, 1, 2, 4, 6, 7] Vars: 6 precision = 0.6534653465346535 recall = 0.4647887323943662 F1 = 0.5432098765432098
+Logit [0, 1, 2, 4, 6, 8] Vars: 6 precision = 0.6120689655172413 recall = 0.5 F1 = 0.5503875968992248
+Logit [0, 1, 2, 4, 7, 8] Vars: 6 precision = 0.6116504854368932 recall = 0.44366197183098594 F1 = 0.5142857142857142
+Logit [0, 1, 2, 5, 6, 7] Vars: 6 precision = 0.6172839506172839 recall = 0.352112676056338 F1 = 0.44843049327354256
+Logit [0, 1, 2, 5, 6, 8] Vars: 6 precision = 0.6176470588235294 recall = 0.44366197183098594 F1 = 0.5163934426229507
+Logit [0, 1, 2, 5, 7, 8] Vars: 6 precision = 0.6057692307692307 recall = 0.44366197183098594 F1 = 0.5121951219512195
+Logit [0, 1, 2, 6, 7, 8] Vars: 6 precision = 0.6285714285714286 recall = 0.4647887323943662 F1 = 0.5344129554655871
+Logit [0, 1, 3, 4, 5, 6] Vars: 6 precision = 0.6336633663366337 recall = 0.4507042253521127 F1 = 0.5267489711934157
+Logit [0, 1, 3, 4, 5, 7] Vars: 6 precision = 0.5769230769230769 recall = 0.4225352112676056 F1 = 0.4878048780487805
+Logit [0, 1, 3, 4, 5, 8] Vars: 6 precision = 0.580952380952381 recall = 0.4295774647887324 F1 = 0.49392712550607293
+Logit [0, 1, 3, 4, 6, 7] Vars: 6 precision = 0.6039603960396039 recall = 0.4295774647887324 F1 = 0.5020576131687242
+Logit [0, 1, 3, 4, 6, 8] Vars: 6 precision = 0.6090909090909091 recall = 0.47183098591549294 F1 = 0.5317460317460317
+Logit [0, 1, 3, 4, 7, 8] Vars: 6 precision = 0.5740740740740741 recall = 0.43661971830985913 F1 = 0.49599999999999994
+Logit [0, 1, 3, 5, 6, 7] Vars: 6 precision = 0.5698924731182796 recall = 0.3732394366197183 F1 = 0.451063829787234
+Logit [0, 1, 3, 5, 6, 8] Vars: 6 precision = 0.5714285714285714 recall = 0.4225352112676056 F1 = 0.48582995951417
+Logit [0, 1, 3, 5, 7, 8] Vars: 6 precision = 0.5833333333333334 recall = 0.39436619718309857 F1 = 0.4705882352941176
+Logit [0, 1, 3, 6, 7, 8] Vars: 6 precision = 0.5979381443298969 recall = 0.4084507042253521 F1 = 0.4853556485355649
+Logit [0, 1, 4, 5, 6, 7] Vars: 6 precision = 0.5773195876288659 recall = 0.39436619718309857 F1 = 0.4686192468619247
+Logit [0, 1, 4, 5, 6, 8] Vars: 6 precision = 0.6194690265486725 recall = 0.49295774647887325 F1 = 0.5490196078431373
+Logit [0, 1, 4, 5, 7, 8] Vars: 6 precision = 0.580952380952381 recall = 0.4295774647887324 F1 = 0.49392712550607293
+Logit [0, 1, 4, 6, 7, 8] Vars: 6 precision = 0.6160714285714286 recall = 0.4859154929577465 F1 = 0.5433070866141733
+Logit [0, 1, 5, 6, 7, 8] Vars: 6 precision = 0.5555555555555556 recall = 0.3873239436619718 F1 = 0.4564315352697096
+Logit [0, 2, 3, 4, 5, 6] Vars: 6 precision = 0.6274509803921569 recall = 0.4507042253521127 F1 = 0.5245901639344263
+Logit [0, 2, 3, 4, 5, 7] Vars: 6 precision = 0.6344086021505376 recall = 0.4154929577464789 F1 = 0.5021276595744681
+Logit [0, 2, 3, 4, 5, 8] Vars: 6 precision = 0.5963302752293578 recall = 0.45774647887323944 F1 = 0.5179282868525896
+Logit [0, 2, 3, 4, 6, 7] Vars: 6 precision = 0.6428571428571429 recall = 0.44366197183098594 F1 = 0.525
+Logit [0, 2, 3, 4, 6, 8] Vars: 6 precision = 0.6190476190476191 recall = 0.45774647887323944 F1 = 0.5263157894736842
+Logit [0, 2, 3, 4, 7, 8] Vars: 6 precision = 0.5982142857142857 recall = 0.47183098591549294 F1 = 0.5275590551181103
+Logit [0, 2, 3, 5, 6, 7] Vars: 6 precision = 0.5934065934065934 recall = 0.38028169014084506 F1 = 0.463519313304721
+Logit [0, 2, 3, 5, 6, 8] Vars: 6 precision = 0.5925925925925926 recall = 0.4507042253521127 F1 = 0.512
+Logit [0, 2, 3, 5, 7, 8] Vars: 6 precision = 0.5612244897959183 recall = 0.3873239436619718 F1 = 0.4583333333333333
+Logit [0, 2, 3, 6, 7, 8] Vars: 6 precision = 0.6074766355140186 recall = 0.45774647887323944 F1 = 0.5220883534136546
+Logit [0, 2, 4, 5, 6, 7] Vars: 6 precision = 0.6428571428571429 recall = 0.38028169014084506 F1 = 0.47787610619469023
+Logit [0, 2, 4, 5, 6, 8] Vars: 6 precision = 0.6181818181818182 recall = 0.4788732394366197 F1 = 0.5396825396825397
+Logit [0, 2, 4, 5, 7, 8] Vars: 6 precision = 0.6055045871559633 recall = 0.4647887323943662 F1 = 0.5258964143426296
+Logit [0, 2, 4, 6, 7, 8] Vars: 6 precision = 0.6285714285714286 recall = 0.4647887323943662 F1 = 0.5344129554655871
+Logit [0, 2, 5, 6, 7, 8] Vars: 6 precision = 0.5963302752293578 recall = 0.45774647887323944 F1 = 0.5179282868525896
+Logit [0, 3, 4, 5, 6, 7] Vars: 6 precision = 0.6632653061224489 recall = 0.45774647887323944 F1 = 0.5416666666666666
+Logit [0, 3, 4, 5, 6, 8] Vars: 6 precision = 0.6181818181818182 recall = 0.4788732394366197 F1 = 0.5396825396825397
+Logit [0, 3, 4, 5, 7, 8] Vars: 6 precision = 0.5520833333333334 recall = 0.3732394366197183 F1 = 0.4453781512605042
+Logit [0, 3, 4, 6, 7, 8] Vars: 6 precision = 0.5794392523364486 recall = 0.43661971830985913 F1 = 0.497991967871486
+Logit [0, 3, 5, 6, 7, 8] Vars: 6 precision = 0.5588235294117647 recall = 0.4014084507042254 F1 = 0.4672131147540984
+Logit [0, 4, 5, 6, 7, 8] Vars: 6 precision = 0.5871559633027523 recall = 0.4507042253521127 F1 = 0.5099601593625498
+Logit [1, 2, 3, 4, 5, 6] Vars: 6 precision = 0.6355140186915887 recall = 0.4788732394366197 F1 = 0.5461847389558233
+Logit [1, 2, 3, 4, 5, 7] Vars: 6 precision = 0.5816326530612245 recall = 0.4014084507042254 F1 = 0.47500000000000003
+Logit [1, 2, 3, 4, 5, 8] Vars: 6 precision = 0.594059405940594 recall = 0.4225352112676056 F1 = 0.4938271604938271
+Logit [1, 2, 3, 4, 6, 7] Vars: 6 precision = 0.638095238095238 recall = 0.47183098591549294 F1 = 0.5425101214574898
+Logit [1, 2, 3, 4, 6, 8] Vars: 6 precision = 0.6283185840707964 recall = 0.5 F1 = 0.5568627450980392
+Logit [1, 2, 3, 4, 7, 8] Vars: 6 precision = 0.5420560747663551 recall = 0.4084507042253521 F1 = 0.465863453815261
+Logit [1, 2, 3, 5, 6, 7] Vars: 6 precision = 0.6326530612244898 recall = 0.43661971830985913 F1 = 0.5166666666666667
+Logit [1, 2, 3, 5, 6, 8] Vars: 6 precision = 0.6190476190476191 recall = 0.45774647887323944 F1 = 0.5263157894736842
+Logit [1, 2, 3, 5, 7, 8] Vars: 6 precision = 0.5520833333333334 recall = 0.3732394366197183 F1 = 0.4453781512605042
+Logit [1, 2, 3, 6, 7, 8] Vars: 6 precision = 0.6203703703703703 recall = 0.47183098591549294 F1 = 0.536
+Logit [1, 2, 4, 5, 6, 7] Vars: 6 precision = 0.638095238095238 recall = 0.47183098591549294 F1 = 0.5425101214574898
+Logit [1, 2, 4, 5, 6, 8] Vars: 6 precision = 0.6206896551724138 recall = 0.5070422535211268 F1 = 0.5581395348837208
+Logit [1, 2, 4, 5, 7, 8] Vars: 6 precision = 0.5555555555555556 recall = 0.4225352112676056 F1 = 0.48
+Logit [1, 2, 4, 6, 7, 8] Vars: 6 precision = 0.6120689655172413 recall = 0.5 F1 = 0.5503875968992248
+Logit [1, 2, 5, 6, 7, 8] Vars: 6 precision = 0.5943396226415094 recall = 0.44366197183098594 F1 = 0.5080645161290323
+Logit [1, 3, 4, 5, 6, 7] Vars: 6 precision = 0.6415094339622641 recall = 0.4788732394366197 F1 = 0.5483870967741935
+Logit [1, 3, 4, 5, 6, 8] Vars: 6 precision = 0.6283185840707964 recall = 0.5 F1 = 0.5568627450980392
+Logit [1, 3, 4, 5, 7, 8] Vars: 6 precision = 0.5882352941176471 recall = 0.4225352112676056 F1 = 0.49180327868852464
+Logit [1, 3, 4, 6, 7, 8] Vars: 6 precision = 0.5964912280701754 recall = 0.4788732394366197 F1 = 0.53125
+Logit [1, 3, 5, 6, 7, 8] Vars: 6 precision = 0.5961538461538461 recall = 0.43661971830985913 F1 = 0.5040650406504065
+Logit [1, 4, 5, 6, 7, 8] Vars: 6 precision = 0.6134453781512605 recall = 0.5140845070422535 F1 = 0.5593869731800767
+Logit [2, 3, 4, 5, 6, 7] Vars: 6 precision = 0.6538461538461539 recall = 0.4788732394366197 F1 = 0.5528455284552846
+Logit [2, 3, 4, 5, 6, 8] Vars: 6 precision = 0.625 recall = 0.49295774647887325 F1 = 0.5511811023622046
+Logit [2, 3, 4, 5, 7, 8] Vars: 6 precision = 0.5714285714285714 recall = 0.4225352112676056 F1 = 0.48582995951417
+Logit [2, 3, 4, 6, 7, 8] Vars: 6 precision = 0.6055045871559633 recall = 0.4647887323943662 F1 = 0.5258964143426296
+Logit [2, 3, 5, 6, 7, 8] Vars: 6 precision = 0.5849056603773585 recall = 0.43661971830985913 F1 = 0.5
+Logit [2, 4, 5, 6, 7, 8] Vars: 6 precision = 0.6126126126126126 recall = 0.4788732394366197 F1 = 0.5375494071146244
+Logit [3, 4, 5, 6, 7, 8] Vars: 6 precision = 0.6330275229357798 recall = 0.4859154929577465 F1 = 0.5498007968127491
+Logit [0, 1, 2, 3, 4, 5, 6] Vars: 7 precision = 0.6435643564356436 recall = 0.45774647887323944 F1 = 0.5349794238683128
+Logit [0, 1, 2, 3, 4, 5, 7] Vars: 7 precision = 0.6288659793814433 recall = 0.4295774647887324 F1 = 0.510460251046025
+Logit [0, 1, 2, 3, 4, 5, 8] Vars: 7 precision = 0.6019417475728155 recall = 0.43661971830985913 F1 = 0.5061224489795918
+Logit [0, 1, 2, 3, 4, 6, 7] Vars: 7 precision = 0.6285714285714286 recall = 0.4647887323943662 F1 = 0.5344129554655871
+Logit [0, 1, 2, 3, 4, 6, 8] Vars: 7 precision = 0.6283185840707964 recall = 0.5 F1 = 0.5568627450980392
+Logit [0, 1, 2, 3, 4, 7, 8] Vars: 7 precision = 0.6057692307692307 recall = 0.44366197183098594 F1 = 0.5121951219512195
+Logit [0, 1, 2, 3, 5, 6, 7] Vars: 7 precision = 0.6288659793814433 recall = 0.4295774647887324 F1 = 0.510460251046025
+Logit [0, 1, 2, 3, 5, 6, 8] Vars: 7 precision = 0.6018518518518519 recall = 0.45774647887323944 F1 = 0.52
+Logit [0, 1, 2, 3, 5, 7, 8] Vars: 7 precision = 0.580952380952381 recall = 0.4295774647887324 F1 = 0.49392712550607293
+Logit [0, 1, 2, 3, 6, 7, 8] Vars: 7 precision = 0.638095238095238 recall = 0.47183098591549294 F1 = 0.5425101214574898
+Logit [0, 1, 2, 4, 5, 6, 7] Vars: 7 precision = 0.6534653465346535 recall = 0.4647887323943662 F1 = 0.5432098765432098
+Logit [0, 1, 2, 4, 5, 6, 8] Vars: 7 precision = 0.6050420168067226 recall = 0.5070422535211268 F1 = 0.5517241379310346
+Logit [0, 1, 2, 4, 5, 7, 8] Vars: 7 precision = 0.5918367346938775 recall = 0.4084507042253521 F1 = 0.4833333333333334
+Logit [0, 1, 2, 4, 6, 7, 8] Vars: 7 precision = 0.6068376068376068 recall = 0.5 F1 = 0.5482625482625482
+Logit [0, 1, 2, 5, 6, 7, 8] Vars: 7 precision = 0.6213592233009708 recall = 0.4507042253521127 F1 = 0.5224489795918367
+Logit [0, 1, 3, 4, 5, 6, 7] Vars: 7 precision = 0.6326530612244898 recall = 0.43661971830985913 F1 = 0.5166666666666667
+Logit [0, 1, 3, 4, 5, 6, 8] Vars: 7 precision = 0.6146788990825688 recall = 0.47183098591549294 F1 = 0.5338645418326693
+Logit [0, 1, 3, 4, 5, 7, 8] Vars: 7 precision = 0.580952380952381 recall = 0.4295774647887324 F1 = 0.49392712550607293
+Logit [0, 1, 3, 4, 6, 7, 8] Vars: 7 precision = 0.6090909090909091 recall = 0.47183098591549294 F1 = 0.5317460317460317
+Logit [0, 1, 3, 5, 6, 7, 8] Vars: 7 precision = 0.5714285714285714 recall = 0.4225352112676056 F1 = 0.48582995951417
+Logit [0, 1, 4, 5, 6, 7, 8] Vars: 7 precision = 0.6140350877192983 recall = 0.49295774647887325 F1 = 0.5468750000000001
+Logit [0, 2, 3, 4, 5, 6, 7] Vars: 7 precision = 0.6407766990291263 recall = 0.4647887323943662 F1 = 0.5387755102040817
+Logit [0, 2, 3, 4, 5, 6, 8] Vars: 7 precision = 0.625 recall = 0.49295774647887325 F1 = 0.5511811023622046
+Logit [0, 2, 3, 4, 5, 7, 8] Vars: 7 precision = 0.6074766355140186 recall = 0.45774647887323944 F1 = 0.5220883534136546
+Logit [0, 2, 3, 4, 6, 7, 8] Vars: 7 precision = 0.6238532110091743 recall = 0.4788732394366197 F1 = 0.5418326693227091
+Logit [0, 2, 3, 5, 6, 7, 8] Vars: 7 precision = 0.5981308411214953 recall = 0.4507042253521127 F1 = 0.5140562248995983
+Logit [0, 2, 4, 5, 6, 7, 8] Vars: 7 precision = 0.6146788990825688 recall = 0.47183098591549294 F1 = 0.5338645418326693
+Logit [0, 3, 4, 5, 6, 7, 8] Vars: 7 precision = 0.6071428571428571 recall = 0.4788732394366197 F1 = 0.5354330708661418
+Logit [1, 2, 3, 4, 5, 6, 7] Vars: 7 precision = 0.6261682242990654 recall = 0.47183098591549294 F1 = 0.5381526104417671
+Logit [1, 2, 3, 4, 5, 6, 8] Vars: 7 precision = 0.6140350877192983 recall = 0.49295774647887325 F1 = 0.5468750000000001
+Logit [1, 2, 3, 4, 5, 7, 8] Vars: 7 precision = 0.5882352941176471 recall = 0.4225352112676056 F1 = 0.49180327868852464
+Logit [1, 2, 3, 4, 6, 7, 8] Vars: 7 precision = 0.6194690265486725 recall = 0.49295774647887325 F1 = 0.5490196078431373
+Logit [1, 2, 3, 5, 6, 7, 8] Vars: 7 precision = 0.6190476190476191 recall = 0.45774647887323944 F1 = 0.5263157894736842
+Logit [1, 2, 4, 5, 6, 7, 8] Vars: 7 precision = 0.6260869565217392 recall = 0.5070422535211268 F1 = 0.5603112840466926
+Logit [1, 3, 4, 5, 6, 7, 8] Vars: 7 precision = 0.5945945945945946 recall = 0.4647887323943662 F1 = 0.5217391304347826
+Logit [2, 3, 4, 5, 6, 7, 8] Vars: 7 precision = 0.6306306306306306 recall = 0.49295774647887325 F1 = 0.5533596837944664
+Logit [0, 1, 2, 3, 4, 5, 6, 7] Vars: 8 precision = 0.6435643564356436 recall = 0.45774647887323944 F1 = 0.5349794238683128
+Logit [0, 1, 2, 3, 4, 5, 6, 8] Vars: 8 precision = 0.6428571428571429 recall = 0.5070422535211268 F1 = 0.5669291338582677
+Logit [0, 1, 2, 3, 4, 5, 7, 8] Vars: 8 precision = 0.6039603960396039 recall = 0.4295774647887324 F1 = 0.5020576131687242
+Logit [0, 1, 2, 3, 4, 6, 7, 8] Vars: 8 precision = 0.6283185840707964 recall = 0.5 F1 = 0.5568627450980392
+Logit [0, 1, 2, 3, 5, 6, 7, 8] Vars: 8 precision = 0.6074766355140186 recall = 0.45774647887323944 F1 = 0.5220883534136546
+Logit [0, 1, 2, 4, 5, 6, 7, 8] Vars: 8 precision = 0.6050420168067226 recall = 0.5070422535211268 F1 = 0.5517241379310346
+Logit [0, 1, 3, 4, 5, 6, 7, 8] Vars: 8 precision = 0.6111111111111112 recall = 0.4647887323943662 F1 = 0.5279999999999999
+Logit [0, 2, 3, 4, 5, 6, 7, 8] Vars: 8 precision = 0.6330275229357798 recall = 0.4859154929577465 F1 = 0.5498007968127491
+Logit [1, 2, 3, 4, 5, 6, 7, 8] Vars: 8 precision = 0.6068376068376068 recall = 0.5 F1 = 0.5482625482625482
+BMA: precision = 0.664179104477612 recall = 0.55625 F1 = 0.6054421768707483

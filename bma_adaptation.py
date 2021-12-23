@@ -161,7 +161,7 @@ y1 = df["hazard"][0:LIMIT1]
 
 # build oracle model
 oracle = BMA(y_oracle, add_constant(X_oracle), RegType = 'Logit', Verbose=True).fit()
-# 'a priori' model
+# 'a priori' model example
 log_reg = sm.Logit(y1, add_constant(X1)).fit()
 # print(log_reg.summary())
 pred_Logit = log_reg.predict(add_constant(X1))
@@ -172,30 +172,16 @@ pred_bma = bma_reg.predict(add_constant(X))
 # print(pred_Logit)
 # print(pred_bma)
 
-def precision(predictions, oracle):
-    true_positives = np.sum((predictions > 0.5) == oracle)
-    false_positives = np.sum((predictions > 0.5) != oracle)
-    return true_positives / (true_positives + false_positives)
-
-def recall(predictions, oracle):
-    true_positives = np.sum((predictions > 0.5) == oracle)
-    false_negatives = np.sum((predictions < 0.5) != oracle)
-    return true_positives / (true_positives + false_negatives)
-
-def f_measure(predictions, oracle):
-    p = precision(predictions, oracle)
-    r = recall(predictions, oracle)
-    return 2 * ( (p * r) / (p + r) )
-
 #accuracy = np.sum((pred_bma > 0.5) == y)/len(y)
-
-print('BMA: precision = ' + str(precision(pred_bma, y)) + ' recall = ' + str(recall(pred_bma, y)) + ' F = ' + str(f_measure(pred_bma, y)))
-print('Logit: precision = ' + str(precision(pred_Logit, y1)) + ' recall = ' + str(recall(pred_Logit, y1)) + ' F = ' + str(f_measure(pred_Logit, y1)))
+#print('BMA: precision = ' + str(precision(pred_bma, y)) + ' recall = ' + str(recall(pred_bma, y)) + ' F = ' + str(f_measure(pred_bma, y)))
+#print('Logit: precision = ' + str(precision(pred_Logit, y1)) + ' recall = ' + str(recall(pred_Logit, y1)) + ' F = ' + str(f_measure(pred_Logit, y1)))
 
 
 def fitness(X):
-    for k in tmp_vars:
-        tmp_data.loc[2, tmp_vars[k][0]] = X[k]
+    i = 0
+    for k in tmp_index_set:
+        tmp_data.iloc[0, tmp_data.columns.get_loc(tmp_vars[k][0])] = X[i]
+        i = i + 1
     if type(tmp_model) is BMA:
         prediction = tmp_model.predict(tmp_data)[0]
     else:
@@ -203,14 +189,16 @@ def fitness(X):
     if prediction < 0.51:
         prediction = prediction / 10
     delta_change = 0.0
-    for k in tmp_vars:
-        delta_change = delta_change + tmp_vars[k][3] * abs(X[k] - tmp_initial_values[k])/(tmp_vars[k][2][1] - tmp_vars[k][2][0])
+    i = 0
+    for k in tmp_index_set:
+        delta_change = delta_change + tmp_vars[k][3] * abs(X[i] - tmp_initial_values[i])/(tmp_vars[k][2][1] - tmp_vars[k][2][0])
+        i = i + 1
     #delta_change = 0.8 * abs(X[0] - 52)/(78-13) + 0.4 * abs(X[1] - 29.14)/(46.58-14.7) + 0.2 * abs(X[2] - 3.81)/(147.19-0) + 0.1 * abs(X[3] - 46)/(64-15)
     return delta_change - prediction
 
-def run_adaptation(model, vars, row_data, fitness):
-    vartype = np.array([vars[k][1] for k in vars])
-    varbound = np.array([vars[k][2] for k in vars])
+def run_adaptation(model, vars, index_set, row_data, fitness):
+    vartype = np.array([vars[k][1] for k in index_set])
+    varbound = np.array([vars[k][2] for k in index_set])
     params = {'max_num_iteration': 50,\
         'population_size': 100,\
         'mutation_probability':0.1,\
@@ -220,83 +208,164 @@ def run_adaptation(model, vars, row_data, fitness):
         'crossover_type': 'uniform',\
         'max_iteration_without_improv': None}
     ga_model = ga(function = fitness,
-        dimension = len(vars),
+        dimension = len(index_set),
         variable_type_mixed = vartype,
         variable_boundaries = varbound,
         convergence_curve = False,
+        progress_bar = False,
         algorithm_parameters = params)
     ga_model.run()
     assignment = ga_model.output_dict['variable']
-    for k in vars:
-        row_data.loc[2, vars[k][0]] = assignment[k]
+    i = 0
+    for k in index_set:
+        row_data.iloc[0, row_data.columns.get_loc(vars[k][0])] = assignment[i]
+        i = i + 1
     return row_data
 
 # vars: illuminance,smoke,color,dist,firm,power,band,speed,quality,hazard
 # e.g., 160,12,5.73,23.11,Present,49,25.3,97.2,52,1
 # [101,218], [0,31.2], [0.98,15.33], [6.74,42.49], [0,1], [13,78], [14.7,46.58], [0,147.19], [15,64]
 
-
-print('=== adaptation with BMA ===')
-
-row_data = df.drop(["hazard"], axis=1)
-row_data = add_constant(row_data)[2:3]
-prediction = bma_reg.predict(row_data)
-pred_oracle = oracle.predict(row_data)
-
-print(row_data)
-print('Prediction: ' + str(prediction[0]))
-print('Oracle: ' + str(pred_oracle[0]))
-
 vars = {
-    0: ('power', ['int'], [13,78], 0.8),\
-    1: ('band', ['real'], [14.7,46.58], 0.4),\
-    2: ('speed', ['real'], [0,147.19], 0.2),\
-    3: ('quality', ['int'], [15,64], 0.1)}
+    5: ('power', ['int'], [13,78], 0.8),\
+    6: ('band', ['real'], [14.7,46.58], 0.4),\
+    7: ('quality', ['real'], [0,147.19], 0.2),\
+    8: ('speed', ['int'], [15,64], 0.1)}
 
-tmp_model = bma_reg
-tmp_vars = vars
-tmp_data = row_data
-tmp_initial_values = [row_data[vars[k][0]].values[0] for k in vars]
+#print('=== Example: adaptation with BMA ===')
 
-new_data = run_adaptation(bma_reg, vars, row_data, fitness)
-prediction = bma_reg.predict(new_data)
-pred_oracle = oracle.predict(row_data)
+# row_data = df.drop(["hazard"], axis=1)
+# row_data = add_constant(row_data)[2:3]
+# prediction = bma_reg.predict(row_data)
+# pred_oracle = oracle.predict(row_data)
+#
+# print(row_data)
+# print('Prediction: ' + str(prediction[0]))
+# print('Oracle: ' + str(pred_oracle[0]))
+#
+# tmp_model = bma_reg
+# tmp_vars = vars
+# tmp_data = row_data
+# tmp_index_set = [5,6,7,8]
+# tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
+#
+# new_data = run_adaptation(bma_reg, vars, tmp_index_set, row_data, fitness)
+# prediction = bma_reg.predict(new_data)
+# pred_oracle = oracle.predict(row_data)
+#
+# print(new_data)
+# print('Prediction: ' + str(prediction[0]))
+# print('Oracle: ' + str(pred_oracle[0]))
+# print('RE: ' + str(abs(prediction[0] - pred_oracle[0])/pred_oracle[0]))
 
-print(new_data)
-print('Prediction: ' + str(prediction[0]))
-print('Oracle: ' + str(pred_oracle[0]))
-print('RE: ' + str(abs(prediction[0] - pred_oracle[0])/pred_oracle[0]))
+#print('=== Example: adaptation with Logit ===')
 
-print('=== adaptation with Logit ===')
+#row_data = df.drop(DROP, axis=1)
+#row_data = add_constant(row_data)[2:3]
+#prediction = log_reg.predict(row_data)
 
-vars = {
-    0: ('power', ['int'], [13,78], 0.8),\
-    1: ('band', ['real'], [14.7,46.58], 0.4)}
-    #2: ('quality', ['int'], [15,64], 0.1)}
+#print(row_data)
+#print('Prediction: ' + str(prediction.values[0]))
+#reference_data = df.drop(["hazard"], axis=1)
+#reference_data = add_constant(reference_data)[2:3]
+#print('Oracle: ' + str(pred_oracle[0]))
 
-row_data = df.drop(DROP, axis=1)
-row_data = add_constant(row_data)[2:3]
-prediction = log_reg.predict(row_data)
+#tmp_model = log_reg
+#tmp_vars = vars
+#tmp_data = row_data
+#tmp_index_set = [5,6]
+#tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
 
-print(row_data)
-print('Prediction: ' + str(prediction.values[0]))
-reference_data = df.drop(["hazard"], axis=1)
-reference_data = add_constant(reference_data)[2:3]
-pred_oracle = oracle.predict(reference_data)
-print('Oracle: ' + str(pred_oracle[0]))
+#new_data = run_adaptation(log_reg, vars, tmp_index_set, row_data, fitness)
+#prediction = log_reg.predict(new_data)
 
-tmp_model = log_reg
-tmp_vars = vars
-tmp_data = row_data
-tmp_initial_values = [row_data[vars[k][0]].values[0] for k in vars]
+#print(new_data)
+# print('Prediction: ' + str(prediction.values[0]))
+# for k in new_data:
+#     reference_data.loc[2, k] = new_data.loc[2, k]
+# pred_oracle = oracle.predict(reference_data)
+# print('Oracle: ' + str(pred_oracle[0]))
+# print('RE: ' + str(abs(prediction.values[0] - pred_oracle[0])/pred_oracle[0]))
 
-new_data = run_adaptation(log_reg, vars, row_data, fitness)
-prediction = log_reg.predict(new_data)
 
-print(new_data)
-print('Prediction: ' + str(prediction.values[0]))
-for k in new_data:
-    reference_data.loc[2, k] = new_data.loc[2, k]
-pred_oracle = oracle.predict(reference_data)
-print('Oracle: ' + str(pred_oracle[0]))
-print('RE: ' + str(abs(prediction.values[0] - pred_oracle[0])/pred_oracle[0]))
+print('=== Adaptation with BMA ===')
+#
+# selected_rows = [i for i in df.index if df.loc[i, 'hazard'] == 0]
+# for r in selected_rows:
+#     row_data = df.drop(["hazard"], axis=1)
+#     row_data = add_constant(row_data)[r:(r+1)]
+#     prediction = bma_reg.predict(row_data)
+#     pred_oracle = oracle.predict(row_data)
+#
+#     #print(row_data)
+#     #print('Prediction: ' + str(prediction[0]))
+#     #print('Oracle: ' + str(pred_oracle[0]))
+#
+#     tmp_model = bma_reg
+#     tmp_vars = vars
+#     tmp_data = row_data
+#     tmp_index_set = [5,6,7,8]
+#     tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
+#
+#     new_data = run_adaptation(bma_reg, vars, tmp_index_set, row_data, fitness)
+#     prediction = bma_reg.predict(new_data)
+#     pred_oracle = oracle.predict(row_data)
+#
+#     #print(new_data)
+#     #print('Prediction: ' + str(prediction[0]))
+#     #print('Oracle: ' + str(pred_oracle[0]))
+#     print('BMA RE: ' + str(abs(prediction[0] - pred_oracle[0])/pred_oracle[0]) + ' Success: ' + str(prediction[0] > 0.5 and pred_oracle[0] > 0.5))
+# quit()
+
+
+print('=== Systematic comparison between BMA and Logit models ===')
+
+# mechanical elicitation of all possible models
+names = list(X.columns)
+nRows, nCols = np.shape(X)
+maxVars = nCols
+for num_elements in range(1, maxVars + 1):
+    # make a list of all index sets of models of this size
+    models_next = list(combinations(list(range(nCols)), num_elements))
+    if num_elements == 1:
+        models_current = models_next
+        models_previous = []
+    else:
+        idx_keep = np.zeros(len(models_next))
+        for m_new,idx in zip(models_next, range(len(models_next))):
+            for m_good in models_previous:
+                if(all(x in m_new for x in m_good)):
+                    idx_keep[idx] = 1
+                    break
+                else:
+                    pass
+        models_current = np.asarray(models_next)[np.where(idx_keep==1)].tolist()
+        models_previous = []
+
+    # iterate through all possible models of the given size
+    for model_index_set in models_current:
+        if len(model_index_set) < maxVars and len(np.intersect1d(model_index_set, [int(k) for k in vars.keys()])) > 0:
+            # compute the regression for this given model
+            model_X = X.iloc[:, list(model_index_set)]
+            model_regr = sm.Logit(y, model_X).fit(disp = 0)
+            row_data = X.iloc[2:3, list(model_index_set)]
+            row_data = add_constant(row_data)
+            #print(row_data)
+            tmp_model = model_regr
+            tmp_vars = vars
+            tmp_data = row_data
+            tmp_index_set = [x for x in model_index_set if x >=5]
+            tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
+            new_data = run_adaptation(model_regr, vars, tmp_index_set, row_data, fitness)
+            #print(new_data)
+            prediction = model_regr.predict(new_data)
+            reference_data = df.drop(["hazard"], axis=1)
+            reference_data = add_constant(reference_data)[2:3]
+            for k in tmp_index_set:
+                s = reference_data.columns.get_loc(vars[k][0])
+                t = new_data.columns.get_loc(vars[k][0])
+                reference_data.iloc[0, s] = new_data.iloc[0, t]
+            #print(reference_data)
+            pred_oracle = oracle.predict(reference_data)
+            print('Logit ' + str(model_index_set) + ' Vars: ' + str(len(model_index_set)) + ' RE: ' + str(abs(prediction.values[0] - pred_oracle[0])/pred_oracle[0]) + ' Success: ' + str(prediction.values[0] > 0.5 and pred_oracle[0] > 0.5))
+        models_previous.append(model_index_set)

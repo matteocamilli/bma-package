@@ -1,6 +1,7 @@
 library(BMA)
 library(MASS)
 library(survival)
+library(BAS)
 
 df <- read.csv('sample_data1.csv')
 x.demo <- df[,2:5]
@@ -96,10 +97,23 @@ relative_error(actual, predict_from_model(df, 3, crime.bicreg, 50))
 
 df <- read.csv('CHDdata.csv')
 
-reg <- bic.glm (chd ~ sbp + tobacco + ldl + adiposity + typea + obesity + alcohol + age,
+df$firm<- factor(as.character(df$firm))
+reg <- bic.glm (hazard ~ illuminance + smoke + color + dist + firm + power + band + speed + quality,
                         data=df, glm.family="binomial", factor.type=T)
 summary(reg)
 imageplot.bma(reg)
+plot(reg)
+
+bas_reg = bas.glm(hazard ~ illuminance + smoke + color + dist + firm + power + band + speed + quality, data=df,
+                   method="BAS+MCMC", MCMC.iterations=5000,
+                   betaprior=bic.prior(), family=binomial(link = "logit"),
+                   modelprior=uniform())
+cog_bas = bas.glm(hazard ~ illuminance + smoke + color + dist + firm + power + band + speed + quality, data=df,
+                  method="MCMC",
+                  betaprior=bic.prior(), family=binomial(link = "logit"),
+                  modelprior = uniform())
+round(summary(cog_bas), 3)
+image(cog_bas, rotate = F)
 
 
 data(UScrime)
