@@ -58,3 +58,4 @@ g2 <- ggplot(data = success_rate_df, aes(x=type, y=rate, fill=type)) +
 #g2
 
 grid.arrange(g1, g2, ncol=2)
+

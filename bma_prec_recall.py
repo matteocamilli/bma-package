@@ -162,7 +162,7 @@ class BMA:
         return df
 
 
-df = pd.read_csv('CHDdata.csv')
+df = pd.read_csv('rescueRobotData.csv')
 df["firm"] = (df["firm"] == "Yes")*1 # converts the famhit to 0 (no hist) and 1 (has hist)
 #df = df.drop(["famhist"], axis=1)
 #df.head()
@@ -182,6 +182,8 @@ y = df["hazard"][0:LIMIT]
 
 # build oracle model
 oracle = BMA(y_oracle, add_constant(X_oracle), RegType = 'Logit', Verbose=False).fit()
+print(str(add_constant(X_oracle)))
+exit()
 # 'a priori' model
 #log_reg = sm.Logit(y1, add_constant(X1)).fit()
 # print(log_reg.summary())

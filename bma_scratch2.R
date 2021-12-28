@@ -95,7 +95,7 @@ relative_error(actual, predict_from_model(df, 3, crime.bicreg, 50))
 
 # ====
 
-df <- read.csv('CHDdata.csv')
+df <- read.csv('rescueRobotData.csv')
 
 df$firm<- factor(as.character(df$firm))
 reg <- bic.glm (hazard ~ illuminance + smoke + color + dist + firm + power + band + speed + quality,
