@@ -95,7 +95,7 @@ relative_error(actual, predict_from_model(df, 3, crime.bicreg, 50))
 
 # ====
 
-df <- read.csv('rescueRobotData.csv')
+df <- read.csv('rescueRobotData2.csv')
 
 df$firm<- factor(as.character(df$firm))
 reg <- bic.glm (hazard ~ illuminance + smoke + color + dist + firm + power + band + speed + quality,
@@ -108,10 +108,11 @@ bas_reg = bas.glm(hazard ~ illuminance + smoke + color + dist + firm + power + b
                    method="BAS+MCMC", MCMC.iterations=5000,
                    betaprior=bic.prior(), family=binomial(link = "logit"),
                    modelprior=uniform())
-cog_bas = bas.glm(hazard ~ illuminance + smoke + color + dist + firm + power + band + speed + quality, data=df,
+cog_bas = bas.glm(hazard ~ illuminance + smoke + size + distance + firm + power + band + speed + quality, data=df,
                   method="MCMC",
                   betaprior=bic.prior(), family=binomial(link = "logit"),
                   modelprior = uniform())
+coef(cog_bas)
 round(summary(cog_bas), 3)
 image(cog_bas, rotate = F)
 

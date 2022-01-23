@@ -142,18 +142,19 @@ class BMA:
              ["Variable Name", "Probability", "Avg. Coefficient"]).T
         return df
 
-df = pd.read_csv('CHDdata.csv')
-df["firm"] = (df["firm"] == "Yes")*1 # converts the famhit to 0 (no hist) and 1 (has hist)
-#df = df.drop(["famhist"], axis=1)
-#df.head()
+df = pd.read_csv('data/training_rescueRobot_450.csv')
+dfv = pd.read_csv('data/validation_rescueRobot_450.csv')
+# converts the firm field to 0 (no firm) and 1 (firm)
+df["firm"] = (df["firm"] == "Yes") * 1
+dfv["firm"] = (dfv["firm"] == "Yes") * 1
 
-# illuminance,smoke,color,dist,firm,power,band,speed,quality,hazard
-DROP = ['color','dist','firm','speed','quality','hazard']
-LIMIT = 400
-LIMIT1 = 400
+# illuminance,smoke,size,distance,firm,power,band,quality,speed,hazard
+DROP = ['illuminance','smoke','distance','band','quality','hazard']
+LIMIT = 450
+LIMIT1 = 450
 
-X_oracle = df.drop(["hazard"], axis=1)
-y_oracle = df["hazard"]
+X_oracle = dfv.drop(["hazard"], axis=1)
+y_oracle = dfv["hazard"]
 X = df.drop(["hazard"], axis=1)[0:LIMIT]
 y = df["hazard"][0:LIMIT]
 X1 = df.drop(DROP, axis=1)[0:LIMIT1]
@@ -163,11 +164,22 @@ y1 = df["hazard"][0:LIMIT1]
 oracle = BMA(y_oracle, add_constant(X_oracle), RegType = 'Logit', Verbose=True).fit()
 # 'a priori' model example
 log_reg = sm.Logit(y1, add_constant(X1)).fit()
-# print(log_reg.summary())
-pred_Logit = log_reg.predict(add_constant(X1))
+#print(log_reg.summary())
+#row_data = df.drop(DROP, axis=1)
+#row_data = add_constant(row_data)[2:3]
+#print(row_data)
+#print(log_reg.predict(row_data))
+#row_data.iloc[0, row_data.columns.get_loc('speed')] = 70
+#print(row_data)
+#print(log_reg.predict(row_data))
+#pred_Logit = log_reg.predict(add_constant(X1))
 # bma model
 bma_reg = BMA(y, add_constant(X), RegType = 'Logit', Verbose=True).fit()
 pred_bma = bma_reg.predict(add_constant(X))
+
+#print(pred_Logit[100:106])
+#print(pred_bma[100:106])
+#exit()
 
 # print(pred_Logit)
 # print(pred_bma)
@@ -232,8 +244,8 @@ vars = {
     7: ('quality', ['real'], [0,147.19], 0.2),\
     8: ('speed', ['int'], [15,64], 0.1)}
 
-#print('=== Example: adaptation with BMA ===')
-
+# print('=== Example: adaptation with BMA ===')
+#
 # row_data = df.drop(["hazard"], axis=1)
 # row_data = add_constant(row_data)[2:3]
 # prediction = bma_reg.predict(row_data)
@@ -257,38 +269,40 @@ vars = {
 # print('Prediction: ' + str(prediction[0]))
 # print('Oracle: ' + str(pred_oracle[0]))
 # print('RE: ' + str(abs(prediction[0] - pred_oracle[0])/pred_oracle[0]))
-
-#print('=== Example: adaptation with Logit ===')
-
-#row_data = df.drop(DROP, axis=1)
-#row_data = add_constant(row_data)[2:3]
-#prediction = log_reg.predict(row_data)
-
-#print(row_data)
-#print('Prediction: ' + str(prediction.values[0]))
-#reference_data = df.drop(["hazard"], axis=1)
-#reference_data = add_constant(reference_data)[2:3]
-#print('Oracle: ' + str(pred_oracle[0]))
-
-#tmp_model = log_reg
-#tmp_vars = vars
-#tmp_data = row_data
-#tmp_index_set = [5,6]
-#tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
-
-#new_data = run_adaptation(log_reg, vars, tmp_index_set, row_data, fitness)
-#prediction = log_reg.predict(new_data)
-
-#print(new_data)
+#
+# print('=== Example: adaptation with Logit ===')
+#
+# row_data = df.drop(DROP, axis=1)
+# row_data = add_constant(row_data)[2:3]
+# prediction = log_reg.predict(row_data)
+#
+# print(row_data)
+# print('Prediction: ' + str(prediction.values[0]))
+# reference_data = df.drop(["hazard"], axis=1)
+# reference_data = add_constant(reference_data)[2:3]
+# print('Oracle: ' + str(pred_oracle[0]))
+#
+# tmp_model = log_reg
+# tmp_vars = vars
+# tmp_data = row_data
+# tmp_index_set = [5,8]
+# tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
+#
+# new_data = run_adaptation(log_reg, vars, tmp_index_set, row_data, fitness)
+# prediction = log_reg.predict(new_data)
+#
+# print(new_data)
 # print('Prediction: ' + str(prediction.values[0]))
 # for k in new_data:
 #     reference_data.loc[2, k] = new_data.loc[2, k]
 # pred_oracle = oracle.predict(reference_data)
 # print('Oracle: ' + str(pred_oracle[0]))
 # print('RE: ' + str(abs(prediction.values[0] - pred_oracle[0])/pred_oracle[0]))
+#
+# exit()
 
 
-print('=== Adaptation with BMA ===')
+#print('=== Adaptation with BMA ===')
 #
 # selected_rows = [i for i in df.index if df.loc[i, 'hazard'] == 0]
 # for r in selected_rows:

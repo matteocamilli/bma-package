@@ -162,36 +162,33 @@ class BMA:
         return df
 
 
-df = pd.read_csv('rescueRobotData.csv')
-df["firm"] = (df["firm"] == "Yes")*1 # converts the famhit to 0 (no hist) and 1 (has hist)
-#df = df.drop(["famhist"], axis=1)
-#df.head()
+df = pd.read_csv('data/training_rescueRobot_450.csv')
+dfv = pd.read_csv('data/validation_rescueRobot_450.csv')
+# converts the firm field to 0 (no firm) and 1 (firm)
+df["firm"] = (df["firm"] == "Yes") * 1
+dfv["firm"] = (dfv["firm"] == "Yes") * 1
 
-# illuminance,smoke,color,dist,firm,power,band,speed,quality,hazard
-DROP = ['color','dist','firm','speed','quality','hazard']
-LIMIT = 400
-LIMIT1 = 400
+# illuminance,smoke,size,distance,firm,power,band,quality,speed,hazard
+DROP = ['illuminance','smoke','distance','band','quality','hazard']
+LIMIT = 450
+LIMIT1 = 450
 
-X_oracle = df.drop(["hazard"], axis=1)
-X_oracle_drop = df.drop(DROP, axis=1)
-y_oracle = df["hazard"]
+X_oracle = dfv.drop(["hazard"], axis=1)
+X_oracle_drop = dfv.drop(DROP, axis=1)
+y_oracle = dfv["hazard"]
 X = df.drop(["hazard"], axis=1)[0:LIMIT]
 y = df["hazard"][0:LIMIT]
-#X1 = df.drop(DROP, axis=1)[0:LIMIT1]
-#y1 = df["hazard"][0:LIMIT1]
+X1 = df.drop(DROP, axis=1)[0:LIMIT1]
+y1 = df["hazard"][0:LIMIT1]
 
 # build oracle model
 oracle = BMA(y_oracle, add_constant(X_oracle), RegType = 'Logit', Verbose=False).fit()
-print(str(add_constant(X_oracle)))
-exit()
 # 'a priori' model
 #log_reg = sm.Logit(y1, add_constant(X1)).fit()
 # print(log_reg.summary())
-#pred_Logit = log_reg.predict(add_constant(X_oracle_drop))
 # bma model
 bma_reg = BMA(y, add_constant(X), RegType = 'Logit', Verbose=True).fit()
 pred_bma = bma_reg.predict(add_constant(X_oracle))
-
 
 # mechanical elicitation of all possible models
 print( '=== Computation of the scores for each model ===' )
