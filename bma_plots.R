@@ -4,7 +4,7 @@ library(gridExtra)
 
 # ==== RQ1: accuracy of predictions ====
 
-df <- read.csv('precision_recall.log', header = T, dec = '.', sep = '')
+df <- read.csv('logs/precision_recall.log', header = T, dec = '.', sep = '')
 bma_precision <- 0.664179104477612 
 bma_recall <- 0.55625 
 bma_F1 <- 0.6054421768707483
@@ -19,7 +19,7 @@ g1 <- ggplot(data = df, aes(x=model, y=precision, fill=model)) +
 #g1
 print(g1)
 dev.off()
-system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf bma_precision.pdf")
+system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/bma_precision.pdf")
 
 pdf("plot_tmp.pdf")
 g2 <- ggplot(data = df, aes(x=model, y=recall, fill=model)) +
@@ -31,7 +31,7 @@ g2 <- ggplot(data = df, aes(x=model, y=recall, fill=model)) +
 #g2
 print(g2)
 dev.off()
-system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf bma_recall.pdf")
+system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/bma_recall.pdf")
 
 pdf("plot_tmp.pdf")
 g3 <- ggplot(data = df, aes(x=model, y=F1, fill=model)) +
@@ -43,7 +43,7 @@ g3 <- ggplot(data = df, aes(x=model, y=F1, fill=model)) +
 #g3
 print(g3)
 dev.off()
-system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf bma_f1.pdf")
+system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/bma_f1.pdf")
 
 system("rm *_tmp.pdf")
 #par(mfrow=c(1,3))
@@ -52,7 +52,7 @@ system("rm *_tmp.pdf")
 
 # ==== RQ2: effectiveness of adaptation ====
 
-df <- read.csv('re_bma_logit.log', header = T, dec = '.', sep = '')
+df <- read.csv('logs/re_bma_logit.log', header = T, dec = '.', sep = '')
 options(scipen = 999)
 #par(mfrow=c(1,2))
 
@@ -65,7 +65,7 @@ g1 <- ggplot(data = df, aes(x=type, y=RE, fill=type)) +
 #g1
 print(g1)
 dev.off()
-system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf relative_error.pdf")
+system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/relative_error.pdf")
 
 bma_success_rate <- nrow(subset(df, type=='BMA' & success)) / nrow(subset(df, type=='BMA'))
 logit_success_rate <- nrow(subset(df, type=='Logit' & success)) / nrow(subset(df, type=='Logit'))
@@ -79,7 +79,7 @@ g2 <- ggplot(data = success_rate_df, aes(x=type, y=rate, fill=type)) +
 #g2
 print(g2)
 dev.off()
-system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf success_rate.pdf")
+system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/success_rate.pdf")
 
 system("rm *_tmp.pdf")
 #grid.arrange(g1, g2, ncol=2)
@@ -87,8 +87,9 @@ system("rm *_tmp.pdf")
 
 # ==== RQ3: cost of BMA estimates ====
 
-df <- read.csv('bma_cost.log', header = T, dec = '.', sep = '')
-tiles <- aggregate(df[, 3:3], list(df$vars, df$sample), mean)
+df <- read.csv('logs/bma_cost.log', header = T, dec = '.', sep = '')
+df <- df[df$method == 'MCMC', ]
+tiles <- aggregate(df[,4:4], list(df$vars, df$sample), mean)
 colnames(tiles) <- c('variables','sample','time')
 
 pdf("plot_tmp.pdf")
@@ -105,11 +106,12 @@ g1 <- ggplot(tiles, aes(factor(variables), factor(sample), fill = time)) +
 #g1
 print(g1)
 dev.off()
-system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf cost_mcmc.pdf")
+system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/cost_mcmc.pdf")
 
 
-df <- read.csv('bma_cost2.log', header = T, dec = '.', sep = '')
-tiles <- aggregate(df[, 4:4], list(df$vars, df$sample), mean)
+df <- read.csv('logs/bma_cost.log', header = T, dec = '.', sep = '')
+df <- df[df$method == 'BAS', ]
+tiles <- aggregate(df[,4:4], list(df$vars, df$sample), mean)
 colnames(tiles) <- c('variables','sample','time')
 
 pdf("plot_tmp.pdf")
@@ -126,7 +128,7 @@ g2 <- ggplot(tiles, aes(factor(variables), factor(sample), fill = time)) +
 #g2
 print(g2)
 dev.off()
-system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf cost_bas.pdf")
+system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/cost_bas.pdf")
 
 system("rm *_tmp.pdf")
 #par(mfrow=c(1,2))
