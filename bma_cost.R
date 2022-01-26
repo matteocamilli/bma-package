@@ -1,21 +1,33 @@
-library(BMA)
-library(MASS)
-library(survival)
-library(BAS)
-library(argparse)
-library(R.utils)
+suppressMessages(library(BMA))
+suppressMessages(library(MASS))
+suppressMessages(library(survival))
+suppressMessages(library(BAS))
+suppressMessages(library(argparse))
+suppressMessages(library(R.utils))
 
 defaultW <- getOption('warn')
-options(warn = -1) 
+options(warn = -1)
 
 parser <- ArgumentParser()
-parser$add_argument('-n', '--nexec', type='integer', default=100,
-                    help='Number of executions [default 100]',
-                    metavar='number')
+#parser$add_argument('-n', '--nexec', type='integer', default=1,
+#                    help='Number of executions [default 100]',
+#                    metavar='number')
+parser$add_argument('-s', '--sample', type='integer', default=200,
+                    help='Number of observations [default 200]',
+                    metavar='sample')
+parser$add_argument('-v', '--vars', type='integer', default=2,
+                    help='Number of variables [default 2]',
+                    metavar='vars')
+parser$add_argument('-m', '--method', type='character', default='MCMC',
+                    help='Sampling method [default MCMC]',
+                    metavar='method')
 args <- parser$parse_args()
-N <- args$nexec
+#N <- args$nexec
+SAMPLE <- args$sample # in [200, 25600]
+VARS <- args$vars # in [2, 64]
+METHOD <- args$method # in {MCMC, BAS, MCMC+BAS}
 
-cat('method vars sample time\n')
+#cat('method vars sample time\n')
 df <- read.csv('data/training_rescueRobot_25600_64.csv')
 #df$firm<- factor(as.character(df$firm))
 
@@ -48,127 +60,13 @@ run_bma <- function(df, sample_size = 200, vars = 2, max_cols = 10, selected_met
     bma(sample, selected_method),
     timeout = 200.0, elapsed = 200.0, onTimeout = 'silent')
   time_diff <- as.numeric(Sys.time() - t0, units = "secs")
-  cat(paste(selected_method, vars, sample_size, time_diff, sep = ' '), '\n')
+  cat(selected_method, vars, sample_size, time_diff, sep = ' ')
 }
 
 #setTimeLimit(cpu = 10.0, elapsed = 10.0, transient = FALSE)
 #quartz()
 #dev.off()
 
-for (i in 1:N) {
-  # run_bma(df, 200, 2, 64, 'MCMC')
-  # run_bma(df, 200, 4, 64, 'MCMC')
-  # run_bma(df, 200, 8, 64, 'MCMC')
-  # run_bma(df, 200, 16, 64, 'MCMC')
-  # run_bma(df, 200, 32, 64, 'MCMC')
-  # run_bma(df, 200, 64, 64, 'MCMC')
-  # 
-  # run_bma(df, 400, 2, 64, 'MCMC')
-  # run_bma(df, 400, 4, 64, 'MCMC')
-  # run_bma(df, 400, 8, 64, 'MCMC')
-  # run_bma(df, 400, 16, 64, 'MCMC')
-  # run_bma(df, 400, 32, 64, 'MCMC')
-  # run_bma(df, 400, 64, 64, 'MCMC')
-  # 
-  # run_bma(df, 800, 2, 64, 'MCMC')
-  # run_bma(df, 800, 4, 64, 'MCMC')
-  # run_bma(df, 800, 8, 64, 'MCMC')
-  # run_bma(df, 800, 16, 64, 'MCMC')
-  # run_bma(df, 800, 32, 64, 'MCMC')
-  # run_bma(df, 800, 64, 64, 'MCMC')
-  # 
-  # run_bma(df, 1600, 2, 64, 'MCMC')
-  # run_bma(df, 1600, 4, 64, 'MCMC')
-  # run_bma(df, 1600, 8, 64, 'MCMC')
-  # run_bma(df, 1600, 16, 64, 'MCMC')
-  # run_bma(df, 1600, 32, 64, 'MCMC')
-  # run_bma(df, 1600, 64, 64, 'MCMC')
-  # 
-  # run_bma(df, 3200, 2, 64, 'MCMC')
-  # run_bma(df, 3200, 4, 64, 'MCMC')
-  # run_bma(df, 3200, 8, 64, 'MCMC')
-  # run_bma(df, 3200, 16, 64, 'MCMC')
-  # run_bma(df, 3200, 32, 64, 'MCMC')
-  # run_bma(df, 3200, 64, 64, 'MCMC')
-  # 
-  # run_bma(df, 6400, 2, 64, 'MCMC')
-  # run_bma(df, 6400, 4, 64, 'MCMC')
-  # run_bma(df, 6400, 8, 64, 'MCMC')
-  # run_bma(df, 6400, 16, 64, 'MCMC')
-  # run_bma(df, 6400, 32, 64, 'MCMC')
-  # run_bma(df, 6400, 64, 64, 'MCMC')
-  # 
-  # run_bma(df, 12800, 2, 64, 'MCMC')
-  # run_bma(df, 12800, 4, 64, 'MCMC')
-  # run_bma(df, 12800, 8, 64, 'MCMC')
-  # run_bma(df, 12800, 16, 64, 'MCMC')
-  # run_bma(df, 12800, 32, 64, 'MCMC')
-  # run_bma(df, 12800, 64, 64, 'MCMC')
-  # 
-  # run_bma(df, 25600, 2, 64, 'MCMC')
-  # run_bma(df, 25600, 4, 64, 'MCMC')
-  # run_bma(df, 25600, 8, 64, 'MCMC')
-  # run_bma(df, 25600, 16, 64, 'MCMC')
-  # run_bma(df, 25600, 32, 64, 'MCMC')
-  # run_bma(df, 25600, 64, 64, 'MCMC')
-  
-  # ===
-  
-  # run_bma(df, 200, 2, 64, 'BAS')
-  # run_bma(df, 200, 4, 64, 'BAS')
-  # run_bma(df, 200, 8, 64, 'BAS')
-  # run_bma(df, 200, 16, 64, 'BAS')
-  #run_bma(df, 200, 32, 64, 'BAS') # TO
-  #run_bma(df, 200, 64, 64, 'BAS') # TO
-  
-  # run_bma(df, 400, 2, 64, 'BAS')
-  # run_bma(df, 400, 4, 64, 'BAS')
-  # run_bma(df, 400, 8, 64, 'BAS')
-  # run_bma(df, 400, 16, 64, 'BAS')
-  #run_bma(df, 400, 32, 64, 'BAS')  # TO
-  #run_bma(df, 400, 64, 64, 'BAS')  # TO
-  
-  # run_bma(df, 800, 2, 64, 'BAS')
-  # run_bma(df, 800, 4, 64, 'BAS')
-  # run_bma(df, 800, 8, 64, 'BAS')
-  #run_bma(df, 800, 16, 64, 'BAS')  # TO
-  #run_bma(df, 800, 32, 64, 'BAS')  # TO
-  #run_bma(df, 800, 64, 64, 'BAS')  # TO
-  
-  # run_bma(df, 1600, 2, 64, 'BAS')
-  # run_bma(df, 1600, 4, 64, 'BAS')
-  # run_bma(df, 1600, 8, 64, 'BAS')
-  #run_bma(df, 1600, 16, 64, 'BAS')  # TO
-  #run_bma(df, 1600, 32, 64, 'BAS')  # TO
-  #run_bma(df, 1600, 64, 64, 'BAS')  # TO
-  
-  run_bma(df, 3200, 2, 64, 'BAS')
-  run_bma(df, 3200, 4, 64, 'BAS')
-  run_bma(df, 3200, 8, 64, 'BAS')
-  #run_bma(df, 3200, 16, 64, 'BAS')  # TO
-  #run_bma(df, 3200, 32, 64, 'BAS')  # TO
-  #run_bma(df, 3200, 64, 64, 'BAS')  # TO
-  
-  run_bma(df, 6400, 2, 64, 'BAS')
-  run_bma(df, 6400, 4, 64, 'BAS')
-  run_bma(df, 6400, 8, 64, 'BAS')
-  #run_bma(df, 6400, 16, 64, 'BAS')  # TO
-  #run_bma(df, 6400, 32, 64, 'BAS')  # TO
-  #run_bma(df, 6400, 64, 64, 'BAS')  # TO
-  
-  run_bma(df, 12800, 2, 64, 'BAS')
-  run_bma(df, 12800, 4, 64, 'BAS')
-  run_bma(df, 12800, 8, 64, 'BAS')
-  #run_bma(df, 12800, 16, 64, 'BAS')  # TO
-  #run_bma(df, 12800, 32, 64, 'BAS')  # TO
-  #run_bma(df, 12800, 64, 64, 'BAS')  # TO
-  
-  run_bma(df, 25600, 2, 64, 'BAS')
-  run_bma(df, 25600, 4, 64, 'BAS')
-  run_bma(df, 25600, 8, 64, 'BAS')
-  #run_bma(df, 25600, 16, 64, 'BAS')  # TO
-  #run_bma(df, 25600, 32, 64, 'BAS')  # TO
-  #run_bma(df, 25600, 64, 64, 'BAS')  # TO
-}
+run_bma(df, SAMPLE, VARS, 64, METHOD)
 
 options(warn = defaultW)
