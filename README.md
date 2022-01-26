@@ -35,6 +35,7 @@ The following `R` packages are required. Install them by running `install.packag
 * `BAS`
 * `argparse`
 * `R.utils`
+* `ggplot2`
 
 This package is structured as follows:
 * `root` contains the scripts to run the experiments.
@@ -43,6 +44,41 @@ This package is structured as follows:
 * `plots/` contains `.pdf` plots pre-generated starting from the data in the `logs/` folder.
 
 ### Running the experiments
+
+**RQ1 (prediction accuracy)**. Experiments can be executed as follows:
+
+```
+python3 bma_prec_recall.py > log01_precision_recall
+```
+
+The script requires the following files in the folder `data/`:
+* `data/training_rescueRobot_450.csv` training set
+* `data/validation_rescueRobot_450.csv` validation set
+
+The log `log01_precision_recall` contains the results of *precision*, *recall*, and *F1 score*, for each model in the model space as well as the average model.
+
+**RQ2 (effectiveness of the adaptation decisions)** Experiments can be executed as follows:
+
+```
+python3 bma_adaptation.py > log02_adaptation
+```
+
+The script requires the following files in the folder `data/`:
+* `data/training_rescueRobot_450.csv` training set
+* `data/validation_rescueRobot_450.csv` validation set
+
+The log `log02_adaptation` contains the results of *RE* and *success* (True/False), for each adaptation decision guided by all the models in the model space as well as the average model.
+
+**RQ3 (cost of BMA estimates)**. Experiments can be executed as follows:
+
+```
+python3 bma_cost.py > log03_cost
+```
+
+The script requires the following files in the folder `data/`:
+* `data/training_rescueRobot_25600_64.csv` training set
+
+The log `log03_cost` contains the *wall-clock time* required to build the average model by varying number of *variables* and *observations*.
 
 ### Cleaning the data
 

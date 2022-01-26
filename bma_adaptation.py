@@ -302,34 +302,33 @@ vars = {
 # exit()
 
 
-#print('=== Adaptation with BMA ===')
-#
-# selected_rows = [i for i in df.index if df.loc[i, 'hazard'] == 0]
-# for r in selected_rows:
-#     row_data = df.drop(["hazard"], axis=1)
-#     row_data = add_constant(row_data)[r:(r+1)]
-#     prediction = bma_reg.predict(row_data)
-#     pred_oracle = oracle.predict(row_data)
-#
-#     #print(row_data)
-#     #print('Prediction: ' + str(prediction[0]))
-#     #print('Oracle: ' + str(pred_oracle[0]))
-#
-#     tmp_model = bma_reg
-#     tmp_vars = vars
-#     tmp_data = row_data
-#     tmp_index_set = [5,6,7,8]
-#     tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
-#
-#     new_data = run_adaptation(bma_reg, vars, tmp_index_set, row_data, fitness)
-#     prediction = bma_reg.predict(new_data)
-#     pred_oracle = oracle.predict(row_data)
-#
-#     #print(new_data)
-#     #print('Prediction: ' + str(prediction[0]))
-#     #print('Oracle: ' + str(pred_oracle[0]))
-#     print('BMA RE: ' + str(abs(prediction[0] - pred_oracle[0])/pred_oracle[0]) + ' Success: ' + str(prediction[0] > 0.5 and pred_oracle[0] > 0.5))
-# quit()
+print('=== Adaptation with BMA ===')
+
+selected_rows = [i for i in df.index if df.loc[i, 'hazard'] == 0]
+for r in selected_rows:
+    row_data = df.drop(["hazard"], axis=1)
+    row_data = add_constant(row_data)[r:(r+1)]
+    prediction = bma_reg.predict(row_data)
+    pred_oracle = oracle.predict(row_data)
+
+    #print(row_data)
+    #print('Prediction: ' + str(prediction[0]))
+    #print('Oracle: ' + str(pred_oracle[0]))
+
+    tmp_model = bma_reg
+    tmp_vars = vars
+    tmp_data = row_data
+    tmp_index_set = [5,6,7,8]
+    tmp_initial_values = [row_data[vars[k][0]].values[0] for k in tmp_index_set]
+
+    new_data = run_adaptation(bma_reg, vars, tmp_index_set, row_data, fitness)
+    prediction = bma_reg.predict(new_data)
+    pred_oracle = oracle.predict(row_data)
+
+    #print(new_data)
+    #print('Prediction: ' + str(prediction[0]))
+    #print('Oracle: ' + str(pred_oracle[0]))
+    print('BMA RE: ' + str(abs(prediction[0] - pred_oracle[0])/pred_oracle[0]) + ' Success: ' + str(prediction[0] > 0.5 and pred_oracle[0] > 0.5))
 
 
 print('=== Systematic comparison between BMA and Logit models ===')

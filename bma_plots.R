@@ -1,12 +1,12 @@
 library(ggplot2)
-library(gridExtra)
+#library(gridExtra)
 
 
 # ==== RQ1: accuracy of predictions ====
 
 df <- read.csv('logs/precision_recall.log', header = T, dec = '.', sep = '')
-bma_precision <- 0.664179104477612 
-bma_recall <- 0.55625 
+bma_precision <- 0.664179104477612
+bma_recall <- 0.55625
 bma_F1 <- 0.6054421768707483
 
 pdf("plot_tmp.pdf")
@@ -93,7 +93,7 @@ tiles <- aggregate(df[,4:4], list(df$vars, df$sample), mean)
 colnames(tiles) <- c('variables','sample','time')
 
 pdf("plot_tmp.pdf")
-g1 <- ggplot(tiles, aes(factor(variables), factor(sample), fill = time)) + 
+g1 <- ggplot(tiles, aes(factor(variables), factor(sample), fill = time)) +
   geom_tile(color = "black") +
   geom_text(aes(label=ifelse(time=='200', 'TO', round(time, 2))), colour="black", size=5) +
   scale_fill_gradient(low = "white", high = "orangered2",
@@ -115,7 +115,7 @@ tiles <- aggregate(df[,4:4], list(df$vars, df$sample), mean)
 colnames(tiles) <- c('variables','sample','time')
 
 pdf("plot_tmp.pdf")
-g2 <- ggplot(tiles, aes(factor(variables), factor(sample), fill = time)) + 
+g2 <- ggplot(tiles, aes(factor(variables), factor(sample), fill = time)) +
   geom_tile(color = "black") +
   geom_text(aes(label=ifelse(time=='200', 'TO', round(time, 2))), colour="black", size=5) +
   scale_fill_gradient(low = "white", high = "orangered2",
@@ -133,6 +133,3 @@ system("pdfcrop --margins '0 0 0 0' plot_tmp.pdf plots/cost_bas.pdf")
 system("rm *_tmp.pdf")
 #par(mfrow=c(1,2))
 #grid.arrange(g1, g2, ncol=2)
-
-
-
