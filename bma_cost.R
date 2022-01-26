@@ -1,6 +1,6 @@
 suppressMessages(library(BMA))
 suppressMessages(library(MASS))
-suppressMessages(library(survival))
+#suppressMessages(library(survival))
 suppressMessages(library(BAS))
 suppressMessages(library(argparse))
 suppressMessages(library(R.utils))
