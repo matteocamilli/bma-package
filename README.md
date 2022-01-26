@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/452358696.svg)](https://zenodo.org/badge/latestdoi/452358696)
+[![DOI](https://zenodo.org/badge/452358696.svg)](https://zenodo.org/badge/latestdoi/452358696) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # SEAMS 2022 submission 14
 
