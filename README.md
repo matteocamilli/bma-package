@@ -86,4 +86,35 @@ WARNING: the execution may take long time since it computes around 4.8k BMA esti
 
 ### Cleaning the data
 
+**RQ1 (prediction accuracy)**. The log produced by the execution of `bma_prec_recall.py` can be cleaned as follows:
+
+```
+bash clean_precision_recall.sh log01_precision_recall > logs/precision_recall.log
+```
+
+**RQ2 (effectiveness of the adaptation decisions)**. The log produced by the execution of `bma_adaptation.py` can be cleaned as follows:
+
+```
+bash clean_adaptation.sh log02_adaptation > logs/re_mba_logit.log
+```
+
+**RQ2 (cost of BMA estimates)**. The log produced by `bma_cost.py` is ready to be precessed. Copy it in the right folder as follows:
+
+```
+cp log03_cost logs/bma_cost.log
+```
+
 ### Generating the plots
+
+All the plots (RQ1, RQ2, and RQ3) can be generated as follows:
+
+```
+Rscript bma_plots.R
+```
+
+The script requires the `pdfcrop` command line tool and the following files in the folder `logs/`:
+* `logs/precision_recall.log` clean precision-recall data
+* `logs/re_mba_logit.log` clean relative-error data
+* `logs/bma_cost.log` clean cost data
+
+All the plots are generated in `.pdf` format in the root folder.

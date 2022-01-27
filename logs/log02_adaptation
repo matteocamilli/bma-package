@@ -3208,3 +3208,2453 @@ Logit [0, 2, 3, 4, 5, 6, 7, 8] Vars: 8 RE: 0.6009126257917653 Success: True
  Objective function:
  -0.695430793129961
 Logit [1, 2, 3, 4, 5, 6, 7, 8] Vars: 8 RE: 1.3715792690827882 Success: False
+
+Computing BMA for models of size:  1
+Model Variables: (0,) likelihood= 1.6764102335645664532888791099307451474533902752729e-131
+Model Variables: (1,) rejected by Occam's window
+Model Variables: (2,) rejected by Occam's window
+Model Variables: (3,) rejected by Occam's window
+Model Variables: (4,) rejected by Occam's window
+Model Variables: (5,) rejected by Occam's window
+Model Variables: (6,) rejected by Occam's window
+Model Variables: (7,) likelihood= 1.1464455128442806768198208070714121692330734959133e-132
+Model Variables: (8,) rejected by Occam's window
+Model Variables: (9,) rejected by Occam's window
+Computing BMA for models of size:  2
+Model Variables: [0, 1] likelihood= 3.4444089502039875528984166990602644229227462409023e-129
+Model Variables: [0, 2] likelihood= 7.8558801053145200455561371696708113598483547330823e-124
+Model Variables: [0, 3] rejected by Occam's window
+Model Variables: [0, 4] rejected by Occam's window
+Model Variables: [0, 5] rejected by Occam's window
+Model Variables: [0, 6] rejected by Occam's window
+Model Variables: [0, 7] rejected by Occam's window
+Model Variables: [0, 8] rejected by Occam's window
+Model Variables: [0, 9] likelihood= 1.6253490931655119684986769518658637546980939526698e-117
+Model Variables: [1, 7] rejected by Occam's window
+Model Variables: [2, 7] rejected by Occam's window
+Model Variables: [3, 7] rejected by Occam's window
+Model Variables: [4, 7] rejected by Occam's window
+Model Variables: [5, 7] rejected by Occam's window
+Model Variables: [6, 7] rejected by Occam's window
+Model Variables: [7, 8] rejected by Occam's window
+Model Variables: [7, 9] rejected by Occam's window
+Computing BMA for models of size:  3
+Model Variables: [0, 1, 2] rejected by Occam's window
+Model Variables: [0, 1, 3] rejected by Occam's window
+Model Variables: [0, 1, 4] rejected by Occam's window
+Model Variables: [0, 1, 5] rejected by Occam's window
+Model Variables: [0, 1, 6] rejected by Occam's window
+Model Variables: [0, 1, 7] rejected by Occam's window
+Model Variables: [0, 1, 8] rejected by Occam's window
+Model Variables: [0, 1, 9] likelihood= 1.3275414219044666920370459907363419417597103078934e-118
+Model Variables: [0, 2, 3] rejected by Occam's window
+Model Variables: [0, 2, 4] rejected by Occam's window
+Model Variables: [0, 2, 5] likelihood= 1.2383108178700812314682391459904875909889476018751e-118
+Model Variables: [0, 2, 6] rejected by Occam's window
+Model Variables: [0, 2, 7] rejected by Occam's window
+Model Variables: [0, 2, 8] rejected by Occam's window
+Model Variables: [0, 2, 9] likelihood= 1.2259928160939090868376120099499836689194137806154e-116
+Model Variables: [0, 3, 9] likelihood= 5.2434159176293495654362746585168729037351662007347e-116
+Model Variables: [0, 4, 9] rejected by Occam's window
+Model Variables: [0, 5, 9] likelihood= 9.6297916807520603269745697992121789168188145374369e-115
+Model Variables: [0, 6, 9] rejected by Occam's window
+Model Variables: [0, 7, 9] rejected by Occam's window
+Model Variables: [0, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  4
+Model Variables: [0, 1, 2, 5] rejected by Occam's window
+Model Variables: [0, 1, 2, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 9] rejected by Occam's window
+Model Variables: [0, 1, 4, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 9] likelihood= 9.085521286004992611366662082594186009372241865351e-116
+Model Variables: [0, 1, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5] rejected by Occam's window
+Model Variables: [0, 2, 3, 9] likelihood= 3.045956126978167920878024425613868101045092613539e-115
+Model Variables: [0, 2, 4, 5] rejected by Occam's window
+Model Variables: [0, 2, 4, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6] rejected by Occam's window
+Model Variables: [0, 2, 5, 7] rejected by Occam's window
+Model Variables: [0, 2, 5, 8] rejected by Occam's window
+Model Variables: [0, 2, 5, 9] likelihood= 1.2564449675694923921446608465791578396639799864524e-113
+Model Variables: [0, 2, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 9] likelihood= 8.44380524884990554038926840353281053774920363315e-114
+Model Variables: [0, 3, 6, 9] likelihood= 6.6210668953682852312366781037683919649726694319498e-115
+Model Variables: [0, 3, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 8, 9] rejected by Occam's window
+Model Variables: [0, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 9] likelihood= 1.1048879477117554459895659778784522742124574564493e-113
+Model Variables: [0, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 5, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  5
+Model Variables: [0, 1, 2, 3, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 9] likelihood= 1.0495033388862394395513044312730508413216209408236e-114
+Model Variables: [0, 1, 3, 5, 9] likelihood= 6.5029336425941847476032636605115234611509984412114e-115
+Model Variables: [0, 1, 3, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 9] likelihood= 1.1067654963015673377828496910727286979926529449973e-114
+Model Variables: [0, 1, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 9] likelihood= 8.425583883349809035958548789569896088655304483108e-113
+Model Variables: [0, 2, 3, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 9] likelihood= 1.2134295205930240280772738633580807673994814035466e-112
+Model Variables: [0, 2, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 9] likelihood= 6.2783112821494470311885057459243522249771592695508e-113
+Model Variables: [0, 3, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  6
+Model Variables: [0, 1, 2, 3, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 6, 9] likelihood= 1.1381054603861049023464040973782934296851947514132e-113
+Model Variables: [0, 1, 2, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 1, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6, 9] likelihood= 5.1554103942588626503974566275281471591127056734122e-112
+Model Variables: [0, 2, 3, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  7
+Model Variables: [0, 1, 2, 3, 5, 6, 9] likelihood= 4.0158209084744603038910683745784630584017311713382e-113
+Model Variables: [0, 1, 2, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 9] likelihood= 2.707174126735580909421116883906229527066190299767e-113
+Model Variables: [0, 2, 3, 5, 6, 7, 9] likelihood= 5.627647120182793430059164095769193248435091452943e-113
+Model Variables: [0, 2, 3, 5, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  8
+Model Variables: [0, 1, 2, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6, 7, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  9
+Computing BMA for models of size:  10
+Optimization terminated successfully.
+         Current function value: 0.594691
+         Iterations 5
+Computing BMA for models of size:  1
+Model Variables: (0,) likelihood= 4.9865768219377153210630711681547669976099931774553e-115
+Model Variables: (1,) likelihood= 3.6534738213120627630253828984622542154766070082152e-116
+Model Variables: (2,) rejected by Occam's window
+Model Variables: (3,) rejected by Occam's window
+Model Variables: (4,) rejected by Occam's window
+Model Variables: (5,) rejected by Occam's window
+Model Variables: (6,) likelihood= 2.6707110836894816941243062512314620866694730980284e-116
+Model Variables: (7,) likelihood= 5.7497197207224400570343050504651292173215399544176e-116
+Model Variables: (8,) rejected by Occam's window
+Model Variables: (9,) rejected by Occam's window
+Computing BMA for models of size:  2
+Model Variables: [0, 1] likelihood= 2.2463378753164842314985027926006736873702276230771e-114
+Model Variables: [0, 2] likelihood= 2.3099419829468787899386765498139250135273567586889e-109
+Model Variables: [0, 3] likelihood= 1.157834019819486150167137697040946720092508654823e-109
+Model Variables: [0, 4] likelihood= 1.7118861554561784241052535157505964704010983280883e-110
+Model Variables: [0, 5] likelihood= 6.8992299122915820500566416558573399060069347351795e-110
+Model Variables: [0, 6] rejected by Occam's window
+Model Variables: [0, 7] rejected by Occam's window
+Model Variables: [0, 8] rejected by Occam's window
+Model Variables: [0, 9] likelihood= 5.3151082360813410363583536264073314587367343269699e-104
+Model Variables: [1, 2] rejected by Occam's window
+Model Variables: [1, 3] rejected by Occam's window
+Model Variables: [1, 4] rejected by Occam's window
+Model Variables: [1, 5] rejected by Occam's window
+Model Variables: [1, 6] rejected by Occam's window
+Model Variables: [1, 7] rejected by Occam's window
+Model Variables: [1, 8] rejected by Occam's window
+Model Variables: [1, 9] rejected by Occam's window
+Model Variables: [2, 6] rejected by Occam's window
+Model Variables: [2, 7] rejected by Occam's window
+Model Variables: [3, 6] rejected by Occam's window
+Model Variables: [3, 7] rejected by Occam's window
+Model Variables: [4, 6] rejected by Occam's window
+Model Variables: [4, 7] rejected by Occam's window
+Model Variables: [5, 6] rejected by Occam's window
+Model Variables: [5, 7] rejected by Occam's window
+Model Variables: [6, 7] rejected by Occam's window
+Model Variables: [6, 8] rejected by Occam's window
+Model Variables: [6, 9] rejected by Occam's window
+Model Variables: [7, 8] rejected by Occam's window
+Model Variables: [7, 9] rejected by Occam's window
+Computing BMA for models of size:  3
+Model Variables: [0, 1, 2] rejected by Occam's window
+Model Variables: [0, 1, 3] rejected by Occam's window
+Model Variables: [0, 1, 4] rejected by Occam's window
+Model Variables: [0, 1, 5] rejected by Occam's window
+Model Variables: [0, 1, 6] rejected by Occam's window
+Model Variables: [0, 1, 7] rejected by Occam's window
+Model Variables: [0, 1, 8] rejected by Occam's window
+Model Variables: [0, 1, 9] likelihood= 3.2044476786219497577695846030935929154721897001759e-105
+Model Variables: [0, 2, 3] rejected by Occam's window
+Model Variables: [0, 2, 4] rejected by Occam's window
+Model Variables: [0, 2, 5] likelihood= 8.1390977920998718377237341283456255006813741635056e-105
+Model Variables: [0, 2, 6] rejected by Occam's window
+Model Variables: [0, 2, 7] rejected by Occam's window
+Model Variables: [0, 2, 8] rejected by Occam's window
+Model Variables: [0, 2, 9] likelihood= 1.404513420644144193834419538966924336664156664499e-103
+Model Variables: [0, 3, 4] rejected by Occam's window
+Model Variables: [0, 3, 5] rejected by Occam's window
+Model Variables: [0, 3, 6] rejected by Occam's window
+Model Variables: [0, 3, 7] rejected by Occam's window
+Model Variables: [0, 3, 8] rejected by Occam's window
+Model Variables: [0, 3, 9] likelihood= 4.6855993749311206153457422696785552140098301336211e-102
+Model Variables: [0, 4, 5] rejected by Occam's window
+Model Variables: [0, 4, 6] rejected by Occam's window
+Model Variables: [0, 4, 7] rejected by Occam's window
+Model Variables: [0, 4, 8] rejected by Occam's window
+Model Variables: [0, 4, 9] rejected by Occam's window
+Model Variables: [0, 5, 6] rejected by Occam's window
+Model Variables: [0, 5, 7] rejected by Occam's window
+Model Variables: [0, 5, 8] rejected by Occam's window
+Model Variables: [0, 5, 9] likelihood= 7.9533888092675116478933232353089421502682310681593e-102
+Model Variables: [0, 6, 9] likelihood= 1.2825999813687647629200028679075950537212836249661e-102
+Model Variables: [0, 7, 9] rejected by Occam's window
+Model Variables: [0, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  4
+Model Variables: [0, 1, 2, 5] rejected by Occam's window
+Model Variables: [0, 1, 2, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 9] rejected by Occam's window
+Model Variables: [0, 1, 4, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 9] likelihood= 5.5524099321395164687227483683758910253325843849183e-103
+Model Variables: [0, 1, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5] likelihood= 1.9772199189266547287419519234390084098451925047275e-102
+Model Variables: [0, 2, 3, 9] likelihood= 1.201457513252064729393843194471794141346076141935e-101
+Model Variables: [0, 2, 4, 5] rejected by Occam's window
+Model Variables: [0, 2, 4, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6] rejected by Occam's window
+Model Variables: [0, 2, 5, 7] rejected by Occam's window
+Model Variables: [0, 2, 5, 8] rejected by Occam's window
+Model Variables: [0, 2, 5, 9] likelihood= 4.1713181734996767233624239018325058270585713667924e-101
+Model Variables: [0, 2, 6, 9] likelihood= 2.6409667113893958818733586068264402672225764462763e-102
+Model Variables: [0, 2, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 9] likelihood= 9.9587724267248052782725155565232518404509407891728e-101
+Model Variables: [0, 3, 6, 9] likelihood= 4.6744180767353349575170590011732983448882279021526e-101
+Model Variables: [0, 3, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 8, 9] rejected by Occam's window
+Model Variables: [0, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 9] likelihood= 1.3325801159677731217313872774076016397988557842918e-100
+Model Variables: [0, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  5
+Model Variables: [0, 1, 2, 3, 5] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 9] likelihood= 9.7761091330231338676327808561409131451681780494624e-102
+Model Variables: [0, 1, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 7] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 8] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 9] likelihood= 4.9637296209784024125744638347933049914946124727589e-100
+Model Variables: [0, 2, 3, 6, 9] likelihood= 9.5197131935400615883239807904643899812536775828449e-101
+Model Variables: [0, 2, 3, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 9] likelihood= 5.4949457013424475753240541364756101710584473684187e-100
+Model Variables: [0, 2, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 9] likelihood= 8.6118558902853240868604783425576630171691607065145e-100
+Model Variables: [0, 3, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 5, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  6
+Model Variables: [0, 1, 2, 3, 5, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 6, 9] likelihood= 5.2320935130107449126892967073681737237336464258383e-101
+Model Variables: [0, 1, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6, 9] likelihood= 3.4258799309601851188099173558338879332766241236398e-99
+Model Variables: [0, 2, 3, 5, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 3, 5, 6, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  7
+Model Variables: [0, 1, 2, 3, 5, 6, 9] likelihood= 2.0451178233744155759913704095312449682747925893412e-100
+Model Variables: [0, 1, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 3, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 9] likelihood= 1.8745469233326054984752594308829065324134811100887e-100
+Model Variables: [0, 2, 3, 5, 6, 7, 9] likelihood= 2.9774657739546936972170560559149471710432044929062e-100
+Model Variables: [0, 2, 3, 5, 6, 8, 9] likelihood= 1.7505944940613004879340526310940085707081373378099e-100
+Computing BMA for models of size:  8
+Model Variables: [0, 1, 2, 3, 4, 5, 6, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 1, 2, 3, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 7, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 4, 5, 6, 8, 9] rejected by Occam's window
+Model Variables: [0, 2, 3, 5, 6, 7, 8, 9] rejected by Occam's window
+Computing BMA for models of size:  9
+Computing BMA for models of size:  10
+=== Adaptation with BMA ===
+
+ The best solution found:
+ [54.         29.07591005  2.35887359 64.        ]
+
+ Objective function:
+ -0.5084822262531106
+BMA RE: 0.01744240831017126 Success: True
+
+ The best solution found:
+ [62.         30.60105929 20.02453894 64.        ]
+
+ Objective function:
+ -0.7651283997052938
+BMA RE: 0.0030108884527719525 Success: True
+
+ The best solution found:
+ [64.         20.48009965  4.86851645 64.        ]
+
+ Objective function:
+ -0.3928662163827518
+BMA RE: 0.0018211597507964636 Success: True
+
+ The best solution found:
+ [49.         24.81141564  2.52242021 64.        ]
+
+ Objective function:
+ -0.4718707973243329
+BMA RE: 0.02036742735266729 Success: True
+
+ The best solution found:
+ [59.         21.16727907  1.05186993 17.        ]
+
+ Objective function:
+ 0.0017713993351758418
+BMA RE: 0.025040114771964467 Success: False
+
+ The best solution found:
+ [50.         23.59898721  5.80859208 16.        ]
+
+ Objective function:
+ 0.01802800337305755
+BMA RE: 0.0041891787229262146 Success: False
+
+ The best solution found:
+ [55.         23.79950117  0.76502097 64.        ]
+
+ Objective function:
+ -0.6443699353505516
+BMA RE: 0.045913758674284856 Success: True
+
+ The best solution found:
+ [50.         25.58177228 30.26100842 64.        ]
+
+ Objective function:
+ -0.2938771722367953
+BMA RE: 0.04406547059208543 Success: True
+
+ The best solution found:
+ [60.         25.66913654 34.89124839 63.        ]
+
+ Objective function:
+ -0.8548061837969461
+BMA RE: 0.042718334918975476 Success: True
+
+ The best solution found:
+ [51.         25.92405887 25.99788536 63.        ]
+
+ Objective function:
+ -0.5920898964220773
+BMA RE: 0.04624830675869451 Success: True
+
+ The best solution found:
+ [62.         24.61850131  4.91412116 64.        ]
+
+ Objective function:
+ -0.7122566428255392
+BMA RE: 0.013768767216412419 Success: True
+
+ The best solution found:
+ [72.         28.65759546  1.12802614 64.        ]
+
+ Objective function:
+ -0.3086735430675221
+BMA RE: 0.030221755600626576 Success: True
+
+ The best solution found:
+ [62.         26.14567835  0.38388429 64.        ]
+
+ Objective function:
+ -0.701340148368846
+BMA RE: 0.022365807386125498 Success: True
+
+ The best solution found:
+ [60.         38.64440686  0.26907857 64.        ]
+
+ Objective function:
+ -0.7070109781883996
+BMA RE: 0.049708260314855354 Success: True
+
+ The best solution found:
+ [60.         29.22317125  5.69822422 62.        ]
+
+ Objective function:
+ -0.7194063763895098
+BMA RE: 0.0001745229709707618 Success: True
+
+ The best solution found:
+ [56.         29.4529128  22.00548498 63.        ]
+
+ Objective function:
+ -0.5443063263244132
+BMA RE: 0.034310489050491964 Success: True
+
+ The best solution found:
+ [48.         27.98652673 36.06874281 64.        ]
+
+ Objective function:
+ -0.4446003241456893
+BMA RE: 0.04057315162930203 Success: True
+
+ The best solution found:
+ [58.         30.97694678 14.74611604 64.        ]
+
+ Objective function:
+ -0.3525098647325875
+BMA RE: 0.01294666723105533 Success: True
+
+ The best solution found:
+ [72.         23.40801874  0.941957   63.        ]
+
+ Objective function:
+ -0.5723434508183963
+BMA RE: 0.007034256097726349 Success: True
+
+ The best solution found:
+ [30.         23.79335521  5.66692543 32.        ]
+
+ Objective function:
+ 0.0014016245422769566
+BMA RE: 0.0173822910540849 Success: False
+
+ The best solution found:
+ [47.         22.06644899  5.32761082 16.        ]
+
+ Objective function:
+ 0.007725868342679874
+BMA RE: 0.024867836252300362 Success: False
+
+ The best solution found:
+ [54.         46.55926708  4.33128786 19.        ]
+
+ Objective function:
+ 0.0051856558593740875
+BMA RE: 0.06423988979856142 Success: False
+
+ The best solution found:
+ [63.         22.98138615  3.88681141 64.        ]
+
+ Objective function:
+ -0.46087311538639364
+BMA RE: 0.004158777935195745 Success: True
+
+ The best solution found:
+ [55.         20.05584105 37.37706126 16.        ]
+
+ Objective function:
+ 0.011957021880272254
+BMA RE: 0.019211631849859915 Success: False
+
+ The best solution found:
+ [63.         30.83684552  2.33526669 64.        ]
+
+ Objective function:
+ -0.3669903775448961
+BMA RE: 0.01077411263310038 Success: True
+
+ The best solution found:
+ [46.         29.53431961  4.3596103  64.        ]
+
+ Objective function:
+ -0.542444600923484
+BMA RE: 0.0027260323724953308 Success: True
+
+ The best solution found:
+ [67.         27.24416554 24.16322129 64.        ]
+
+ Objective function:
+ -0.3075985709807666
+BMA RE: 0.01554984088633359 Success: True
+
+ The best solution found:
+ [77.         23.97539901 51.51671387 62.        ]
+
+ Objective function:
+ -0.29001656728866065
+BMA RE: 0.0029583715819329337 Success: True
+
+ The best solution found:
+ [47.         26.36242106 98.78280327 64.        ]
+
+ Objective function:
+ -0.5225084976216592
+BMA RE: 0.035370866856012206 Success: True
+
+ The best solution found:
+ [49.         23.88584001  5.52548851 30.        ]
+
+ Objective function:
+ 0.0005225311237839108
+BMA RE: 0.021991511139109163 Success: False
+
+ The best solution found:
+ [48.         23.01105514  2.62278009 19.        ]
+
+ Objective function:
+ -0.002209544881379144
+BMA RE: 0.06936419811188746 Success: False
+
+ The best solution found:
+ [48.         22.89669084  0.12489319 64.        ]
+
+ Objective function:
+ -0.584937997590834
+BMA RE: 0.005463990822120621 Success: True
+
+ The best solution found:
+ [57.         23.72553597  3.02478325 34.        ]
+
+ Objective function:
+ -0.006687787575269623
+BMA RE: 0.003025980086150052 Success: False
+
+ The best solution found:
+ [61.         26.12861636 12.20589565 63.        ]
+
+ Objective function:
+ -0.64001392814755
+BMA RE: 0.00298164768913627 Success: True
+
+ The best solution found:
+ [65.         26.20250539 24.80985699 64.        ]
+
+ Objective function:
+ -0.8111405012796108
+BMA RE: 0.011468337233516014 Success: True
+
+ The best solution found:
+ [70.         27.54839829 10.96704628 62.        ]
+
+ Objective function:
+ -0.10822289567384791
+BMA RE: 0.037967658143843876 Success: True
+
+ The best solution found:
+ [58.         23.42415889  4.20671295 16.        ]
+
+ Objective function:
+ 0.02996393486196021
+BMA RE: 0.021687932978476352 Success: False
+
+ The best solution found:
+ [61.         25.87505404 62.97758869 63.        ]
+
+ Objective function:
+ -0.650769180853389
+BMA RE: 0.03760780910449001 Success: True
+
+ The best solution found:
+ [48.        28.4856806  9.9931635 64.       ]
+
+ Objective function:
+ -0.5158988902585055
+BMA RE: 0.04067366639423821 Success: True
+
+ The best solution found:
+ [39.         22.08424744 25.39871239 27.        ]
+
+ Objective function:
+ 0.0021035221533584666
+BMA RE: 0.03226406063102881 Success: False
+
+ The best solution found:
+ [49.         29.33162069 11.28353288 64.        ]
+
+ Objective function:
+ -0.6578941093935509
+BMA RE: 0.0062508203772988595 Success: True
+
+ The best solution found:
+ [71.         19.26689286  2.32887797 63.        ]
+
+ Objective function:
+ -0.16207352857906882
+BMA RE: 0.02998437445844821 Success: False
+
+ The best solution found:
+ [73.         17.83879823 15.80451181 64.        ]
+
+ Objective function:
+ -0.38168621818594983
+BMA RE: 0.0076649384482448315 Success: True
+
+ The best solution found:
+ [61.         26.32823762 45.65410948 64.        ]
+
+ Objective function:
+ -0.40554116749982966
+BMA RE: 0.0077880667553432295 Success: True
+
+ The best solution found:
+ [50.         17.51372552  1.90475328 64.        ]
+
+ Objective function:
+ -0.509845357647461
+BMA RE: 0.006377235219781035 Success: True
+
+ The best solution found:
+ [64.         27.72414657 11.32951985 63.        ]
+
+ Objective function:
+ -0.4936822273771207
+BMA RE: 0.05616232855885974 Success: True
+
+ The best solution found:
+ [68.         21.62810183 12.83971055 64.        ]
+
+ Objective function:
+ -0.2679233671055875
+BMA RE: 0.03177564795571804 Success: False
+
+ The best solution found:
+ [61.         28.8627407   2.64080226 64.        ]
+
+ Objective function:
+ -0.34926885817733544
+BMA RE: 0.05303766543714632 Success: False
+
+ The best solution found:
+ [57.         25.80420319 67.70480209 64.        ]
+
+ Objective function:
+ -0.6390798874304086
+BMA RE: 0.011148774175445887 Success: True
+
+ The best solution found:
+ [63.         20.52630848  0.43561692 62.        ]
+
+ Objective function:
+ -0.4914100044989423
+BMA RE: 0.02299750175796886 Success: True
+
+ The best solution found:
+ [49.         27.50005993 34.27464799 46.        ]
+
+ Objective function:
+ -0.012682045405126402
+BMA RE: 0.011137110192785717 Success: False
+
+ The best solution found:
+ [43.        26.7552169  1.1979192 63.       ]
+
+ Objective function:
+ -0.44077949134420913
+BMA RE: 0.011689910688429478 Success: True
+
+ The best solution found:
+ [55.         21.53960886  4.14388819 64.        ]
+
+ Objective function:
+ -0.6233065877688481
+BMA RE: 0.003445186049492049 Success: True
+
+ The best solution found:
+ [70.         27.37328576 10.96800911 64.        ]
+
+ Objective function:
+ -0.04844155032402053
+BMA RE: 0.03225803593657458 Success: True
+
+ The best solution found:
+ [76.         21.65102077  1.85309678 63.        ]
+
+ Objective function:
+ -0.06724512686834483
+BMA RE: 0.019140328788128914 Success: True
+
+ The best solution found:
+ [75.         27.67501557 14.59103461 64.        ]
+
+ Objective function:
+ -0.2587869892124613
+BMA RE: 0.014468743285525028 Success: True
+
+ The best solution found:
+ [56.         30.30755728  0.58082595 63.        ]
+
+ Objective function:
+ -0.3850177712816718
+BMA RE: 0.04215967063299743 Success: False
+
+ The best solution found:
+ [63.         20.45868937 14.10487851 64.        ]
+
+ Objective function:
+ -0.43189798380261724
+BMA RE: 0.016133055019473267 Success: True
+
+ The best solution found:
+ [41.         26.13347935 28.27834701 64.        ]
+
+ Objective function:
+ -0.45590956072889255
+BMA RE: 0.02333335262841596 Success: True
+
+ The best solution found:
+ [49.         27.53411778  5.11908339 64.        ]
+
+ Objective function:
+ -0.5345585562507524
+BMA RE: 0.005079625814732659 Success: True
+
+ The best solution found:
+ [52.         24.00970366 21.74069533 64.        ]
+
+ Objective function:
+ -0.48598105196853814
+BMA RE: 0.03510940098216251 Success: True
+
+ The best solution found:
+ [51.         22.76294905 14.29626641 63.        ]
+
+ Objective function:
+ -0.7586121546442632
+BMA RE: 0.0018572156069132668 Success: True
+
+ The best solution found:
+ [70.         28.27162362  5.66751269 63.        ]
+
+ Objective function:
+ -0.22320914675035786
+BMA RE: 0.03300735817690741 Success: False
+
+ The best solution found:
+ [52.         32.17969029  4.55594697 64.        ]
+
+ Objective function:
+ -0.5503933888463761
+BMA RE: 0.007285323226672242 Success: True
+
+ The best solution found:
+ [68.         31.32048057 14.07091795 63.        ]
+
+ Objective function:
+ -0.11711524918228627
+BMA RE: 0.041991163426049506 Success: True
+
+ The best solution found:
+ [66.         28.64408388  3.71208951 64.        ]
+
+ Objective function:
+ -0.47288404879247914
+BMA RE: 0.041739855388082475 Success: True
+
+ The best solution found:
+ [ 68.          26.24549431 108.03819526  64.        ]
+
+ Objective function:
+ -0.4576057935827347
+BMA RE: 0.0009532917870847104 Success: True
+
+ The best solution found:
+ [65.         23.48514108  8.04316458 64.        ]
+
+ Objective function:
+ -0.4878671388409883
+BMA RE: 0.04588909000062011 Success: True
+
+ The best solution found:
+ [51.         22.24464991  2.21883991 19.        ]
+
+ Objective function:
+ 0.027495915992648456
+BMA RE: 0.03769186136443043 Success: False
+
+ The best solution found:
+ [67.         25.604673   10.31787677 63.        ]
+
+ Objective function:
+ -0.5279361100393292
+BMA RE: 0.07152836625114928 Success: True
+
+ The best solution found:
+ [69.         21.7123277   0.72035585 63.        ]
+
+ Objective function:
+ -0.2513670147238205
+BMA RE: 0.017876299844843034 Success: True
+
+ The best solution found:
+ [46.         29.27707386 13.01761582 64.        ]
+
+ Objective function:
+ -0.7208198174230305
+BMA RE: 0.03762807551493603 Success: True
+
+ The best solution found:
+ [13.         20.9177788   2.57865523 42.        ]
+
+ Objective function:
+ 0.0009809335445275635
+BMA RE: 0.004166101638277217 Success: False
+
+ The best solution found:
+ [72.         28.40984316  0.3629061  62.        ]
+
+ Objective function:
+ -0.3871092032360123
+BMA RE: 0.038203619380127646 Success: False
+
+ The best solution found:
+ [67.         22.90761555 12.1797795  63.        ]
+
+ Objective function:
+ -0.5871696989022045
+BMA RE: 0.04486391189476997 Success: True
+
+ The best solution found:
+ [62.         26.15549283 10.91255291 64.        ]
+
+ Objective function:
+ -0.4645524644997031
+BMA RE: 0.0486931440213763 Success: True
+
+ The best solution found:
+ [70.         26.04631902 12.97753927 63.        ]
+
+ Objective function:
+ -0.41554750915189365
+BMA RE: 0.04811879228805592 Success: True
+
+ The best solution found:
+ [55.         26.07594557 27.80385756 64.        ]
+
+ Objective function:
+ -0.46382469126895554
+BMA RE: 0.01701124942608194 Success: True
+
+ The best solution found:
+ [61.         27.68896756  6.5784184  64.        ]
+
+ Objective function:
+ -0.41715312251300607
+BMA RE: 0.0058399576470003715 Success: True
+
+ The best solution found:
+ [50.         34.41106999 16.96562575 64.        ]
+
+ Objective function:
+ -0.5141966548231055
+BMA RE: 0.042276857650588404 Success: True
+
+ The best solution found:
+ [65.         34.67032308  2.73343308 64.        ]
+
+ Objective function:
+ -0.7992702871834068
+BMA RE: 0.016252998931973336 Success: True
+
+ The best solution found:
+ [54.         24.33349076 10.99293152 64.        ]
+
+ Objective function:
+ -0.6195866627118856
+BMA RE: 0.01920164438566355 Success: True
+
+ The best solution found:
+ [50.         29.16309025 25.30022318 64.        ]
+
+ Objective function:
+ -0.4703360278036361
+BMA RE: 0.0027348665859015376 Success: True
+
+ The best solution found:
+ [65.         26.08194564 57.07157274 63.        ]
+
+ Objective function:
+ -0.48827932107195304
+BMA RE: 0.00512760486923175 Success: True
+
+ The best solution found:
+ [65.         20.96885037 16.92315497 64.        ]
+
+ Objective function:
+ -0.3209362483958995
+BMA RE: 0.011990816206249155 Success: True
+
+ The best solution found:
+ [66.         20.74901728 22.17456435 64.        ]
+
+ Objective function:
+ -0.6100617615880922
+BMA RE: 0.005380044648601136 Success: True
+
+ The best solution found:
+ [51.         20.50118227  0.83576418 20.        ]
+
+ Objective function:
+ -0.004843479232085024
+BMA RE: 0.054462076922707714 Success: False
+
+ The best solution found:
+ [59.         31.58319944 11.57633216 64.        ]
+
+ Objective function:
+ -0.5931461716065919
+BMA RE: 0.004979382677952515 Success: True
+
+ The best solution found:
+ [65.         24.89046632  2.31081704 64.        ]
+
+ Objective function:
+ -0.5210369034838661
+BMA RE: 0.03364628168618311 Success: True
+
+ The best solution found:
+ [61.         30.99473038 32.13960224 63.        ]
+
+ Objective function:
+ -0.567039776601303
+BMA RE: 0.03122590361975686 Success: True
+
+ The best solution found:
+ [57.         24.88585045 10.38328021 64.        ]
+
+ Objective function:
+ -0.343053844657882
+BMA RE: 0.04787297040679867 Success: False
+
+ The best solution found:
+ [74.         23.07155494  5.42921034 64.        ]
+
+ Objective function:
+ -0.27186608901278164
+BMA RE: 0.031844795918165594 Success: True
+
+ The best solution found:
+ [48.         21.87057821 19.01405091 64.        ]
+
+ Objective function:
+ -0.42772045166756156
+BMA RE: 0.03618554802801776 Success: True
+
+ The best solution found:
+ [48.         24.6306358   0.35438011 64.        ]
+
+ Objective function:
+ -0.5122037079878727
+BMA RE: 0.01721468780324046 Success: True
+
+ The best solution found:
+ [61.         24.16118202  4.48164844 64.        ]
+
+ Objective function:
+ -0.431250613862742
+BMA RE: 0.00938064537533663 Success: True
+
+ The best solution found:
+ [71.         25.62009938  9.91380037 64.        ]
+
+ Objective function:
+ -0.32789806860587983
+BMA RE: 0.03591681187670344 Success: True
+
+ The best solution found:
+ [77.         23.10521562  3.93327533 63.        ]
+
+ Objective function:
+ -0.12951111879135851
+BMA RE: 0.025072312317420933 Success: True
+
+ The best solution found:
+ [40.         21.60823802  6.23023903 17.        ]
+
+ Objective function:
+ 0.03412348853548592
+BMA RE: 0.00603472449715712 Success: False
+
+ The best solution found:
+ [55.         30.64171131 59.78917794 63.        ]
+
+ Objective function:
+ -0.558088060926645
+BMA RE: 0.005340578425522105 Success: True
+
+ The best solution found:
+ [46.         25.65430236  4.70619204 38.        ]
+
+ Objective function:
+ -0.0014023645125966246
+BMA RE: 0.009456331475236644 Success: False
+
+ The best solution found:
+ [66.         24.90633482  3.37232432 64.        ]
+
+ Objective function:
+ -0.5254377321446451
+BMA RE: 0.04558354677508661 Success: True
+
+ The best solution found:
+ [42.         22.01990858  2.91296445 16.        ]
+
+ Objective function:
+ 0.0028666013660134724
+BMA RE: 0.006326694248779214 Success: False
+
+ The best solution found:
+ [72.         19.36820045  5.84833118 63.        ]
+
+ Objective function:
+ -0.4005873329286485
+BMA RE: 0.030102794002847637 Success: True
+
+ The best solution found:
+ [44.         21.97169068  4.23083752 17.        ]
+
+ Objective function:
+ 0.01867100626467377
+BMA RE: 0.024612980700298496 Success: False
+
+ The best solution found:
+ [77.         23.64172198 23.97990848 64.        ]
+
+ Objective function:
+ -0.6313636618062022
+BMA RE: 0.0011727877537672448 Success: True
+
+ The best solution found:
+ [46.         26.11664294 14.98094603 64.        ]
+
+ Objective function:
+ -0.43551545875082504
+BMA RE: 0.018349780405765476 Success: True
+
+ The best solution found:
+ [58.         36.18477758 10.5850282  64.        ]
+
+ Objective function:
+ -0.7829802711808495
+BMA RE: 0.01040153070739937 Success: True
+
+ The best solution found:
+ [69.         29.84614289  4.53764728 64.        ]
+
+ Objective function:
+ -0.7678715855952557
+BMA RE: 0.011231909631949866 Success: True
+
+ The best solution found:
+ [74.         24.50339837  3.6697012  64.        ]
+
+ Objective function:
+ -0.2582802959209949
+BMA RE: 0.015519801571062275 Success: True
+
+ The best solution found:
+ [74.         25.99199732  8.98985078 59.        ]
+
+ Objective function:
+ -0.19571626160472544
+BMA RE: 0.05421519431654849 Success: True
+
+ The best solution found:
+ [48.         29.59413133  2.303016   59.        ]
+
+ Objective function:
+ -0.014319035745945632
+BMA RE: 0.021943677310108385 Success: False
+
+ The best solution found:
+ [57.         22.25776784  0.57437447 63.        ]
+
+ Objective function:
+ -0.49332231140477434
+BMA RE: 0.0300476321864797 Success: True
+
+ The best solution found:
+ [50.         28.90955177  8.63626836 64.        ]
+
+ Objective function:
+ -0.46959427543652343
+BMA RE: 0.04111567894749904 Success: True
+
+ The best solution found:
+ [46.         20.10460235  4.42486566 16.        ]
+
+ Objective function:
+ 0.005611348784025051
+BMA RE: 0.010071855642091445 Success: False
+
+ The best solution found:
+ [65.         25.6214821  11.78786622 64.        ]
+
+ Objective function:
+ -0.5624708754581825
+BMA RE: 0.06973266636044285 Success: True
+
+ The best solution found:
+ [42.         27.84589497 12.45258748 63.        ]
+
+ Objective function:
+ -0.5133232813536791
+BMA RE: 0.03829949910628754 Success: True
+
+ The best solution found:
+ [69.         30.04248765 13.28752079 64.        ]
+
+ Objective function:
+ -0.21520812977341275
+BMA RE: 0.03570363356950667 Success: True
+
+ The best solution found:
+ [51.         39.92408118  7.12669322 64.        ]
+
+ Objective function:
+ -0.6039343202305056
+BMA RE: 0.011194738501160977 Success: True
+
+ The best solution found:
+ [53.         29.68313936 13.41252867 64.        ]
+
+ Objective function:
+ -0.7491696341698455
+BMA RE: 0.014506557588340154 Success: True
+
+ The best solution found:
+ [61.         25.75917518  1.74490821 64.        ]
+
+ Objective function:
+ -0.3619717907910625
+BMA RE: 0.0313872668508563 Success: True
+
+ The best solution found:
+ [55.         24.84743349 23.74889696 64.        ]
+
+ Objective function:
+ -0.7584202092152357
+BMA RE: 0.0020926891003128726 Success: True
+
+ The best solution found:
+ [72.         30.41342618 16.58757974 64.        ]
+
+ Objective function:
+ -0.4911997792022088
+BMA RE: 0.0464654785910343 Success: True
+
+ The best solution found:
+ [46.         21.90003962  5.6325171  20.        ]
+
+ Objective function:
+ 0.011185089048626778
+BMA RE: 0.014308175971549486 Success: False
+
+ The best solution found:
+ [54.        22.0698769 10.7838161 64.       ]
+
+ Objective function:
+ -0.42084687805614374
+BMA RE: 0.0444381373200244 Success: True
+
+ The best solution found:
+ [54.         25.43591684  9.05037925 23.        ]
+
+ Objective function:
+ 0.01991416054556775
+BMA RE: 0.04357119453708602 Success: False
+
+ The best solution found:
+ [68.         31.97367449 18.55212872 64.        ]
+
+ Objective function:
+ -0.4143574369300053
+BMA RE: 0.013460199088156492 Success: True
+
+ The best solution found:
+ [68.         26.36712184 10.59223629 63.        ]
+
+ Objective function:
+ -0.20468236636077947
+BMA RE: 0.04085506937431924 Success: True
+
+ The best solution found:
+ [76.         24.12266558 75.00244981 64.        ]
+
+ Objective function:
+ -0.292163131472419
+BMA RE: 0.01835082331644813 Success: True
+
+ The best solution found:
+ [57.         29.58323751  6.83344558 64.        ]
+
+ Objective function:
+ -0.446904092865817
+BMA RE: 0.0310121049784181 Success: True
+
+ The best solution found:
+ [67.         22.52605772 19.12122267 64.        ]
+
+ Objective function:
+ -0.33385521646621696
+BMA RE: 0.026645158092459948 Success: False
+
+ The best solution found:
+ [45.         24.84833877 35.58916851 64.        ]
+
+ Objective function:
+ -0.5364747641082569
+BMA RE: 0.03835512956848211 Success: True
+
+ The best solution found:
+ [71.         29.39657838  5.1684418  64.        ]
+
+ Objective function:
+ -0.18720258693445957
+BMA RE: 0.026365370197093962 Success: True
+
+ The best solution found:
+ [64.         27.30455517  0.96027964 64.        ]
+
+ Objective function:
+ -0.610495351473357
+BMA RE: 0.00622954434425833 Success: True
+
+ The best solution found:
+ [55.        28.6195146 31.3513706 64.       ]
+
+ Objective function:
+ -0.7271572992872537
+BMA RE: 0.005585376942070417 Success: True
+
+ The best solution found:
+ [65.         25.37322254 14.00226489 62.        ]
+
+ Objective function:
+ -0.6158226048016819
+BMA RE: 0.025835499084510976 Success: True
+
+ The best solution found:
+ [52.         31.37973635 34.58860048 63.        ]
+
+ Objective function:
+ -0.6979344627654841
+BMA RE: 0.02651085308246134 Success: True
+
+ The best solution found:
+ [52.         26.96050294  2.7480167  63.        ]
+
+ Objective function:
+ -0.4603796510343781
+BMA RE: 0.07531559324809789 Success: False
+
+ The best solution found:
+ [68.         24.05233743 15.53395291 64.        ]
+
+ Objective function:
+ -0.11790140021367085
+BMA RE: 0.006287229497450023 Success: True
+
+ The best solution found:
+ [62.         26.64104741  1.69323739 56.        ]
+
+ Objective function:
+ -0.015313788940465603
+BMA RE: 0.023595846293125673 Success: False
+
+ The best solution found:
+ [57.         22.28857359  4.39783164 18.        ]
+
+ Objective function:
+ 0.001132159275490473
+BMA RE: 0.032628532453661506 Success: False
+
+ The best solution found:
+ [61.         22.51991672 18.75774518 64.        ]
+
+ Objective function:
+ -0.12780479552479668
+BMA RE: 0.049011766680557046 Success: True
+
+ The best solution found:
+ [26.         22.65776585  1.73554122 25.        ]
+
+ Objective function:
+ -0.00059278700570015
+BMA RE: 0.030323028348688642 Success: False
+
+ The best solution found:
+ [52.         27.60946217  8.46356639 64.        ]
+
+ Objective function:
+ -0.5870985433476535
+BMA RE: 0.020499316349981884 Success: True
+
+ The best solution found:
+ [75.         20.32437628  0.43547559 64.        ]
+
+ Objective function:
+ -0.17884996763979938
+BMA RE: 0.023499930362093333 Success: True
+
+ The best solution found:
+ [46.         27.2314293  13.52605529 64.        ]
+
+ Objective function:
+ -0.5119043138139444
+BMA RE: 0.05705680759675057 Success: False
+
+ The best solution found:
+ [60.         19.52868512  3.40802295 64.        ]
+
+ Objective function:
+ -0.5190656205596238
+BMA RE: 0.015798196789578244 Success: True
+
+ The best solution found:
+ [58.         24.72718539 19.92565921 64.        ]
+
+ Objective function:
+ -0.49028648757303844
+BMA RE: 0.009947036172482911 Success: True
+
+ The best solution found:
+ [50.         29.20644296  3.29794744 64.        ]
+
+ Objective function:
+ -0.6511495503183969
+BMA RE: 0.002786463707256024 Success: True
+
+ The best solution found:
+ [72.         24.06312369  7.41144429 64.        ]
+
+ Objective function:
+ -0.25281691443839316
+BMA RE: 0.032321148107652506 Success: True
+
+ The best solution found:
+ [73.         25.28411576 89.23241395 64.        ]
+
+ Objective function:
+ -0.2832448902983776
+BMA RE: 0.0266184435432202 Success: True
+
+ The best solution found:
+ [64.         28.75490201 10.79217045 64.        ]
+
+ Objective function:
+ -0.4218430795630451
+BMA RE: 0.0028324653399614025 Success: True
+
+ The best solution found:
+ [46.         27.22481426 24.72119249 64.        ]
+
+ Objective function:
+ -0.6296575731936201
+BMA RE: 0.025876618251753858 Success: True
+
+ The best solution found:
+ [62.         23.16992135 15.96270994 64.        ]
+
+ Objective function:
+ -0.3764889448344283
+BMA RE: 0.047314610564565 Success: False
+
+ The best solution found:
+ [74.         23.81128666  1.79621764 63.        ]
+
+ Objective function:
+ -0.22018461291318325
+BMA RE: 0.02782207814554583 Success: True
+
+ The best solution found:
+ [52.         25.72999971  0.57335457 60.        ]
+
+ Objective function:
+ -0.5819514166439339
+BMA RE: 0.02416892922435704 Success: True
+
+ The best solution found:
+ [57.         26.52364545 83.89422427 63.        ]
+
+ Objective function:
+ -0.3117471702176001
+BMA RE: 0.013375500696134841 Success: True
+
+ The best solution found:
+ [45.         21.32632552  5.60417931 57.        ]
+
+ Objective function:
+ -0.015743037022865263
+BMA RE: 0.02254843870653492 Success: False
+
+ The best solution found:
+ [42.         25.54807232  2.57490953 63.        ]
+
+ Objective function:
+ -0.5347317265562064
+BMA RE: 0.03927720603866676 Success: True
+
+ The best solution found:
+ [55.         25.6414726   6.31002117 63.        ]
+
+ Objective function:
+ -0.2690182033527796
+BMA RE: 0.05706591969491447 Success: False
+
+ The best solution found:
+ [47.         27.82064071 96.25665293 64.        ]
+
+ Objective function:
+ -0.542236638694302
+BMA RE: 0.035734760094868215 Success: True
+
+ The best solution found:
+ [58.         22.80842642  4.89029113 64.        ]
+
+ Objective function:
+ -0.39838762467146455
+BMA RE: 0.05456882950187082 Success: False
+
+ The best solution found:
+ [55.         22.49865924  1.4333067  64.        ]
+
+ Objective function:
+ -0.7639143853767649
+BMA RE: 0.00014305095037608133 Success: True
+
+ The best solution found:
+ [58.         24.03720412 45.53029278 61.        ]
+
+ Objective function:
+ -0.7095538907496117
+BMA RE: 0.018985856420135908 Success: True
+
+ The best solution found:
+ [51.         23.48539101  2.24774488 64.        ]
+
+ Objective function:
+ -0.5905113281760737
+BMA RE: 0.032886710214095526 Success: True
+
+ The best solution found:
+ [52.         35.15967234 38.06329661 64.        ]
+
+ Objective function:
+ -0.6721948549849699
+BMA RE: 0.0135744735947142 Success: True
+
+ The best solution found:
+ [62.         22.4116788  12.56322058 64.        ]
+
+ Objective function:
+ -0.5133483136850755
+BMA RE: 0.020770081293136653 Success: True
+
+ The best solution found:
+ [52.         20.0106061   7.83281997 63.        ]
+
+ Objective function:
+ -0.4455519432386619
+BMA RE: 0.03602324809208317 Success: True
+
+ The best solution found:
+ [68.         27.8940798  33.51321829 63.        ]
+
+ Objective function:
+ -0.6977257948784747
+BMA RE: 0.00670334452957145 Success: True
+
+ The best solution found:
+ [37.         20.01894553  1.51220545 19.        ]
+
+ Objective function:
+ 0.0009008385339475677
+BMA RE: 0.027982574736087378 Success: False
+
+ The best solution found:
+ [69.         19.68344822  0.44479958 63.        ]
+
+ Objective function:
+ -0.27151575599758065
+BMA RE: 0.03433138044776608 Success: False
+
+ The best solution found:
+ [53.         25.10715514 13.65901098 64.        ]
+
+ Objective function:
+ -0.5834450125051477
+BMA RE: 0.016453797906972205 Success: True
+
+ The best solution found:
+ [57.         20.19862532 19.17633122 63.        ]
+
+ Objective function:
+ -0.5094221955908413
+BMA RE: 0.00988360037478078 Success: True
+
+ The best solution found:
+ [56.         25.03925093  9.86578272 64.        ]
+
+ Objective function:
+ -0.5145093928115577
+BMA RE: 0.024560446426402614 Success: True
+
+ The best solution found:
+ [58.         25.58469329  1.80726222 64.        ]
+
+ Objective function:
+ -0.5034785587339389
+BMA RE: 0.021984562690347466 Success: True
+
+ The best solution found:
+ [56.         25.43432027  4.39462292 63.        ]
+
+ Objective function:
+ -0.5783181865933549
+BMA RE: 0.050453628657058054 Success: True
+
+ The best solution found:
+ [76.         17.84930286  3.64914213 63.        ]
+
+ Objective function:
+ -0.028706857973854583
+BMA RE: 0.02004972734912904 Success: True
+
+ The best solution found:
+ [76.         22.79960786  5.40330329 63.        ]
+
+ Objective function:
+ -0.17445296040183245
+BMA RE: 0.029187379512645724 Success: True
+
+ The best solution found:
+ [68.         23.32082181 44.24213334 62.        ]
+
+ Objective function:
+ -0.2584151428342669
+BMA RE: 0.008812012581225263 Success: True
+
+ The best solution found:
+ [34.         26.37456061 15.1136009  28.        ]
+
+ Objective function:
+ 0.009383471522858632
+BMA RE: 0.028923431193964625 Success: False
+
+ The best solution found:
+ [69.         22.24289959  3.09302066 64.        ]
+
+ Objective function:
+ -0.322762640249336
+BMA RE: 0.030280683300110346 Success: True
+
+ The best solution found:
+ [72.         27.63977196  4.9552164  64.        ]
+
+ Objective function:
+ -0.07408805508328647
+BMA RE: 0.03164512068013121 Success: True
+
+ The best solution found:
+ [76.         23.9761523  12.24830285 63.        ]
+
+ Objective function:
+ -0.014469870250837125
+BMA RE: 0.023081473018047426 Success: True
+
+ The best solution found:
+ [67.         24.38680574  3.11733112 64.        ]
+
+ Objective function:
+ -0.2154293335413629
+BMA RE: 0.039192918736498925 Success: True
+
+ The best solution found:
+ [42.         21.76616785  3.38626776 16.        ]
+
+ Objective function:
+ 0.0010390588350242592
+BMA RE: 0.017245643497395314 Success: False
+
+ The best solution found:
+ [56.         19.68435786  5.68924364 63.        ]
+
+ Objective function:
+ -0.36108765198006326
+BMA RE: 0.06442987801320803 Success: True
+
+ The best solution found:
+ [70.         23.52026452  6.27345356 63.        ]
+
+ Objective function:
+ -0.2721366701492381
+BMA RE: 0.033086480374788695 Success: True
+
+ The best solution found:
+ [69.        32.098696   5.3222547 64.       ]
+
+ Objective function:
+ -0.4999539952430412
+BMA RE: 0.05316399350308908 Success: True
+
+ The best solution found:
+ [74.         20.3356069   2.35192541 64.        ]
+
+ Objective function:
+ -0.4223780358961163
+BMA RE: 0.024577801269566987 Success: True
+
+ The best solution found:
+ [55.         22.68861206  3.36282947 18.        ]
+
+ Objective function:
+ 0.00325481656612712
+BMA RE: 0.024320635310151058 Success: False
+
+ The best solution found:
+ [38.         29.58053608  8.44896392 64.        ]
+
+ Objective function:
+ -0.42219095836892023
+BMA RE: 0.04844160595271868 Success: True
+
+ The best solution found:
+ [53.         23.86034268  3.05263643 64.        ]
+
+ Objective function:
+ -0.5415193133555856
+BMA RE: 0.015096901469460194 Success: True
+
+ The best solution found:
+ [73.         35.43341214  4.66738826 64.        ]
+
+ Objective function:
+ -0.16318571177787583
+BMA RE: 0.025329052474197387 Success: False
+
+ The best solution found:
+ [52.         22.62567397  6.69226036 27.        ]
+
+ Objective function:
+ -0.0015214976707197377
+BMA RE: 0.012477927559306873 Success: False
+
+ The best solution found:
+ [50.         26.4797448  24.01908017 63.        ]
+
+ Objective function:
+ -0.3392741909272257
+BMA RE: 0.02869532783591563 Success: True
+
+ The best solution found:
+ [61.         28.84141524  5.48444921 64.        ]
+
+ Objective function:
+ -0.7928638479707351
+BMA RE: 0.014304651823565159 Success: True
+
+ The best solution found:
+ [54.         26.08427271 58.2798639  38.        ]
+
+ Objective function:
+ -0.010153226295537492
+BMA RE: 0.005607830616853767 Success: False
+
+ The best solution found:
+ [67.         30.92304541 43.76007198 64.        ]
+
+ Objective function:
+ -0.5746475131208573
+BMA RE: 0.014212597734029017 Success: True
+
+ The best solution found:
+ [58.         25.41312873 40.51348728 64.        ]
+
+ Objective function:
+ -0.36142217666015714
+BMA RE: 0.037251804812495765 Success: True
+
+ The best solution found:
+ [74.         37.48600236 25.09136304 64.        ]
+
+ Objective function:
+ -0.2862000048490969
+BMA RE: 0.028692941482977286 Success: True
+
+ The best solution found:
+ [52.         29.77498699 71.90082484 64.        ]
+
+ Objective function:
+ -0.3755334869070194
+BMA RE: 0.017810092863486053 Success: True
+
+ The best solution found:
+ [58.         23.3522477  43.18917728 59.        ]
+
+ Objective function:
+ -0.0211701651753175
+BMA RE: 0.027486168854065147 Success: False
+
+ The best solution found:
+ [60.         22.42689598 11.44807419 63.        ]
+
+ Objective function:
+ -0.3845290540271543
+BMA RE: 0.028296957127981442 Success: True
+
+ The best solution found:
+ [68.         23.41558655 26.20969518 63.        ]
+
+ Objective function:
+ -0.19961614258786747
+BMA RE: 0.02806167416973369 Success: True
+
+ The best solution found:
+ [62.         25.07312285  6.78088235 63.        ]
+
+ Objective function:
+ -0.3622483969518856
+BMA RE: 0.01220612773147978 Success: True
+
+ The best solution found:
+ [56.        25.6567072 76.1590317 63.       ]
+
+ Objective function:
+ -0.6237401833729788
+BMA RE: 0.0010956442915535892 Success: True
+
+ The best solution found:
+ [49.         24.59403265 10.3295107  64.        ]
+
+ Objective function:
+ -0.5536022833205956
+BMA RE: 0.025761849594020038 Success: True
+
+ The best solution found:
+ [63.         24.11749676 38.18850109 64.        ]
+
+ Objective function:
+ -0.1674350989921542
+BMA RE: 0.015651693321095606 Success: True
+
+ The best solution found:
+ [69.         19.09851749 14.57722395 63.        ]
+
+ Objective function:
+ -0.3336352068008839
+BMA RE: 0.01654136941771511 Success: True
+
+ The best solution found:
+ [43.         29.42309295  4.80080274 64.        ]
+
+ Objective function:
+ -0.5232384487381684
+BMA RE: 0.009462757672636133 Success: True
+
+ The best solution found:
+ [65.         20.67879098  1.77954118 19.        ]
+
+ Objective function:
+ -0.006385589617756658
+BMA RE: 0.06617520068120515 Success: False
+
+ The best solution found:
+ [65.         20.28313059  1.49338985 62.        ]
+
+ Objective function:
+ -0.2691390535804739
+BMA RE: 0.005297894804589926 Success: True
+
+ The best solution found:
+ [30.         27.27443372  5.86730656 56.        ]
+
+ Objective function:
+ -0.0063858076686363514
+BMA RE: 0.004835752445670375 Success: False
+
+ The best solution found:
+ [33.         23.81094878 10.04988476 19.        ]
+
+ Objective function:
+ 0.006544164584417751
+BMA RE: 0.03162029014491874 Success: False
+
+ The best solution found:
+ [58.         29.18278466 26.71268862 64.        ]
+
+ Objective function:
+ -0.525600784969516
+BMA RE: 0.03884989062600811 Success: True
+
+ The best solution found:
+ [52.         27.45817147 33.3596753  64.        ]
+
+ Objective function:
+ -0.6530459743013785
+BMA RE: 0.02268814713826337 Success: True
+
+ The best solution found:
+ [47.         28.55051465 12.68649947 64.        ]
+
+ Objective function:
+ -0.4118593709275672
+BMA RE: 0.028412103426703684 Success: True
+
+ The best solution found:
+ [52.         31.64986912 31.70170499 64.        ]
+
+ Objective function:
+ -0.5445909640835429
+BMA RE: 0.0022494936944407475 Success: True
+
+ The best solution found:
+ [66.         30.26266555 83.89097333 64.        ]
+
+ Objective function:
+ -0.24369284978566347
+BMA RE: 2.215583028749686e-05 Success: True
+
+ The best solution found:
+ [60.         25.76320326 26.90729652 64.        ]
+
+ Objective function:
+ -0.594206702847046
+BMA RE: 0.0673871907539259 Success: True
+
+ The best solution found:
+ [44.         27.06401313 36.99746148 31.        ]
+
+ Objective function:
+ 0.006149836691803296
+BMA RE: 0.0283971929358012 Success: False
+
+ The best solution found:
+ [71.         24.13382218 45.92574286 64.        ]
+
+ Objective function:
+ -0.40070260365426547
+BMA RE: 0.01688241334925151 Success: True
+
+ The best solution found:
+ [69.         18.35195857  8.1403703  64.        ]
+
+ Objective function:
+ -0.30933078045271767
+BMA RE: 0.014535948355132021 Success: True
+
+ The best solution found:
+ [57.         22.76149793  4.05350123 64.        ]
+
+ Objective function:
+ -0.15630344463166662
+BMA RE: 0.004684399046924401 Success: True
+
+ The best solution found:
+ [55.         24.49168213 16.77749234 64.        ]
+
+ Objective function:
+ -0.664903215115502
+BMA RE: 0.04093471578954254 Success: True
+
+ The best solution found:
+ [53.         23.18630295 30.02191634 64.        ]
+
+ Objective function:
+ -0.5233670056638212
+BMA RE: 0.04250276429763771 Success: True
+
+ The best solution found:
+ [51.         24.96942268  1.30788425 63.        ]
+
+ Objective function:
+ -0.6024033473330441
+BMA RE: 0.004216517933856285 Success: True
+
+ The best solution found:
+ [52.         26.49103631 42.89399494 24.        ]
+
+ Objective function:
+ -0.003941907390825414
+BMA RE: 0.019583167021175046 Success: False
+
+ The best solution found:
+ [64.         33.27010032  2.5803422  64.        ]
+
+ Objective function:
+ -0.6267295032124931
+BMA RE: 0.023814229040053262 Success: True
+
+ The best solution found:
+ [37.         26.86685399 16.40123254 63.        ]
+
+ Objective function:
+ -0.4424384260660212
+BMA RE: 0.0302719846124194 Success: True
+
+ The best solution found:
+ [70.         26.6897237   3.28162187 64.        ]
+
+ Objective function:
+ -0.2150102880222009
+BMA RE: 0.018683679937450005 Success: True
+
+ The best solution found:
+ [43.         28.99068866 21.30895378 35.        ]
+
+ Objective function:
+ 0.005830024171967511
+BMA RE: 0.022314134856147583 Success: False
+
+ The best solution found:
+ [44.         25.56559982 47.24070338 63.        ]
+
+ Objective function:
+ -0.46350781909175004
+BMA RE: 0.05514192981135393 Success: True
+
+ The best solution found:
+ [54.         26.8126613  53.72560922 64.        ]
+
+ Objective function:
+ -0.5174751529639134
+BMA RE: 0.0381950668695701 Success: True
+
+ The best solution found:
+ [68.         26.11956215 49.23038819 64.        ]
+
+ Objective function:
+ -0.21482270964098027
+BMA RE: 0.03381543394656021 Success: True
+
+ The best solution found:
+ [64.         30.92932174  8.61451089 64.        ]
+
+ Objective function:
+ -0.34320774490915856
+BMA RE: 0.04299633764208212 Success: False
+
+ The best solution found:
+ [49.         26.57291864 18.08949725 63.        ]
+
+ Objective function:
+ -0.24226010488632588
+BMA RE: 0.02833994694800233 Success: True
+
+ The best solution found:
+ [65.         22.03160593 15.42984333 64.        ]
+
+ Objective function:
+ -0.7001835516247527
+BMA RE: 0.0018178630969617696 Success: True
+
+ The best solution found:
+ [59.         29.21402982  6.15680744 64.        ]
+
+ Objective function:
+ -0.40874321266334157
+BMA RE: 0.04890928739149743 Success: False
+
+ The best solution found:
+ [ 66.          24.30115882 145.6660638   64.        ]
+
+ Objective function:
+ -0.774064088989144
+BMA RE: 0.0018866064712308986 Success: True
+
+ The best solution found:
+ [68.         29.5339786  23.01140425 64.        ]
+
+ Objective function:
+ -0.520950269439694
+BMA RE: 0.04176887546142626 Success: True
+
+ The best solution found:
+ [57.         27.22273999  5.64446119 63.        ]
+
+ Objective function:
+ -0.6958294337529568
+BMA RE: 0.009988599965475463 Success: True
+
+ The best solution found:
+ [ 71.          30.80549332 144.37302267  64.        ]
+
+ Objective function:
+ -0.5871094688261191
+BMA RE: 0.009948268639450163 Success: True
+
+ The best solution found:
+ [25.         27.64348044  1.72155865 43.        ]
+
+ Objective function:
+ -0.0038661014804910188
+BMA RE: 0.019847883911621636 Success: False
+
+ The best solution found:
+ [67.         24.95367669 64.50826074 63.        ]
+
+ Objective function:
+ -0.3927414005648042
+BMA RE: 0.019169746589402854 Success: True
+
+ The best solution found:
+ [53.         27.45384712  1.95996074 64.        ]
+
+ Objective function:
+ -0.5899550708706245
+BMA RE: 0.006916005722401731 Success: True
+
+ The best solution found:
+ [67.         32.27935155 61.78550083 63.        ]
+
+ Objective function:
+ -0.45857312557450153
+BMA RE: 0.0441925578454984 Success: True
+
+ The best solution found:
+ [7.70000000e+01 2.72594697e+01 1.72197755e-02 6.30000000e+01]
+
+ Objective function:
+ -0.26830448731680123
+BMA RE: 0.0192399889624754 Success: True
+
+ The best solution found:
+ [49.         32.73402382 59.36542494 64.        ]
+
+ Objective function:
+ -0.6115168080465546
+BMA RE: 0.026970888033960368 Success: True
+
+ The best solution found:
+ [61.         21.28926965 17.70043018 64.        ]
+
+ Objective function:
+ -0.4367167601593507
+BMA RE: 0.024613964454049262 Success: True
+
+ The best solution found:
+ [49.         26.76192033 58.7334211  64.        ]
+
+ Objective function:
+ -0.6774643458789184
+BMA RE: 0.020856473143855088 Success: True
+
+ The best solution found:
+ [53.         21.58657079  1.41822843 64.        ]
+
+ Objective function:
+ -0.5668910334988206
+BMA RE: 0.01341904621506733 Success: True
+
+ The best solution found:
+ [68.         23.39950534 33.80411546 63.        ]
+
+ Objective function:
+ -0.31227581909024055
+BMA RE: 0.04296592746034539 Success: True
+
+ The best solution found:
+ [63.         24.66702224 22.77413986 64.        ]
+
+ Objective function:
+ -0.3192557411019188
+BMA RE: 0.028715201100687107 Success: False
+
+ The best solution found:
+ [65.         26.91059699 20.45692373 64.        ]
+
+ Objective function:
+ -0.16140760495539158
+BMA RE: 0.003440732267499671 Success: True
+
+ The best solution found:
+ [52.         35.71836985  2.58723579 64.        ]
+
+ Objective function:
+ -0.4245766595229292
+BMA RE: 0.049801695172060255 Success: True
+
+ The best solution found:
+ [71.         25.73262454  8.62734699 64.        ]
+
+ Objective function:
+ -0.2766924225508129
+BMA RE: 0.027604850224404166 Success: True
+
+ The best solution found:
+ [33.         30.66165043  6.70827935 64.        ]
+
+ Objective function:
+ -0.6538000062119411
+BMA RE: 0.010247148119903203 Success: True
+
+ The best solution found:
+ [77.         25.60046826 13.81320855 60.        ]
+
+ Objective function:
+ -0.2785331847532627
+BMA RE: 0.03918832300718969 Success: False
+
+ The best solution found:
+ [54.         23.51410287  2.27512809 64.        ]
+
+ Objective function:
+ -0.39284830931806286
+BMA RE: 0.0002254427179918842 Success: True
+
+ The best solution found:
+ [69.         30.63567086 17.438082   64.        ]
+
+ Objective function:
+ -0.3413289780817158
+BMA RE: 0.0376568653780936 Success: True
+
+ The best solution found:
+ [41.         31.15513226 23.3717142  62.        ]
+
+ Objective function:
+ -0.37360543857501705
+BMA RE: 0.09220624958858309 Success: False
+
+ The best solution found:
+ [54.         27.32673308 17.99630145 62.        ]
+
+ Objective function:
+ -0.644336447772397
+BMA RE: 0.002031669950064015 Success: True
+
+ The best solution found:
+ [63.         26.36530883  2.69511971 64.        ]
+
+ Objective function:
+ -0.3215680503862077
+BMA RE: 0.004326129027817205 Success: True
+
+ The best solution found:
+ [41.         24.86193515  1.48805522 17.        ]
+
+ Objective function:
+ 0.0017736994835427528
+BMA RE: 0.02080118611042147 Success: False
+
+ The best solution found:
+ [60.         34.72547087 28.90620539 64.        ]
+
+ Objective function:
+ -0.3830822353174827
+BMA RE: 0.044581854016568265 Success: False
+
+ The best solution found:
+ [57.         31.04005027  1.76510256 64.        ]
+
+ Objective function:
+ -0.7251237854573973
+BMA RE: 0.0060387210454274 Success: True
+
+ The best solution found:
+ [40.         26.21212862 60.27117669 63.        ]
+
+ Objective function:
+ -0.5107202504372845
+BMA RE: 0.03710761837621599 Success: True
+
+ The best solution found:
+ [50.         30.24422674  4.45035482 64.        ]
+
+ Objective function:
+ -0.42251506704155534
+BMA RE: 0.03245650282878382 Success: True
+
+ The best solution found:
+ [50.         22.29164753  8.3653132  64.        ]
+
+ Objective function:
+ -0.5978065184454189
+BMA RE: 0.01516382655426281 Success: True
+
+ The best solution found:
+ [66.         25.05977204 37.87489739 64.        ]
+
+ Objective function:
+ -0.23969445925662336
+BMA RE: 0.03889030018481171 Success: False
+
+ The best solution found:
+ [61.         22.30728071 91.16149469 64.        ]
+
+ Objective function:
+ -0.2859230609428166
+BMA RE: 0.005409484976890893 Success: True
+
+ The best solution found:
+ [69.         23.16914826  5.60836507 64.        ]
+
+ Objective function:
+ -0.16840698748027283
+BMA RE: 0.026107579618469774 Success: False
+
+ The best solution found:
+ [42.         24.54077244 33.49755772 31.        ]
+
+ Objective function:
+ 0.0035963064631485547
+BMA RE: 0.012572262401245 Success: False
+
+ The best solution found:
+ [57.         31.51615147 72.76577523 64.        ]
+
+ Objective function:
+ -0.6962228132504388
+BMA RE: 0.019222619901652176 Success: True
+
+ The best solution found:
+ [51.         29.30966248 45.61476909 51.        ]
+
+ Objective function:
+ 0.005714054725631863
+BMA RE: 0.018816896035052107 Success: False
+
+ The best solution found:
+ [56.         23.12406653  0.92234366 64.        ]
+
+ Objective function:
+ -0.6411515843387767
+BMA RE: 0.027386523387681844 Success: True
+
+ The best solution found:
+ [71.         27.79015431  1.95356672 64.        ]
+
+ Objective function:
+ -0.27941091695056286
+BMA RE: 0.031002601494296147 Success: False
+
+ The best solution found:
+ [71.         20.08264044  8.44606457 64.        ]
+
+ Objective function:
+ -0.34675405417280636
+BMA RE: 0.03187403251163593 Success: True
+
+ The best solution found:
+ [42.         19.65604659  3.63297018 17.        ]
+
+ Objective function:
+ 0.00800662219411287
+BMA RE: 0.02684601222623405 Success: False
+
+ The best solution found:
+ [70.         21.82516266  4.19312776 64.        ]
+
+ Objective function:
+ -0.05527615531094687
+BMA RE: 0.0315999007586193 Success: True
+
+ The best solution found:
+ [47.         21.99134853  1.36474839 18.        ]
+
+ Objective function:
+ -0.0021999625898672234
+BMA RE: 0.012843430935097754 Success: False
+
+ The best solution found:
+ [61.         18.36747711  0.26738037 64.        ]
+
+ Objective function:
+ -0.5345787261232895
+BMA RE: 0.011848901518831521 Success: True
+
+ The best solution found:
+ [45.         21.7876963   1.31288394 16.        ]
+
+ Objective function:
+ 0.0017745148389550261
+BMA RE: 0.012627230731380569 Success: False
+
+ The best solution found:
+ [59.         25.36873477  5.37180281 64.        ]
+
+ Objective function:
+ -0.45390418389176435
+BMA RE: 0.036073149995068304 Success: True
+
+ The best solution found:
+ [77.         22.14278802 15.1266367  63.        ]
+
+ Objective function:
+ -0.11964173795997951
+BMA RE: 0.03788296648692944 Success: True
+
+ The best solution found:
+ [70.         21.35760508  5.01970836 64.        ]
+
+ Objective function:
+ -0.20216542280011324
+BMA RE: 0.016909809461833975 Success: True
+
+ The best solution found:
+ [72.         22.08875556  1.08231084 64.        ]
+
+ Objective function:
+ -0.3443148822724339
+BMA RE: 0.004369318308673277 Success: True
+
+ The best solution found:
+ [62.         29.03623797  6.66154813 62.        ]
+
+ Objective function:
+ -0.4247958254348572
+BMA RE: 0.07239569831498545 Success: True
+
+ The best solution found:
+ [47.         21.85868659  9.96552298 63.        ]
+
+ Objective function:
+ -0.41176408979548174
+BMA RE: 0.022616903628852894 Success: True
+
+ The best solution found:
+ [40.         29.05739143 41.0889468  63.        ]
+
+ Objective function:
+ -0.500979608666478
+BMA RE: 0.041965219092879986 Success: True
+
+ The best solution found:
+ [67.         26.33544023  5.99431636 63.        ]
+
+ Objective function:
+ -0.4649186412684262
+BMA RE: 0.03950069059929375 Success: True
+
+ The best solution found:
+ [65.         29.77401334 46.11840511 64.        ]
+
+ Objective function:
+ -0.36500031501263885
+BMA RE: 0.01227772447434636 Success: True
+
+ The best solution found:
+ [61.         20.61006316  3.24079008 64.        ]
+
+ Objective function:
+ -0.5589576485213869
+BMA RE: 0.029386933483044844 Success: True
+
+ The best solution found:
+ [54.         19.49583795  0.34329253 64.        ]
+
+ Objective function:
+ -0.3792883124794853
+BMA RE: 0.046113103245195956 Success: True
+
+ The best solution found:
+ [44.         22.21660391  8.21682926 64.        ]
+
+ Objective function:
+ -0.4086760111929304
+BMA RE: 0.03598121281359947 Success: True
+
+ The best solution found:
+ [71.         21.29231663 33.39975488 63.        ]
+
+ Objective function:
+ -0.31389739966290164
+BMA RE: 0.015860481922033584 Success: True
+
+ The best solution found:
+ [67.         23.43140805 17.08267185 24.        ]
+
+ Objective function:
+ 0.025066530654160472
+BMA RE: 0.06214671889852564 Success: False
+
+ The best solution found:
+ [63.         26.14448252 44.2168969  64.        ]
+
+ Objective function:
+ -0.6464552018837398
+BMA RE: 0.02180696383645221 Success: True
+
+ The best solution found:
+ [57.         33.00492106  9.31346774 63.        ]
+
+ Objective function:
+ -0.5809952196607273
+BMA RE: 0.008802901845835306 Success: True
+
+ The best solution found:
+ [65.         28.20560117  2.79315242 63.        ]
+
+ Objective function:
+ -0.5291452458513045
+BMA RE: 0.0464805255211754 Success: True
+
+ The best solution found:
+ [40.         19.89977393 25.57721857 57.        ]
+
+ Objective function:
+ -0.010033429720346453
+BMA RE: 0.07326064357525316 Success: False
+
+ The best solution found:
+ [64.         27.21265746 22.92715935 64.        ]
+
+ Objective function:
+ -0.7661017990128924
+BMA RE: 0.049479896801245475 Success: True
